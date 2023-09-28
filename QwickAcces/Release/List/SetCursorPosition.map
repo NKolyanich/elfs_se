@@ -1,0 +1,326 @@
+################################################################################
+#                                                                              #
+#      IAR Universal Linker V4.60I/386                                         #
+#                                                                              #
+#           Link time     =  03/Feb/2012  18:03:33                             #
+#           Target CPU    =  ARM                                               #
+#           List file     =  "C:\Embedded Workbench 4.0 Evaluation\Project\Set #
+#                            CursorPosition\Release\List\SetCursorPosition.map #
+#                            "                                                 #
+#           Output file 1 =  "C:\Embedded Workbench 4.0 Evaluation\Project\Set #
+#                            CursorPosition\Release\Exe\SetCursorPosition.elf" #
+#                            Format: elf, variant: -ynpra                      #
+#           Command line  =  "C:\Embedded Workbench 4.0 Evaluation\Project\Set #
+#                            CursorPosition\Release\Obj\_cpp2.r79"             #
+#                            "C:\Embedded Workbench 4.0 Evaluation\Project\Set #
+#                            CursorPosition\Release\Obj\func.r79"              #
+#                            "C:\Embedded Workbench 4.0 Evaluation\Project\Set #
+#                            CursorPosition\Release\Obj\main.r79"              #
+#                            -o                                                #
+#                            "C:\Embedded Workbench 4.0 Evaluation\Project\Set #
+#                            CursorPosition\Release\Exe\SetCursorPosition.elf" #
+#                            -Felf -l                                          #
+#                            "C:\Embedded Workbench 4.0 Evaluation\Project\Set #
+#                            CursorPosition\Release\List\SetCursorPosition.map #
+#                            "                                                 #
+#                            -xms -f                                           #
+#                            "C:\Embedded Workbench 4.0 Evaluation\Project\Set #
+#                            CursorPosition\..\include\1.xcl"                  #
+#                            (-carm -ynpra -V(CODE)CODE_AREA,12                #
+#                            -V(DATA)DATA_AREA,12                              #
+#                            -Z(CODE_AREA)ELFBEGIN,DATA_ID,START,CODE,DATA_C,I #
+#                            NITTAB,DATA_Z,DATA_N,CONFIG_C,DYN_CONST,DYN_CONST #
+#                            _DESC,DYN_PAGE,DYN_PAGE_DESC=0-FFFFFFFF           #
+#                            -Z(DATA_AREA)DATA_I=0-FFFFFFFF)                   #
+#                            "C:\Embedded Workbench 4.0 Evaluation\ARM\LIB\dl5 #
+#                            tpainl8n.r79"                                     #
+#                            -s main                                           #
+#                                                                              #
+#                        Copyright 1987-2007 IAR Systems. All rights reserved. #
+################################################################################
+
+
+
+
+
+                ****************************************
+                *                                      *
+                *           CROSS REFERENCE            *
+                *                                      *
+                ****************************************
+
+       Program entry at : CODE_AREA 00000248  Relocatable, from module : main
+
+
+
+
+                ****************************************
+                *                                      *
+                *            RUNTIME MODEL             *
+                *                                      *
+                ****************************************
+
+  ARMv4M                 = USED
+  ARMv4T                 = USED
+  ARMv5T                 = USED
+  StackAlign4            = USED
+  __cpu_mode             = __pcs__interwork
+  __data_model           = absolute
+  __dlib_file_descriptor = 1
+  __endian               = little
+  __rt_version           = 6
+
+
+
+                ****************************************
+                *                                      *
+                *              MODULE MAP              *
+                *                                      *
+                ****************************************
+
+
+  DEFINED ABSOLUTE ENTRIES
+    *************************************************************************
+
+  DEFINED ABSOLUTE ENTRIES
+    *************************************************************************
+
+  FILE NAME : C:\Embedded Workbench 4.0 Evaluation\Project\SetCursorPosition\Release\Obj\_cpp2.r79
+  PROGRAM MODULE, NAME : _cpp2
+
+  SEGMENTS IN THE MODULE
+  ======================
+CODE
+  Relative segment, address: CODE_AREA 00000010 - 0000001B (0xc bytes), align: 2
+  Segment part 3.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           operator new(size_t)    00000010        CreateHWBook() (main)
+               stack 1 = 00000000 ( 00000004 )
+
+    *************************************************************************
+
+  FILE NAME : C:\Embedded Workbench 4.0 Evaluation\Project\SetCursorPosition\Release\Obj\func.r79
+  PROGRAM MODULE, NAME : func
+
+  SEGMENTS IN THE MODULE
+  ======================
+ELFBEGIN
+  Relative segment, address: CODE_AREA 00000000, align: 0
+  Segment part 0. ROOT.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           ELF_BEGIN               00000000        elf_exit() (main)
+    -------------------------------------------------------------------------
+CODE
+  Relative segment, address: CODE_AREA 0000001C - 00000033 (0x18 bytes), align: 2
+  Segment part 1. ROOT.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           kill_data               0000001C        elf_exit() (main)
+           seqkill                 00000020 
+           ASYNC                   00000030 
+           SYNC                    0000002C 
+    -------------------------------------------------------------------------
+DYN_CONST
+  Relative segment, address: CODE_AREA 0000037C - 0000037F (0x4 bytes), align: 2
+  Segment part 37.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           KEY_VOL_UP              0000037C        KeyPr(int, int, int, LPARAM, DISP_OBJ *) (main)
+    -------------------------------------------------------------------------
+DYN_CONST
+  Relative segment, address: CODE_AREA 00000380 - 00000383 (0x4 bytes), align: 2
+  Segment part 44.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           KBD_SHORT_PRESS         00000380        KeyPr(int, int, int, LPARAM, DISP_OBJ *) (main)
+    -------------------------------------------------------------------------
+DYN_CONST_DESC
+  Relative segment, address: CODE_AREA 00000384 - 00000387 (0x4 bytes), align: 2
+  Segment part 681. ROOT.
+    -------------------------------------------------------------------------
+DYN_PAGE
+  Relative segment, address: CODE_AREA 00000388, align: 2
+  Segment part 682.
+    -------------------------------------------------------------------------
+DYN_PAGE_DESC
+  Relative segment, address: CODE_AREA 000003A0 - 000003A3 (0x4 bytes), align: 2
+  Segment part 683. ROOT.
+
+    *************************************************************************
+
+  FILE NAME : C:\Embedded Workbench 4.0 Evaluation\Project\SetCursorPosition\Release\Obj\main.r79
+  PROGRAM MODULE, NAME : main
+
+  SEGMENTS IN THE MODULE
+  ======================
+CODE
+  Relative segment, address: CODE_AREA 00000034 - 0000003B (0x8 bytes), align: 2
+  Segment part 10.            Intra module refs:   main
+                                                   onCloseHWBook(BOOK *)
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           LPARAM::LPARAM(int)     00000034 
+    -------------------------------------------------------------------------
+CODE
+  Relative segment, address: CODE_AREA 0000003C - 000000EB (0xb0 bytes), align: 2
+  Segment part 12.            Intra module refs:   Segment part 29
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           KeyPr(int, int, int, LPARAM, DISP_OBJ *)
+                                   0000003C 
+               stack 1 = 00000000 ( 00000210 )
+    -------------------------------------------------------------------------
+CODE
+  Relative segment, address: CODE_AREA 000000EC - 00000107 (0x1c bytes), align: 2
+  Segment part 14.            Intra module refs:   Segment part 28
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           elf_exit()              000000EC 
+               stack 1 = 00000000 ( 00000004 )
+    -------------------------------------------------------------------------
+CODE
+  Relative segment, address: CODE_AREA 00000108 - 0000011B (0x14 bytes), align: 2
+  Segment part 16.            Intra module refs:   Segment part 9
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           TerminateElf(void *, BOOK *)
+                                   00000108 
+               stack 1 = 00000000 ( 00000004 )
+    -------------------------------------------------------------------------
+CODE
+  Relative segment, address: CODE_AREA 0000011C - 0000019B (0x80 bytes), align: 2
+  Segment part 18.            Intra module refs:   Segment part 9
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           ShowAuthorInfo(void *, BOOK *)
+                                   0000011C 
+               stack 1 = 00000000 ( 0000021C )
+    -------------------------------------------------------------------------
+DYN_PAGE
+  Relative segment, address: CODE_AREA 00000388 - 0000039F (0x18 bytes), align: 2
+  Segment part 9.             Intra module refs:   Segment part 8
+    -------------------------------------------------------------------------
+DATA_I
+  Relative segment, address: DATA_AREA 00000000 - 0000000F (0x10 bytes), align: 2
+  Segment part 7.             Intra module refs:   CreateHWBook()
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           HWBook                  00000000 
+           base_page               00000004 
+    -------------------------------------------------------------------------
+CODE
+  Relative segment, address: CODE_AREA 0000019C - 000001D3 (0x38 bytes), align: 2
+  Segment part 20.            Intra module refs:   CreateHWBook()
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           onCloseHWBook(BOOK *)   0000019C 
+               stack 1 = 00000000 ( 00000008 )
+    -------------------------------------------------------------------------
+CODE
+  Relative segment, address: CODE_AREA 000001D4 - 0000021B (0x48 bytes), align: 2
+  Segment part 22.            Intra module refs:   main
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           CreateHWBook()          000001D4 
+               stack 1 = 00000000 ( 00000010 )
+    -------------------------------------------------------------------------
+CODE
+  Relative segment, address: CODE_AREA 0000021C - 00000243 (0x28 bytes), align: 2
+  Segment part 24.            Intra module refs:   main
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           myFind(BOOK *)          0000021C 
+               stack 1 = 00000000 ( 00000004 )
+    -------------------------------------------------------------------------
+CODE
+  Relative segment, address: CODE_AREA 00000244 - 00000247 (0x4 bytes), align: 2
+  Segment part 25.            Intra module refs:   CreateHWBook()
+                                                   myFind(BOOK *)
+    -------------------------------------------------------------------------
+CODE
+  Relative segment, address: CODE_AREA 00000248 - 000002E3 (0x9c bytes), align: 2
+  Segment part 27.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           main                    00000248        Absolute parts (?ABS_ENTRY_MOD)
+               stack 1 = 00000000 ( 00000014 )
+    -------------------------------------------------------------------------
+CODE
+  Relative segment, address: CODE_AREA 000002E4 - 000002E7 (0x4 bytes), align: 2
+  Segment part 28.            Intra module refs:   main
+                                                   onCloseHWBook(BOOK *)
+    -------------------------------------------------------------------------
+CODE
+  Relative segment, address: CODE_AREA 000002E8 - 000002EB (0x4 bytes), align: 2
+  Segment part 29.            Intra module refs:   main
+                                                   onCloseHWBook(BOOK *)
+    -------------------------------------------------------------------------
+DATA_ID
+  Relative segment, address: CODE_AREA 00000000 - 0000000F (0x10 bytes), align: 2
+  Segment part 8.             Intra module refs:   Segment part 7
+    -------------------------------------------------------------------------
+INITTAB
+  Relative segment, address: CODE_AREA 00000370 - 0000037B (0xc bytes), align: 2
+  Segment part 34. ROOT.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           ?init?tab?DATA_I        00000370 
+    -------------------------------------------------------------------------
+DATA_C
+  Relative segment, address: CODE_AREA 000002EC - 000002F7 (0xc bytes), align: 2
+  Segment part 2.             Intra module refs:   Segment part 8
+    -------------------------------------------------------------------------
+DATA_C
+  Relative segment, address: CODE_AREA 000002F8 - 000002FF (0x8 bytes), align: 2
+  Segment part 3.             Intra module refs:   KeyPr(int, int, int, LPARAM, DISP_OBJ *)
+    -------------------------------------------------------------------------
+DATA_C
+  Relative segment, address: CODE_AREA 00000300 - 0000034F (0x50 bytes), align: 2
+  Segment part 4.             Intra module refs:   Segment part 25
+                                                   ShowAuthorInfo(void *, BOOK *)
+    -------------------------------------------------------------------------
+DATA_C
+  Relative segment, address: CODE_AREA 00000350 - 0000036F (0x20 bytes), align: 2
+  Segment part 6.             Intra module refs:   main
+
+
+
+
+                ****************************************
+                *                                      *
+                *      SEGMENTS IN ADDRESS ORDER       *
+                *                                      *
+                ****************************************
+
+
+SEGMENT              SPACE    START ADDRESS   END ADDRESS     SIZE  TYPE  ALIGN
+=======              =====    =============   ===========     ====  ====  =====
+ELFBEGIN             CODE_AREA           00000000                     rel    0
+DATA_ID              CODE_AREA      00000000 - 0000000F          10   rel    2
+START                CODE_AREA           00000010                     dse    0
+CODE                 CODE_AREA      00000010 - 000002EB         2DC   rel    2
+DATA_C               CODE_AREA      000002EC - 0000036F          84   rel    2
+INITTAB              CODE_AREA      00000370 - 0000037B           C   rel    2
+DATA_Z               CODE_AREA           0000037C                     dse    0
+DATA_N               CODE_AREA           0000037C                     dse    0
+CONFIG_C             CODE_AREA           0000037C                     dse    0
+DYN_CONST            CODE_AREA      0000037C - 00000383           8   rel    2
+DYN_CONST_DESC       CODE_AREA      00000384 - 00000387           4   rel    2
+DYN_PAGE             CODE_AREA      00000388 - 0000039F          18   rel    2
+DYN_PAGE_DESC        CODE_AREA      000003A0 - 000003A3           4   rel    2
+DATA_I               DATA_AREA      00000000 - 0000000F          10   rel    2
+
+                ****************************************
+                *                                      *
+                *        END OF CROSS REFERENCE        *
+                *                                      *
+                ****************************************
+
+ 932 bytes of CODE memory
+  16 bytes of DATA memory
+
+Errors: none
+Warnings: none
+

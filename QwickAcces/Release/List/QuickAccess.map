@@ -1,0 +1,719 @@
+################################################################################
+#                                                                              #
+#      IAR Universal Linker V4.60I/386                                         #
+#                                                                              #
+#           Link time     =  18/Aug/2015  23:03:06                             #
+#           Target CPU    =  ARM                                               #
+#           List file     =  "D:\kl\dev\Embedded Workbench 4.0 Evaluation\Proj #
+#                            ect\QwickAcces\Release\List\QuickAccess.map"      #
+#           Output file 1 =  "D:\kl\dev\Embedded Workbench 4.0 Evaluation\Proj #
+#                            ect\QwickAcces\Release\Exe\QuickAccess.elf"       #
+#                            Format: elf, variant: -ynpra                      #
+#           Command line  =  "D:\kl\dev\Embedded Workbench 4.0 Evaluation\Proj #
+#                            ect\QwickAcces\Release\Obj\_cpp2.r79"             #
+#                            "D:\kl\dev\Embedded Workbench 4.0 Evaluation\Proj #
+#                            ect\QwickAcces\Release\Obj\func.r79"              #
+#                            "D:\kl\dev\Embedded Workbench 4.0 Evaluation\Proj #
+#                            ect\QwickAcces\Release\Obj\main.r79"              #
+#                            -o                                                #
+#                            "D:\kl\dev\Embedded Workbench 4.0 Evaluation\Proj #
+#                            ect\QwickAcces\Release\Exe\QuickAccess.elf"       #
+#                            -Felf -l                                          #
+#                            "D:\kl\dev\Embedded Workbench 4.0 Evaluation\Proj #
+#                            ect\QwickAcces\Release\List\QuickAccess.map"      #
+#                            -xms -f                                           #
+#                            "D:\kl\dev\Embedded Workbench 4.0 Evaluation\Proj #
+#                            ect\QwickAcces\..\include\1.xcl"                  #
+#                            (-carm -ynpra -V(CODE)CODE_AREA,12                #
+#                            -V(DATA)DATA_AREA,12                              #
+#                            -Z(CODE_AREA)ELFBEGIN,DATA_ID,START,CODE,DATA_C,I #
+#                            NITTAB,DATA_Z,DATA_N,CONFIG_C,DYN_CONST,DYN_CONST #
+#                            _DESC,DYN_PAGE,DYN_PAGE_DESC=0-FFFFFFFF           #
+#                            -Z(DATA_AREA)DATA_I=0-FFFFFFFF)                   #
+#                            "D:\kl\dev\Embedded Workbench 4.0 Evaluation\ARM\ #
+#                            LIB\dl5tpainl8n.r79"                              #
+#                            -s main                                           #
+#                                                                              #
+#                        Copyright 1987-2007 IAR Systems. All rights reserved. #
+################################################################################
+
+
+
+
+
+                ****************************************
+                *                                      *
+                *           CROSS REFERENCE            *
+                *                                      *
+                ****************************************
+
+       Program entry at : CODE_AREA 00000CD4  Relocatable, from module : main
+
+
+
+
+                ****************************************
+                *                                      *
+                *            RUNTIME MODEL             *
+                *                                      *
+                ****************************************
+
+  ARMv4M                 = USED
+  ARMv4T                 = USED
+  ARMv5T                 = USED
+  StackAlign4            = USED
+  __cpu_mode             = __pcs__interwork
+  __data_model           = absolute
+  __dlib_file_descriptor = 1
+  __endian               = little
+  __rt_version           = 6
+
+
+
+                ****************************************
+                *                                      *
+                *              MODULE MAP              *
+                *                                      *
+                ****************************************
+
+
+  DEFINED ABSOLUTE ENTRIES
+    *************************************************************************
+
+  DEFINED ABSOLUTE ENTRIES
+    *************************************************************************
+
+  FILE NAME : D:\kl\dev\Embedded Workbench 4.0 Evaluation\Project\QwickAcces\Release\Obj\_cpp2.r79
+  PROGRAM MODULE, NAME : _cpp2
+
+  SEGMENTS IN THE MODULE
+  ======================
+CODE
+  Relative segment, address: CODE_AREA 00000090 - 0000009B (0xc bytes), align: 2
+  Segment part 3.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           operator new(size_t)    00000090        Create_QuickAccessBook() (main)
+                                                   Create_QuickAccessMenuBook() (main)
+               stack 1 = 00000000 ( 00000004 )
+
+    *************************************************************************
+
+  FILE NAME : D:\kl\dev\Embedded Workbench 4.0 Evaluation\Project\QwickAcces\Release\Obj\func.r79
+  PROGRAM MODULE, NAME : func
+
+  SEGMENTS IN THE MODULE
+  ======================
+ELFBEGIN
+  Relative segment, address: CODE_AREA 00000000, align: 0
+  Segment part 0. ROOT.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           ELF_BEGIN               00000000        elf_exit() (main)
+    -------------------------------------------------------------------------
+CODE
+  Relative segment, address: CODE_AREA 0000009C - 000000B3 (0x18 bytes), align: 2
+  Segment part 1. ROOT.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           kill_data               0000009C        elf_exit() (main)
+           seqkill                 000000A0 
+           ASYNC                   000000B0 
+           SYNC                    000000AC        Segment part 79 (main)
+    -------------------------------------------------------------------------
+DYN_CONST
+  Relative segment, address: CODE_AREA 00000F48 - 00000F4B (0x4 bytes), align: 2
+  Segment part 21.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           ACTION_SELECT1          00000F48        QuickAccess_menu(void *, BOOK *, GUI *) (main)
+    -------------------------------------------------------------------------
+DYN_CONST
+  Relative segment, address: CODE_AREA 00000F4C - 00000F4F (0x4 bytes), align: 2
+  Segment part 24.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           KEY_UP                  00000F4C        KeyPr(int, int, int, LPARAM, DISP_OBJ *) (main)
+    -------------------------------------------------------------------------
+DYN_CONST
+  Relative segment, address: CODE_AREA 00000F50 - 00000F53 (0x4 bytes), align: 2
+  Segment part 25.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           KEY_DOWN                00000F50        KeyPr(int, int, int, LPARAM, DISP_OBJ *) (main)
+    -------------------------------------------------------------------------
+DYN_CONST
+  Relative segment, address: CODE_AREA 00000F54 - 00000F57 (0x4 bytes), align: 2
+  Segment part 41.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           KEY_STAR                00000F54        KeyPr(int, int, int, LPARAM, DISP_OBJ *) (main)
+    -------------------------------------------------------------------------
+DYN_CONST
+  Relative segment, address: CODE_AREA 00000F58 - 00000F5B (0x4 bytes), align: 2
+  Segment part 42.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           KEY_DIEZ                00000F58        KeyPr(int, int, int, LPARAM, DISP_OBJ *) (main)
+    -------------------------------------------------------------------------
+DYN_CONST
+  Relative segment, address: CODE_AREA 00000F5C - 00000F5F (0x4 bytes), align: 2
+  Segment part 44.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           KBD_SHORT_PRESS         00000F5C        KeyPr(int, int, int, LPARAM, DISP_OBJ *) (main)
+    -------------------------------------------------------------------------
+DYN_CONST
+  Relative segment, address: CODE_AREA 00000F60 - 00000F63 (0x4 bytes), align: 2
+  Segment part 45.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           KBD_SHORT_RELEASE       00000F60        KeyPr(int, int, int, LPARAM, DISP_OBJ *) (main)
+    -------------------------------------------------------------------------
+DYN_CONST
+  Relative segment, address: CODE_AREA 00000F64 - 00000F67 (0x4 bytes), align: 2
+  Segment part 46.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           KBD_LONG_PRESS          00000F64        KeyPr(int, int, int, LPARAM, DISP_OBJ *) (main)
+    -------------------------------------------------------------------------
+DYN_CONST
+  Relative segment, address: CODE_AREA 00000F68 - 00000F6B (0x4 bytes), align: 2
+  Segment part 327.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           ACTION_BACK             00000F68        QuickAccess_menu(void *, BOOK *, GUI *) (main)
+    -------------------------------------------------------------------------
+DYN_CONST
+  Relative segment, address: CODE_AREA 00000F6C - 00000F6F (0x4 bytes), align: 2
+  Segment part 328.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           ACTION_LONG_BACK        00000F6C        QuickAccess_menu(void *, BOOK *, GUI *) (main)
+    -------------------------------------------------------------------------
+DYN_CONST
+  Relative segment, address: CODE_AREA 00000F70 - 00000F73 (0x4 bytes), align: 2
+  Segment part 341.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           KEY_DIGITAL_0           00000F70        KeyPr(int, int, int, LPARAM, DISP_OBJ *) (main)
+    -------------------------------------------------------------------------
+DYN_CONST
+  Relative segment, address: CODE_AREA 00000F74 - 00000F77 (0x4 bytes), align: 2
+  Segment part 430.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           UI_SLEEPMODE_ACTIVATE_EVENT
+                                   00000F74        Segment part 84 (main)
+    -------------------------------------------------------------------------
+DYN_CONST
+  Relative segment, address: CODE_AREA 00000F78 - 00000F7B (0x4 bytes), align: 2
+  Segment part 434.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           UI_KEYLOCK_ACTIVATE_EVENT
+                                   00000F78        Segment part 83 (main)
+    -------------------------------------------------------------------------
+DYN_CONST
+  Relative segment, address: CODE_AREA 00000F7C - 00000F7F (0x4 bytes), align: 2
+  Segment part 527.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           VAR_ARG_BOOK            00000F7C        Segment part 50 (main)
+    -------------------------------------------------------------------------
+DYN_CONST
+  Relative segment, address: CODE_AREA 00000F80 - 00000F83 (0x4 bytes), align: 2
+  Segment part 544.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           VAR_ARG_YESNO_PRE_QUESTION
+                                   00000F80        Segment part 47 (main)
+    -------------------------------------------------------------------------
+DYN_CONST
+  Relative segment, address: CODE_AREA 00000F84 - 00000F87 (0x4 bytes), align: 2
+  Segment part 546.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           VAR_ARG_YESNO_YES_ACTION
+                                   00000F84        Segment part 49 (main)
+    -------------------------------------------------------------------------
+DYN_CONST
+  Relative segment, address: CODE_AREA 00000F88 - 00000F8B (0x4 bytes), align: 2
+  Segment part 547.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           VAR_ARG_YESNO_NO_ACTION
+                                   00000F88        Segment part 48 (main)
+    -------------------------------------------------------------------------
+DYN_CONST_DESC
+  Relative segment, address: CODE_AREA 00000F8C - 00000F8F (0x4 bytes), align: 2
+  Segment part 681. ROOT.
+    -------------------------------------------------------------------------
+DYN_PAGE
+  Relative segment, address: CODE_AREA 00000F90, align: 2
+  Segment part 682.
+    -------------------------------------------------------------------------
+DYN_PAGE_DESC
+  Relative segment, address: CODE_AREA 00000FA8 - 00000FAB (0x4 bytes), align: 2
+  Segment part 683. ROOT.
+
+    *************************************************************************
+
+  FILE NAME : D:\kl\dev\Embedded Workbench 4.0 Evaluation\Project\QwickAcces\Release\Obj\main.r79
+  PROGRAM MODULE, NAME : main
+
+  SEGMENTS IN THE MODULE
+  ======================
+DATA_Z
+  Relative segment, address: CODE_AREA 00000F3C - 00000F3F (0x4 bytes), align: 2
+  Segment part 20.            Intra module refs:   Segment part 73
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           mbk                     00000F3C 
+    -------------------------------------------------------------------------
+DATA_Z
+  Relative segment, address: CODE_AREA 00000F40 - 00000F43 (0x4 bytes), align: 2
+  Segment part 22.            Intra module refs:   Segment part 39
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           QuestionReboot_GUI      00000F40 
+    -------------------------------------------------------------------------
+DATA_Z
+  Relative segment, address: CODE_AREA 00000F44 - 00000F47 (0x4 bytes), align: 2
+  Segment part 23.            Intra module refs:   Segment part 46
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           QuestionShutdown_GUI    00000F44 
+    -------------------------------------------------------------------------
+CODE
+  Relative segment, address: CODE_AREA 000000B4 - 000000D7 (0x24 bytes), align: 2
+  Segment part 28.            Intra module refs:   KeyPr(int, int, int, LPARAM, DISP_OBJ *)
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           isBook(BOOK *, int *)   000000B4 
+               stack 1 = 00000000 ( 00000004 )
+    -------------------------------------------------------------------------
+CODE
+  Relative segment, address: CODE_AREA 000000D8 - 000000FF (0x28 bytes), align: 2
+  Segment part 32.            Intra module refs:   Create_QuickAccessMenu()
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           isMyQABook(BOOK *)      000000D8 
+               stack 1 = 00000000 ( 00000004 )
+    -------------------------------------------------------------------------
+CODE
+  Relative segment, address: CODE_AREA 00000100 - 0000011F (0x20 bytes), align: 2
+  Segment part 34.            Intra module refs:   Create_QuestionReboot(BOOK *)
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           OnNo_QuestionReboot(BOOK *, void *)
+                                   00000100 
+               stack 1 = 00000000 ( 00000008 )
+    -------------------------------------------------------------------------
+CODE
+  Relative segment, address: CODE_AREA 00000120 - 00000143 (0x24 bytes), align: 2
+  Segment part 36.            Intra module refs:   Create_QuestionReboot(BOOK *)
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           OnYes_QuestionReboot(BOOK *, void *)
+                                   00000120 
+               stack 1 = 00000000 ( 00000008 )
+    -------------------------------------------------------------------------
+CODE
+  Relative segment, address: CODE_AREA 00000144 - 000001C3 (0x80 bytes), align: 2
+  Segment part 38.            Intra module refs:   GuiOnEnterPressed(BOOK *, GUI *)
+                                                   KeyPr(int, int, int, LPARAM, DISP_OBJ *)
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           Create_QuestionReboot(BOOK *)
+                                   00000144 
+               stack 1 = 00000000 ( 00000024 )
+    -------------------------------------------------------------------------
+CODE
+  Relative segment, address: CODE_AREA 000001C4 - 000001C7 (0x4 bytes), align: 2
+  Segment part 39.            Intra module refs:   Create_QuestionReboot(BOOK *)
+                                                   OnNo_QuestionReboot(BOOK *, void *)
+                                                   OnYes_QuestionReboot(BOOK *, void *)
+    -------------------------------------------------------------------------
+CODE
+  Relative segment, address: CODE_AREA 000001C8 - 000001E7 (0x20 bytes), align: 2
+  Segment part 41.            Intra module refs:   Create_QuestionShutdown(BOOK *)
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           OnNo_QuestionShutdown(BOOK *, void *)
+                                   000001C8 
+               stack 1 = 00000000 ( 00000008 )
+    -------------------------------------------------------------------------
+CODE
+  Relative segment, address: CODE_AREA 000001E8 - 0000020B (0x24 bytes), align: 2
+  Segment part 43.            Intra module refs:   Create_QuestionShutdown(BOOK *)
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           OnYes_QuestionShutdown(BOOK *, void *)
+                                   000001E8 
+               stack 1 = 00000000 ( 00000008 )
+    -------------------------------------------------------------------------
+CODE
+  Relative segment, address: CODE_AREA 0000020C - 0000028B (0x80 bytes), align: 2
+  Segment part 45.            Intra module refs:   GuiOnEnterPressed(BOOK *, GUI *)
+                                                   KeyPr(int, int, int, LPARAM, DISP_OBJ *)
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           Create_QuestionShutdown(BOOK *)
+                                   0000020C 
+               stack 1 = 00000000 ( 00000024 )
+    -------------------------------------------------------------------------
+CODE
+  Relative segment, address: CODE_AREA 0000028C - 0000028F (0x4 bytes), align: 2
+  Segment part 46.            Intra module refs:   Create_QuestionShutdown(BOOK *)
+                                                   OnNo_QuestionShutdown(BOOK *, void *)
+                                                   OnYes_QuestionShutdown(BOOK *, void *)
+    -------------------------------------------------------------------------
+CODE
+  Relative segment, address: CODE_AREA 00000290 - 00000293 (0x4 bytes), align: 2
+  Segment part 47.            Intra module refs:   Create_QuestionReboot(BOOK *)
+                                                   Create_QuestionShutdown(BOOK *)
+    -------------------------------------------------------------------------
+CODE
+  Relative segment, address: CODE_AREA 00000294 - 00000297 (0x4 bytes), align: 2
+  Segment part 48.            Intra module refs:   Create_QuestionReboot(BOOK *)
+                                                   Create_QuestionShutdown(BOOK *)
+    -------------------------------------------------------------------------
+CODE
+  Relative segment, address: CODE_AREA 00000298 - 0000029B (0x4 bytes), align: 2
+  Segment part 49.            Intra module refs:   Create_QuestionReboot(BOOK *)
+                                                   Create_QuestionShutdown(BOOK *)
+    -------------------------------------------------------------------------
+CODE
+  Relative segment, address: CODE_AREA 0000029C - 0000029F (0x4 bytes), align: 2
+  Segment part 50.            Intra module refs:   Create_QuestionReboot(BOOK *)
+                                                   Create_QuestionShutdown(BOOK *)
+    -------------------------------------------------------------------------
+CODE
+  Relative segment, address: CODE_AREA 000002A0 - 000002C7 (0x28 bytes), align: 2
+  Segment part 52.            Intra module refs:   GuiOnEnterPressed(BOOK *, GUI *)
+                                                   QuickAccess_menu(void *, BOOK *, GUI *)
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           GuiBack(BOOK *, GUI *)
+                                   000002A0 
+               stack 1 = 00000000 ( 00000008 )
+    -------------------------------------------------------------------------
+CODE
+  Relative segment, address: CODE_AREA 000002C8 - 000002E7 (0x20 bytes), align: 2
+  Segment part 58.            Intra module refs:   GuiOnEnterPressed(BOOK *, GUI *)
+                                                   KeyPr(int, int, int, LPARAM, DISP_OBJ *)
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           SelectMenuItem_KeyLock()
+                                   000002C8 
+               stack 1 = 00000000 ( 00000004 )
+    -------------------------------------------------------------------------
+CODE
+  Relative segment, address: CODE_AREA 000002E8 - 00000357 (0x70 bytes), align: 2
+  Segment part 60.            Intra module refs:   GuiOnEnterPressed(BOOK *, GUI *)
+                                                   KeyPr(int, int, int, LPARAM, DISP_OBJ *)
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           SelectMenuItem_SilenceMode()
+                                   000002E8 
+               stack 1 = 00000000 ( 00000010 )
+    -------------------------------------------------------------------------
+CODE
+  Relative segment, address: CODE_AREA 00000358 - 00000423 (0xcc bytes), align: 2
+  Segment part 66.            Intra module refs:   QuickAccess_menu(void *, BOOK *, GUI *)
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           GuiOnEnterPressed(BOOK *, GUI *)
+                                   00000358 
+               stack 1 = 00000000 ( 0000000C )
+    -------------------------------------------------------------------------
+CODE
+  Relative segment, address: CODE_AREA 00000424 - 000004DF (0xbc bytes), align: 2
+  Segment part 68.            Intra module refs:   QuickAccess_menu(void *, BOOK *, GUI *)
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           GuiOnLBMessage(GUI_MESSAGE *)
+                                   00000424 
+               stack 1 = 00000000 ( 0000001C )
+    -------------------------------------------------------------------------
+CODE
+  Relative segment, address: CODE_AREA 000004E0 - 0000051F (0x40 bytes), align: 2
+  Segment part 70.            Intra module refs:   Create_QuickAccessMenu()
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           Create_QuickAccessMenuBook()
+                                   000004E0 
+               stack 1 = 00000000 ( 00000010 )
+    -------------------------------------------------------------------------
+CODE
+  Relative segment, address: CODE_AREA 00000520 - 00000553 (0x34 bytes), align: 2
+  Segment part 72.            Intra module refs:   KeyPr(int, int, int, LPARAM, DISP_OBJ *)
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           Create_QuickAccessMenu()
+                                   00000520 
+               stack 1 = 00000000 ( 00000004 )
+    -------------------------------------------------------------------------
+CODE
+  Relative segment, address: CODE_AREA 00000554 - 00000557 (0x4 bytes), align: 2
+  Segment part 73.            Intra module refs:   Create_QuickAccessMenu()
+                                                   Create_QuickAccessMenuBook()
+                                                   GuiBack(BOOK *, GUI *)
+    -------------------------------------------------------------------------
+CODE
+  Relative segment, address: CODE_AREA 00000558 - 000006CB (0x174 bytes), align: 2
+  Segment part 77.            Intra module refs:   Create_QuickAccessMenu()
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           QuickAccess_menu(void *, BOOK *, GUI *)
+                                   00000558 
+               stack 1 = 00000000 ( 00000044 )
+    -------------------------------------------------------------------------
+CODE
+  Relative segment, address: CODE_AREA 000006CC - 000006CF (0x4 bytes), align: 2
+  Segment part 78.            Intra module refs:   GuiOnLBMessage(GUI_MESSAGE *)
+                                                   QuickAccess_menu(void *, BOOK *, GUI *)
+    -------------------------------------------------------------------------
+CODE
+  Relative segment, address: CODE_AREA 000006D0 - 000006D3 (0x4 bytes), align: 2
+  Segment part 79.            Intra module refs:   GuiOnLBMessage(GUI_MESSAGE *)
+                                                   QuickAccess_menu(void *, BOOK *, GUI *)
+                                                   SelectMenuItem_SilenceMode()
+    -------------------------------------------------------------------------
+CODE
+  Relative segment, address: CODE_AREA 000006D4 - 00000B7B (0x4a8 bytes), align: 2
+  Segment part 81.            Intra module refs:   Segment part 101
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           KeyPr(int, int, int, LPARAM, DISP_OBJ *)
+                                   000006D4 
+               stack 1 = 00000000 ( 00000020 )
+    -------------------------------------------------------------------------
+CODE
+  Relative segment, address: CODE_AREA 00000B7C - 00000B7F (0x4 bytes), align: 2
+  Segment part 82.            Intra module refs:   Create_QuickAccessMenuBook()
+                                                   KeyPr(int, int, int, LPARAM, DISP_OBJ *)
+                                                   isMyQABook(BOOK *)
+    -------------------------------------------------------------------------
+CODE
+  Relative segment, address: CODE_AREA 00000B80 - 00000B83 (0x4 bytes), align: 2
+  Segment part 83.            Intra module refs:   KeyPr(int, int, int, LPARAM, DISP_OBJ *)
+                                                   SelectMenuItem_KeyLock()
+    -------------------------------------------------------------------------
+CODE
+  Relative segment, address: CODE_AREA 00000B84 - 00000B87 (0x4 bytes), align: 2
+  Segment part 84.            Intra module refs:   KeyPr(int, int, int, LPARAM, DISP_OBJ *)
+                                                   SelectMenuItem_KeyLock()
+    -------------------------------------------------------------------------
+CODE
+  Relative segment, address: CODE_AREA 00000B88 - 00000B9B (0x14 bytes), align: 2
+  Segment part 86.            Intra module refs:   Segment part 26
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           TerminateElf(void *, BOOK *)
+                                   00000B88 
+               stack 1 = 00000000 ( 00000004 )
+    -------------------------------------------------------------------------
+CODE
+  Relative segment, address: CODE_AREA 00000B9C - 00000C1B (0x80 bytes), align: 2
+  Segment part 88.            Intra module refs:   Segment part 26
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           ShowAuthorInfo(void *, BOOK *)
+                                   00000B9C 
+               stack 1 = 00000000 ( 0000021C )
+    -------------------------------------------------------------------------
+DYN_PAGE
+  Relative segment, address: CODE_AREA 00000F90 - 00000FA7 (0x18 bytes), align: 2
+  Segment part 26.            Intra module refs:   Segment part 19
+    -------------------------------------------------------------------------
+DATA_I
+  Relative segment, address: DATA_AREA 00000000 - 0000000F (0x10 bytes), align: 2
+  Segment part 18.            Intra module refs:   Create_QuickAccessBook()
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           QuickAccessBook         00000000 
+           base_page               00000004 
+    -------------------------------------------------------------------------
+DATA_I
+  Relative segment, address: DATA_AREA 00000010 - 0000008F (0x80 bytes), align: 2
+  Segment part 24.            Intra module refs:   Segment part 78
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           imageid                 0000005C 
+           names_str               00000044 
+           names_textid            00000010 
+    -------------------------------------------------------------------------
+CODE
+  Relative segment, address: CODE_AREA 00000C1C - 00000C37 (0x1c bytes), align: 2
+  Segment part 90.            Intra module refs:   Segment part 100
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           elf_exit()              00000C1C 
+               stack 1 = 00000000 ( 00000004 )
+    -------------------------------------------------------------------------
+CODE
+  Relative segment, address: CODE_AREA 00000C38 - 00000C5F (0x28 bytes), align: 2
+  Segment part 92.            Intra module refs:   Create_QuickAccessBook()
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           OnClose_QuickAccessBook(BOOK *)
+                                   00000C38 
+               stack 1 = 00000000 ( 00000004 )
+    -------------------------------------------------------------------------
+CODE
+  Relative segment, address: CODE_AREA 00000C60 - 00000C87 (0x28 bytes), align: 2
+  Segment part 94.            Intra module refs:   main
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           Find_QuickAccessBook(BOOK *)
+                                   00000C60 
+               stack 1 = 00000000 ( 00000004 )
+    -------------------------------------------------------------------------
+CODE
+  Relative segment, address: CODE_AREA 00000C88 - 00000CCF (0x48 bytes), align: 2
+  Segment part 96.            Intra module refs:   main
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           Create_QuickAccessBook()
+                                   00000C88 
+               stack 1 = 00000000 ( 00000010 )
+    -------------------------------------------------------------------------
+CODE
+  Relative segment, address: CODE_AREA 00000CD0 - 00000CD3 (0x4 bytes), align: 2
+  Segment part 97.            Intra module refs:   Create_QuickAccessBook()
+                                                   Find_QuickAccessBook(BOOK *)
+    -------------------------------------------------------------------------
+CODE
+  Relative segment, address: CODE_AREA 00000CD4 - 00000D5F (0x8c bytes), align: 2
+  Segment part 99.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           main                    00000CD4        Absolute parts (?ABS_ENTRY_MOD)
+               stack 1 = 00000000 ( 00000010 )
+    -------------------------------------------------------------------------
+CODE
+  Relative segment, address: CODE_AREA 00000D60 - 00000D63 (0x4 bytes), align: 2
+  Segment part 100.           Intra module refs:   OnClose_QuickAccessBook(BOOK *)
+                                                   main
+    -------------------------------------------------------------------------
+CODE
+  Relative segment, address: CODE_AREA 00000D64 - 00000D67 (0x4 bytes), align: 2
+  Segment part 101.           Intra module refs:   OnClose_QuickAccessBook(BOOK *)
+                                                   main
+    -------------------------------------------------------------------------
+DATA_ID
+  Relative segment, address: CODE_AREA 00000000 - 0000000F (0x10 bytes), align: 2
+  Segment part 19.            Intra module refs:   Segment part 18
+    -------------------------------------------------------------------------
+DATA_ID
+  Relative segment, address: CODE_AREA 00000010 - 0000008F (0x80 bytes), align: 2
+  Segment part 25.            Intra module refs:   Segment part 24
+    -------------------------------------------------------------------------
+INITTAB
+  Relative segment, address: CODE_AREA 00000F24 - 00000F2F (0xc bytes), align: 2
+  Segment part 104. ROOT.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           ?init?tab?DATA_Z        00000F24 
+    -------------------------------------------------------------------------
+INITTAB
+  Relative segment, address: CODE_AREA 00000F30 - 00000F3B (0xc bytes), align: 2
+  Segment part 106. ROOT.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           ?init?tab?DATA_I        00000F30 
+    -------------------------------------------------------------------------
+DATA_C
+  Relative segment, address: CODE_AREA 00000D68 - 00000D83 (0x1c bytes), align: 2
+  Segment part 2.             Intra module refs:   Segment part 25
+    -------------------------------------------------------------------------
+DATA_C
+  Relative segment, address: CODE_AREA 00000D84 - 00000D9B (0x18 bytes), align: 2
+  Segment part 3.             Intra module refs:   Segment part 25
+    -------------------------------------------------------------------------
+DATA_C
+  Relative segment, address: CODE_AREA 00000D9C - 00000DB3 (0x18 bytes), align: 2
+  Segment part 4.             Intra module refs:   Segment part 25
+    -------------------------------------------------------------------------
+DATA_C
+  Relative segment, address: CODE_AREA 00000DB4 - 00000DB7 (0x4 bytes), align: 2
+  Segment part 5.             Intra module refs:   Segment part 25
+    -------------------------------------------------------------------------
+DATA_C
+  Relative segment, address: CODE_AREA 00000DB8 - 00000DC7 (0x10 bytes), align: 2
+  Segment part 6.             Intra module refs:   Segment part 25
+    -------------------------------------------------------------------------
+DATA_C
+  Relative segment, address: CODE_AREA 00000DC8 - 00000DDF (0x18 bytes), align: 2
+  Segment part 7.             Intra module refs:   Segment part 19
+    -------------------------------------------------------------------------
+DATA_C
+  Relative segment, address: CODE_AREA 00000DE0 - 00000DEB (0xc bytes), align: 2
+  Segment part 9.             Intra module refs:   Segment part 82
+    -------------------------------------------------------------------------
+DATA_C
+  Relative segment, address: CODE_AREA 00000DEC - 00000E1B (0x30 bytes), align: 2
+  Segment part 10.            Intra module refs:   Create_QuestionReboot(BOOK *)
+    -------------------------------------------------------------------------
+DATA_C
+  Relative segment, address: CODE_AREA 00000E1C - 00000E43 (0x28 bytes), align: 2
+  Segment part 11.            Intra module refs:   Create_QuestionShutdown(BOOK *)
+    -------------------------------------------------------------------------
+DATA_C
+  Relative segment, address: CODE_AREA 00000E44 - 00000E87 (0x44 bytes), align: 2
+  Segment part 12.            Intra module refs:   GuiOnLBMessage(GUI_MESSAGE *)
+    -------------------------------------------------------------------------
+DATA_C
+  Relative segment, address: CODE_AREA 00000E88 - 00000EA7 (0x20 bytes), align: 2
+  Segment part 14.            Intra module refs:   QuickAccess_menu(void *, BOOK *, GUI *)
+    -------------------------------------------------------------------------
+DATA_C
+  Relative segment, address: CODE_AREA 00000EA8 - 00000EEF (0x48 bytes), align: 2
+  Segment part 15.            Intra module refs:   Segment part 97
+                                                   ShowAuthorInfo(void *, BOOK *)
+    -------------------------------------------------------------------------
+DATA_C
+  Relative segment, address: CODE_AREA 00000EF0 - 00000F23 (0x34 bytes), align: 2
+  Segment part 17.            Intra module refs:   main
+
+
+
+
+                ****************************************
+                *                                      *
+                *      SEGMENTS IN ADDRESS ORDER       *
+                *                                      *
+                ****************************************
+
+
+SEGMENT              SPACE    START ADDRESS   END ADDRESS     SIZE  TYPE  ALIGN
+=======              =====    =============   ===========     ====  ====  =====
+ELFBEGIN             CODE_AREA           00000000                     rel    0
+DATA_ID              CODE_AREA      00000000 - 0000008F          90   rel    2
+START                CODE_AREA           00000090                     dse    0
+CODE                 CODE_AREA      00000090 - 00000D67         CD8   rel    2
+DATA_C               CODE_AREA      00000D68 - 00000F23         1BC   rel    2
+INITTAB              CODE_AREA      00000F24 - 00000F3B          18   rel    2
+DATA_Z               CODE_AREA      00000F3C - 00000F47           C   rel    2
+DATA_N               CODE_AREA           00000F48                     dse    0
+CONFIG_C             CODE_AREA           00000F48                     dse    0
+DYN_CONST            CODE_AREA      00000F48 - 00000F8B          44   rel    2
+DYN_CONST_DESC       CODE_AREA      00000F8C - 00000F8F           4   rel    2
+DYN_PAGE             CODE_AREA      00000F90 - 00000FA7          18   rel    2
+DYN_PAGE_DESC        CODE_AREA      00000FA8 - 00000FAB           4   rel    2
+DATA_I               DATA_AREA      00000000 - 0000008F          90   rel    2
+
+                ****************************************
+                *                                      *
+                *        END OF CROSS REFERENCE        *
+                *                                      *
+                ****************************************
+
+ 4 012 bytes of CODE memory
+   144 bytes of DATA memory
+
+Errors: none
+Warnings: none
+

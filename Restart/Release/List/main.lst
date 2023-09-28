@@ -1,0 +1,463 @@
+##############################################################################
+#                                                                            #
+# IAR ARM ANSI C/C++ Compiler V4.42A/W32 EVALUATION    17/Jul/2011  18:30:59 #
+# Copyright 1999-2005 IAR Systems. All rights reserved.                      #
+#                                                                            #
+#    Cpu mode        =  interwork                                            #
+#    Endian          =  little                                               #
+#    Stack alignment =  4                                                    #
+#    Source file     =  C:\Embedded Workbench 4.0 Evaluation\Project\Hello   #
+#                       World\main.c                                         #
+#    Command line    =  "C:\Embedded Workbench 4.0 Evaluation\Project\Hello  #
+#                       World\main.c" -D NDEBUG -D OLDFUNCTIONS -lC          #
+#                       "C:\Embedded Workbench 4.0 Evaluation\Project\Hello  #
+#                       World\Release\List\" -lA "C:\Embedded Workbench 4.0  #
+#                       Evaluation\Project\Hello World\Release\List\" -o     #
+#                       "C:\Embedded Workbench 4.0 Evaluation\Project\Hello  #
+#                       World\Release\Obj\" -s9 --no_unroll --no_inline      #
+#                       --cpu_mode arm --endian little --cpu ARM926EJ-S      #
+#                       --stack_align 4 --interwork -e --fpu None --eec++    #
+#                       --dlib_config "C:\Embedded Workbench 4.0             #
+#                       Evaluation\ARM\LIB\dl5tpainl8n.h" -I "C:\Embedded    #
+#                       Workbench 4.0 Evaluation\ARM\INC\"                   #
+#    List file       =  C:\Embedded Workbench 4.0 Evaluation\Project\Hello   #
+#                       World\Release\List\main.lst                          #
+#    Object file     =  C:\Embedded Workbench 4.0 Evaluation\Project\Hello   #
+#                       World\Release\Obj\main.r79                           #
+#                                                                            #
+#                                                                            #
+##############################################################################
+
+C:\Embedded Workbench 4.0 Evaluation\Project\Hello World\main.c
+      1          #include "..\\include\Lib_Clara.h"
+
+   \                                 In segment CODE, align 4, keep-with-next
+   \   __??Code32?? __code __interwork __atpcs LPARAM::LPARAM(int)
+   \                     ??LPARAM:
+   \   00000000   001080E5           STR      R1,[R0, #+0]
+   \   00000004   1EFF2FE1           BX       LR               ;; return
+      2          #include "..\\include\Dir.h"
+      3          
+      4          #define ElfName "Restart"
+      5          #define ElfVer "1.0.1"
+      6          
+      7          BOOK*HWBook;
+      8          
+      9          typedef struct
+     10           {
+     11            BOOK * book;
+     12           }MSG;
+     13          
+
+   \                                 In segment CODE, align 4, keep-with-next
+     14          void vibra (void)
+     15          {
+   \                     ??vibra:
+   \   00000000   00402DE9           PUSH     {LR}
+     16            PAudioControl pAC = AudioControl_Init();
+   \   00000004   DF0100EF           SWI      +479
+     17            if( !pAC )
+   \   00000008   000050E3           CMP      R0,#+0
+   \   0000000C   0100001A           BNE      ??vibra_1
+     18                pAC = *GetAudioControlPtr();
+   \   00000010   D18100EF           SWI      +33233
+   \   00000014   000090E5           LDR      R0,[R0, #+0]
+     19                AudioControl_Vibrate(pAC, 100 , 50 , 250);
+   \                     ??vibra_1:
+   \   00000018   FA30A0E3           MOV      R3,#+250
+   \   0000001C   3220A0E3           MOV      R2,#+50
+   \   00000020   6410A0E3           MOV      R1,#+100
+   \   00000024   D20100EF           SWI      +466
+     20          }
+   \   00000028   0080BDE8           POP      {PC}             ;; return
+     21          
+
+   \                                 In segment CODE, align 4, keep-with-next
+     22           int KeyPr ( int key, int r1, int mode, LPARAM lparam, DISP_OBJ*dispobj )
+     23              {
+     24                  
+     25                 if(key==KEY_POWER && mode==KBD_REPEAT && !(isKeylocked()) )                                                                        
+   \                     ??KeyPr:
+   \   00000000   40109FE5           LDR      R1,??KeyPr_1     ;; KEY_POWER
+   \   00000004   00402DE9           PUSH     {LR}
+   \   00000008   001091E5           LDR      R1,[R1, #+0]
+   \   0000000C   010050E1           CMP      R0,R1
+   \   00000010   0A00001A           BNE      ??KeyPr_2
+   \   00000014   30009FE5           LDR      R0,??KeyPr_1+0x4  ;; KBD_REPEAT
+   \   00000018   000090E5           LDR      R0,[R0, #+0]
+   \   0000001C   000052E1           CMP      R2,R0
+   \   00000020   0600001A           BNE      ??KeyPr_2
+   \   00000024   B70100EF           SWI      +439
+   \   00000028   000050E3           CMP      R0,#+0
+   \   0000002C   0300001A           BNE      ??KeyPr_2
+     26                    {
+     27                      vibra ();
+   \   00000030   ........           BL       ??vibra
+     28                      REQUEST_SYSTEM_RESTART();
+   \   00000034   C60100EF           SWI      +454
+     29                      return(-1);
+   \   00000038   0000E0E3           MVN      R0,#+0
+   \   0000003C   0080BDE8           POP      {PC}
+     30                    }
+     31                
+     32                return(0);   
+   \                     ??KeyPr_2:
+   \   00000040   0000A0E3           MOV      R0,#+0
+   \   00000044   0080BDE8           POP      {PC}             ;; return
+   \                     ??KeyPr_1:
+   \   00000048   ........           DC32     KEY_POWER
+   \   0000004C   ........           DC32     KBD_REPEAT
+     33              }
+     34          
+
+   \                                 In segment CODE, align 4, keep-with-next
+     35          void elf_exit(void)
+     36          
+     37          {
+   \                     ??elf_exit:
+   \   00000000   00402DE9           PUSH     {LR}
+     38            kill_data(&ELF_BEGIN, (void(*)(void*))mfree_adr());
+   \   00000004   048100EF           SWI      +33028
+   \   00000008   0010A0E1           MOV      R1,R0
+   \   0000000C   04009FE5           LDR      R0,??elf_exit_1  ;; ELF_BEGIN
+   \   00000010   0040BDE8           POP      {LR}             ;; Pop
+   \   00000014   ........           _BF      kill_data,??kill_data??rA  ;; tailcall
+   \                     ??elf_exit_1:
+   \   00000018   ........           DC32     ELF_BEGIN
+     39          }
+     40          
+     41          
+
+   \                                 In segment CODE, align 4, keep-with-next
+     42          int TerminateElf(void * ,BOOK* book)
+     43          {
+   \                     ??TerminateElf:
+   \   00000000   00402DE9           PUSH     {LR}
+   \   00000004   0100A0E1           MOV      R0,R1
+     44            FreeBook(book);
+   \   00000008   2F0100EF           SWI      +303
+     45            return(1);
+   \   0000000C   0100A0E3           MOV      R0,#+1
+   \   00000010   0080BDE8           POP      {PC}             ;; return
+     46          }
+     47          
+     48          
+     49          
+
+   \                                 In segment CODE, align 4, keep-with-next
+     50          int ShowAuthorInfo(void *mess ,BOOK* book)
+     51          {
+     52            MSG * msg = (MSG*)mess;
+     53            wchar_t info[256];
+     54            snwprintf(info,255,L"%s \nv.%s\n(c)Metaler\n%s",ElfName,ElfVer,__DATE__);
+   \                     ??ShowAuthorInfo:
+   \   00000000   70209FE5           LDR      R2,??ShowAuthorInfo_1  ;; `?<Constant L"\\x25\\x73\\x20\\xa\\x76\\x2e\\x25\\x73\\x`
+   \   00000004   30402DE9           PUSH     {R4,R5,LR}
+   \   00000008   80DF4DE2           SUB      SP,SP,#+512
+   \   0000000C   0040A0E1           MOV      R4,R0
+   \   00000010   400082E2           ADD      R0,R2,#+64
+   \   00000014   01002DE9           PUSH     {R0}
+   \   00000018   303082E2           ADD      R3,R2,#+48
+   \   0000001C   FF10A0E3           MOV      R1,#+255
+     55            MessageBox(EMPTY_TEXTID,TextID_Create(info,ENC_UCS2,TEXTID_ANY_LEN),NOIMAGE,1,0,msg->book);
+   \   00000020   FF50A0E3           MOV      R5,#+255
+   \   00000024   380082E2           ADD      R0,R2,#+56
+   \   00000028   01002DE9           PUSH     {R0}
+   \   0000002C   FF5C85E3           ORR      R5,R5,#0xFF00
+   \   00000030   08008DE2           ADD      R0,SP,#+8
+   \   00000034   150100EF           SWI      +277
+   \   00000038   0520A0E1           MOV      R2,R5
+   \   0000003C   0010A0E3           MOV      R1,#+0
+   \   00000040   08008DE2           ADD      R0,SP,#+8
+   \   00000044   5D0100EF           SWI      +349
+   \   00000048   001094E5           LDR      R1,[R4, #+0]
+   \   0000004C   0130A0E3           MOV      R3,#+1
+   \   00000050   02002DE9           PUSH     {R1}
+   \   00000054   0520A0E1           MOV      R2,R5
+   \   00000058   0010A0E3           MOV      R1,#+0
+   \   0000005C   02002DE9           PUSH     {R1}
+   \   00000060   0010A0E1           MOV      R1,R0
+   \   00000064   9004E0E3           MVN      R0,#-1879048192
+   \   00000068   570200EF           SWI      +599
+     56            return(1);
+   \   0000006C   0100A0E3           MOV      R0,#+1
+   \   00000070   84DF8DE2           ADD      SP,SP,#+528
+   \   00000074   3080BDE8           POP      {R4,R5,PC}       ;; return
+   \                     ??ShowAuthorInfo_1:
+   \   00000078   ........           DC32     `?<Constant L"\\x25\\x73\\x20\\xa\\x76\\x2e\\x25\\x73\\x`
+     57          }
+     58          
+
+   \                                 In segment DYN_PAGE, align 4, align-sorted
+     59          const PAGE_MSG HW_PageEvents[]@ "DYN_PAGE" ={
+   \                     HW_PageEvents:
+   \   00000000   E5030000....       DC32 997, ??TerminateElf, 998, ??ShowAuthorInfo, 0, 0H
+   \              ....E6030000
+   \              ........0000
+   \              000000000000
+
+   \                                 In segment DATA_I, align 4, align-sorted
+   \                     HWBook:
+   \   00000000                      DS8 4
+   \   00000004                      REQUIRE `?<Initializer for HWBook>`
+     60            ELF_TERMINATE_EVENT , TerminateElf,
+     61            ELF_SHOW_INFO_EVENT  , ShowAuthorInfo,
+     62            0,0
+     63          };
+     64          
+     65          PAGE_DESC base_page ={"HW_BasePage",0,HW_PageEvents};
+   \                     base_page:
+   \   00000004                      DS8 12
+   \   00000010                      REQUIRE `?<Initializer for base_page>`
+     66          
+
+   \                                 In segment CODE, align 4, keep-with-next
+     67          void onCloseHWBook(BOOK * book)
+     68          {
+   \                     ??onCloseHWBook:
+   \   00000000   00402DE9           PUSH     {LR}
+   \   00000004   04D04DE2           SUB      SP,SP,#+4
+     69            if (book)
+   \   00000008   000050E3           CMP      R0,#+0
+   \   0000000C   0180BD08           POPEQ    {R0,PC}
+     70            { 
+     71              ModifyKeyHook( KeyPr,0,0 );
+   \   00000010   0010A0E3           MOV      R1,#+0
+   \   00000014   0D00A0E1           MOV      R0,SP
+   \   00000018   ........           _BLF     ??LPARAM,??LPARAM??rA
+   \   0000001C   00209DE5           LDR      R2,[SP, #+0]
+   \   00000020   ........           LDR      R0,??DataTable5  ;; ??KeyPr
+   \   00000024   0010A0E3           MOV      R1,#+0
+   \   00000028   070100EF           SWI      +263
+     72              SUBPROC(elf_exit);
+   \   0000002C   ........           LDR      R0,??DataTable4  ;; ??elf_exit
+   \   00000030   080100EF           SWI      +264
+     73            }
+     74          }
+   \   00000034   0180BDE8           POP      {R0,PC}          ;; return
+     75          
+
+   \                                 In segment CODE, align 4, keep-with-next
+     76          BOOK * CreateHWBook()
+     77          {
+   \                     ??CreateHWBook:
+   \   00000000   10402DE9           PUSH     {R4,LR}
+     78            HWBook= new BOOK;
+   \   00000004   34409FE5           LDR      R4,??CreateHWBook_1  ;; HWBook
+   \   00000008   1800A0E3           MOV      R0,#+24
+   \   0000000C   ........           _BLF     `??operator new`,`??operator new??rA`
+     79            CreateBook(HWBook,onCloseHWBook,&base_page,ElfName,-1,0);
+   \   00000010   ........           LDR      R3,??DataTable3  ;; `?<Constant L"\\x25\\x73\\x20\\xa\\x76\\x2e\\x25\\x73\\x` + 48
+   \   00000014   28109FE5           LDR      R1,??CreateHWBook_1+0x4  ;; ??onCloseHWBook
+   \   00000018   000084E5           STR      R0,[R4, #+0]
+   \   0000001C   0000A0E3           MOV      R0,#+0
+   \   00000020   01002DE9           PUSH     {R0}
+   \   00000024   042084E2           ADD      R2,R4,#+4
+   \   00000028   0000E0E1           MVN      R0,R0
+   \   0000002C   01002DE9           PUSH     {R0}
+   \   00000030   000094E5           LDR      R0,[R4, #+0]
+   \   00000034   2B0100EF           SWI      +299
+     80            return(HWBook);
+   \   00000038   000094E5           LDR      R0,[R4, #+0]
+   \   0000003C   1680BDE8           POP      {R1,R2,R4,PC}    ;; return
+   \                     ??CreateHWBook_1:
+   \   00000040   ........           DC32     HWBook
+   \   00000044   ........           DC32     ??onCloseHWBook
+     81          }
+     82          
+     83          //Проверяем, а не запущен ли наш эльф?------------------------------------------
+
+   \                                 In segment CODE, align 4, keep-with-next
+     84          int myFind(BOOK* book)
+     85          {
+     86             if(!strcmp(book->xbook->name,ElfName))
+   \                     ??myFind:
+   \   00000000   ........           LDR      R1,??DataTable3  ;; `?<Constant L"\\x25\\x73\\x20\\xa\\x76\\x2e\\x25\\x73\\x` + 48
+   \   00000004   00402DE9           PUSH     {LR}
+   \   00000008   000090E5           LDR      R0,[R0, #+0]
+   \   0000000C   040090E5           LDR      R0,[R0, #+4]
+   \   00000010   590100EF           SWI      +345
+   \   00000014   000050E3           CMP      R0,#+0
+     87               return(1);
+   \   00000018   0100A003           MOVEQ    R0,#+1
+   \   0000001C   0080BD08           POPEQ    {PC}
+     88             return(0);
+   \   00000020   0000A0E3           MOV      R0,#+0
+   \   00000024   0080BDE8           POP      {PC}             ;; return
+     89          }
+     90           
+
+   \                                 In segment CODE, align 4, keep-with-next
+     91          int main(void)
+     92             {
+     93               
+     94               if (FindBook(myFind))
+   \                     main:
+   \   00000000   8C009FE5           LDR      R0,??main_0      ;; ??myFind
+   \   00000004   10402DE9           PUSH     {R4,LR}
+   \   00000008   04D04DE2           SUB      SP,SP,#+4
+   \   0000000C   300100EF           SWI      +304
+   \   00000010   000050E3           CMP      R0,#+0
+   \   00000014   1400000A           BEQ      ??main_1
+     95                 {
+     96                  MessageBox(EMPTY_TEXTID,STR("Уже запущен! =)"),NOIMAGE,1,5000,0);
+   \   00000018   78009FE5           LDR      R0,??main_0+0x4  ;; `?<Constant L"\\xd3\\xe6\\xe5\\x20\\xe7\\xe0\\xef\\xf3\\`
+   \   0000001C   FF40A0E3           MOV      R4,#+255
+   \   00000020   FF4C84E3           ORR      R4,R4,#0xFF00
+   \   00000024   0420A0E1           MOV      R2,R4
+   \   00000028   0010A0E3           MOV      R1,#+0
+   \   0000002C   5D0100EF           SWI      +349
+   \   00000030   0010A0E3           MOV      R1,#+0
+   \   00000034   02002DE9           PUSH     {R1}
+   \   00000038   0130A0E3           MOV      R3,#+1
+   \   0000003C   0420A0E1           MOV      R2,R4
+   \   00000040   8810A0E3           MOV      R1,#+136
+   \   00000044   4C1D81E3           ORR      R1,R1,#0x1300
+   \   00000048   02002DE9           PUSH     {R1}
+   \   0000004C   0010A0E1           MOV      R1,R0
+   \   00000050   9004E0E3           MVN      R0,#-1879048192
+   \   00000054   570200EF           SWI      +599
+     97                  SUBPROC(elf_exit);
+   \   00000058   ........           LDR      R0,??DataTable4  ;; ??elf_exit
+   \   0000005C   080100EF           SWI      +264
+     98                 }
+     99               else 
+    100               {
+    101                CreateHWBook();
+    102                ModifyKeyHook( KeyPr, KEY_HOOK_ADD, NULL );
+    103                return(0);
+    104               }
+    105           }
+   \   00000060   0000A0E3           MOV      R0,#+0
+   \   00000064   08D08DE2           ADD      SP,SP,#+8
+   \   00000068   1280BDE8           POP      {R1,R4,PC}
+   \                     ??main_1:
+   \   0000006C   ........           BL       ??CreateHWBook
+   \   00000070   0010A0E3           MOV      R1,#+0
+   \   00000074   0D00A0E1           MOV      R0,SP
+   \   00000078   ........           _BLF     ??LPARAM,??LPARAM??rA
+   \   0000007C   00209DE5           LDR      R2,[SP, #+0]
+   \   00000080   ........           LDR      R0,??DataTable5  ;; ??KeyPr
+   \   00000084   0110A0E3           MOV      R1,#+1
+   \   00000088   070100EF           SWI      +263
+   \   0000008C   0000A0E3           MOV      R0,#+0
+   \   00000090   1280BDE8           POP      {R1,R4,PC}       ;; return
+   \                     ??main_0:
+   \   00000094   ........           DC32     ??myFind
+   \   00000098   ........           DC32     `?<Constant L"\\xd3\\xe6\\xe5\\x20\\xe7\\xe0\\xef\\xf3\\`
+
+   \                                 In segment CODE, align 4, keep-with-next
+   \                     ??DataTable3:
+   \   00000000   ........           DC32     `?<Constant L"\\x25\\x73\\x20\\xa\\x76\\x2e\\x25\\x73\\x` + 48
+
+   \                                 In segment CODE, align 4, keep-with-next
+   \                     ??DataTable4:
+   \   00000000   ........           DC32     ??elf_exit
+
+   \                                 In segment CODE, align 4, keep-with-next
+   \                     ??DataTable5:
+   \   00000000   ........           DC32     ??KeyPr
+
+   \                                 In segment DATA_ID, align 4, align-sorted
+   \                     `?<Initializer for HWBook>`:
+   \   00000000   00000000           DC8 0, 0, 0, 0
+   \                     `?<Initializer for base_page>`:
+   \   00000004   ........0000       DC32 `?<Constant "HW_BasePage">`, 0H, HW_PageEvents
+   \              0000........
+
+   \                                 In segment DATA_C, align 4, align-sorted
+   \                     `?<Constant "HW_BasePage">`:
+   \   00000000   48575F426173       DC8 "HW_BasePage"
+   \              655061676500
+
+   \                                 In segment DATA_C, align 4, align-sorted
+   \                     `?<Constant L"\\x25\\x73\\x20\\xa\\x76\\x2e\\x25\\x73\\x`:
+   \   00000000   250073002000       DC8 25H, 0, 73H, 0, 20H, 0, 0AH, 0
+   \              0A00        
+   \   00000008   76002E002500       DC8 76H, 0, 2EH, 0, 25H, 0, 73H, 0
+   \              7300        
+   \   00000010   0A0028006300       DC8 0AH, 0, 28H, 0, 63H, 0, 29H, 0
+   \              2900        
+   \   00000018   4D0065007400       DC8 4DH, 0, 65H, 0, 74H, 0, 61H, 0
+   \              6100        
+   \   00000020   6C0065007200       DC8 6CH, 0, 65H, 0, 72H, 0, 0AH, 0
+   \              0A00        
+   \   00000028   250073000000       DC8 25H, 0, 73H, 0, 0, 0
+   \   0000002E   0000               DC8 0, 0
+   \   00000030   526573746172       DC8 "Restart"
+   \              7400        
+   \   00000038   312E302E3100       DC8 "1.0.1"
+   \   0000003E   0000               DC8 0, 0
+   \   00000040   4A756C203137       DC8 "Jul 17 2011"
+   \              203230313100
+
+   \                                 In segment DATA_C, align 4, align-sorted
+   \                     `?<Constant L"\\xd3\\xe6\\xe5\\x20\\xe7\\xe0\\xef\\xf3\\`:
+   \   00000000   D300E600E500       DC8 0D3H, 0, 0E6H, 0, 0E5H, 0, 20H, 0
+   \              2000        
+   \   00000008   E700E000EF00       DC8 0E7H, 0, 0E0H, 0, 0EFH, 0, 0F3H, 0
+   \              F300        
+   \   00000010   F900E500ED00       DC8 0F9H, 0, 0E5H, 0, 0EDH, 0, 21H, 0
+   \              2100        
+   \   00000018   20003D002900       DC8 20H, 0, 3DH, 0, 29H, 0, 0, 0
+   \              0000        
+
+   Maximum stack usage in bytes:
+
+     Function                       CSTACK
+     --------                       ------
+     CreateHWBook()                    16
+     KeyPr(int, int, int, LPARAM, DISP_OBJ *)
+                                        4
+     LPARAM::LPARAM(int)                0
+     ShowAuthorInfo(void *, BOOK *)   540
+     TerminateElf(void *, BOOK *)       4
+     elf_exit()                         4
+     main()                            20
+     myFind(BOOK *)                     4
+     onCloseHWBook(BOOK *)              8
+     vibra()                            4
+
+
+   Segment part sizes:
+
+     Function/Label                 Bytes
+     --------------                 -----
+     LPARAM::LPARAM(int)               8
+     vibra()                          44
+     KeyPr(int, int, int, LPARAM, DISP_OBJ *)
+                                      80
+     elf_exit()                       28
+     TerminateElf(void *, BOOK *)     20
+     ShowAuthorInfo(void *, BOOK *)  124
+     HW_PageEvents                    24
+     HWBook                           16
+     onCloseHWBook(BOOK *)            56
+     CreateHWBook()                   72
+     myFind(BOOK *)                   40
+     main()                          156
+     ??DataTable3                      4
+     ??DataTable4                      4
+     ??DataTable5                      4
+     ?<Initializer for HWBook>        16
+     ?<Constant "HW_BasePage">        12
+     ?<Constant L"\x25\x73\x20\xa\x76\x2e\x25\x73\x
+                                      76
+     ?<Constant L"\xd3\xe6\xe5\x20\xe7\xe0\xef\xf3\
+                                      32
+      Others                          84
+
+ 
+ 712 bytes in segment CODE
+ 120 bytes in segment DATA_C
+  16 bytes in segment DATA_I
+  16 bytes in segment DATA_ID
+  24 bytes in segment DYN_PAGE
+  12 bytes in segment INITTAB
+ 
+ 632 bytes of CODE  memory (+ 92 bytes shared)
+ 160 bytes of CONST memory
+  16 bytes of DATA  memory
+
+Errors: none
+Warnings: none

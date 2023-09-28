@@ -1,0 +1,7 @@
+void vibra (void)
+{
+  PAudioControl pAC = AudioControl_Init();
+  if( !pAC )
+      pAC = *GetAudioControlPtr();
+      AudioControl_Vibrate(pAC, vibratime , pausetime , vibraring_time);
+}

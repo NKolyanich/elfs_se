@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<Workspace>
+  <ConfigDictionary>
+    
+  <CurrentConfigs><Project>ElfPack/K800_R8BF003</Project></CurrentConfigs></ConfigDictionary>
+  <Desktop>
+    <Static>
+      <Workspace>
+        <ColumnWidths>
+          
+          
+          
+          
+        <Column0>287</Column0><Column1>27</Column1><Column2>27</Column2><Column3>27</Column3></ColumnWidths>
+      </Workspace>
+      <Build>
+        
+        
+        
+        
+      <ColumnWidth0>20</ColumnWidth0><ColumnWidth1>753</ColumnWidth1><ColumnWidth2>201</ColumnWidth2><ColumnWidth3>50</ColumnWidth3></Build>
+    </Static>
+    <Windows>
+      
+      
+    <Wnd0>
+        <Tabs>
+          <Tab>
+            <Identity>TabID-15877-18963</Identity>
+            <TabName>Workspace</TabName>
+            <Factory>Workspace</Factory>
+            <Session>
+              
+            <NodeDict><ExpandedNode>ElfPack</ExpandedNode><ExpandedNode>ElfPack/ASM</ExpandedNode><ExpandedNode>ElfPack/calls.asm</ExpandedNode></NodeDict></Session>
+          </Tab>
+        </Tabs>
+        
+      <SelectedTab>0</SelectedTab></Wnd0><Wnd1>
+        <Tabs>
+          <Tab>
+            <Identity>TabID-6990-19130</Identity>
+            <TabName>Build</TabName>
+            <Factory>Build</Factory>
+            <Session/>
+          </Tab>
+        </Tabs>
+        
+      <SelectedTab>0</SelectedTab></Wnd1></Windows>
+    <Editor>
+      
+      
+      
+      
+    <Pane><Tab><Factory>TextEditor</Factory><Filename>C:\Embedded Workbench 4.0 Evaluation\Project\Elfpack\dll.c</Filename><XPos>0</XPos><YPos>0</YPos><SelStart>0</SelStart><SelEnd>0</SelEnd></Tab><Tab><Factory>TextEditor</Factory><Filename>C:\Embedded Workbench 4.0 Evaluation\Project\Elfpack\exticons\24x24.inc</Filename><XPos>0</XPos><YPos>0</YPos><SelStart>6096</SelStart><SelEnd>6096</SelEnd></Tab><Tab><Factory>TextEditor</Factory><Filename>C:\Embedded Workbench 4.0 Evaluation\Project\Elfpack\InternalFunc.c</Filename><XPos>0</XPos><YPos>305</YPos><SelStart>8196</SelStart><SelEnd>8196</SelEnd></Tab><ActiveTab>2</ActiveTab><Tab><Factory>TextEditor</Factory><Filename>C:\Embedded Workbench 4.0 Evaluation\Project\Elfpack\calls.h</Filename><XPos>0</XPos><YPos>0</YPos><SelStart>759</SelStart><SelEnd>759</SelEnd></Tab></Pane><ActivePane>0</ActivePane><Sizes><Pane><X>1000000</X><Y>1000000</Y></Pane></Sizes><SplitMode>1</SplitMode></Editor>
+    <Positions>
+      
+      
+      
+      
+      
+    <Top><Row0><Sizes><Toolbar-01312cf0><key>iaridepm.enu1</key></Toolbar-01312cf0></Sizes></Row0></Top><Left><Row0><Sizes><Wnd0><Rect><Top>-2</Top><Left>-2</Left><Bottom>556</Bottom><Right>361</Right><x>-2</x><y>-2</y><xscreen>271</xscreen><yscreen>229</yscreen><sizeHorzCX>188194</sizeHorzCX><sizeHorzCY>276570</sizeHorzCY><sizeVertCX>252083</sizeVertCX><sizeVertCY>673913</sizeVertCY></Rect></Wnd0></Sizes></Row0></Left><Right><Row0><Sizes/></Row0></Right><Bottom><Row0><Sizes><Wnd1><Rect><Top>-2</Top><Left>-2</Left><Bottom>227</Bottom><Right>1442</Right><x>-2</x><y>-2</y><xscreen>1444</xscreen><yscreen>229</yscreen><sizeHorzCX>1002778</sizeHorzCX><sizeHorzCY>276570</sizeHorzCY><sizeVertCX>188194</sizeVertCX><sizeVertCY>276570</sizeVertCY></Rect></Wnd1></Sizes></Row0></Bottom><Float><Sizes/></Float></Positions>
+  </Desktop>
+</Workspace>
+
+

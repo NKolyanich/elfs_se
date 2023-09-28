@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<project>
+  <fileVersion>2</fileVersion>
+  <fileChecksum>4151084649</fileChecksum>
+  <configuration>
+    <name>Release</name>
+    <outputs>
+      <file>$PROJ_DIR$\..\C++\_cpp2.cpp</file>
+      <file>$PROJ_DIR$\..\include\func.asm</file>
+      <file>$PROJ_DIR$\main.cpp</file>
+      <file>$PROJ_DIR$\..\include\Types.h</file>
+      <file>$PROJ_DIR$\..\include\DYN_ext.h</file>
+      <file>$PROJ_DIR$\..\include\DYN_tag.h</file>
+      <file>$PROJ_DIR$\..\include\dir.h</file>
+      <file>$PROJ_DIR$\..\include\Colors.h</file>
+      <file>$PROJ_DIR$\..\include\obsolete.h</file>
+      <file>$PROJ_DIR$\Release\List\ImageConverter.map</file>
+      <file>$PROJ_DIR$\..\include\Lib_Clara.h</file>
+      <file>$PROJ_DIR$\main.h</file>
+      <file>$PROJ_DIR$\..\include\1.xcl</file>
+      <file>$PROJ_DIR$\Release\Obj\main.pbi</file>
+      <file>$PROJ_DIR$\Release\List\_cpp2.lst</file>
+      <file>$PROJ_DIR$\Release\Obj\_cpp2.pbi</file>
+      <file>$PROJ_DIR$\Release\Obj\main.r79</file>
+      <file>$PROJ_DIR$\Release\Obj\WallpaperChanger.pbd</file>
+      <file>$PROJ_DIR$\Release\Obj\func.r79</file>
+      <file>$PROJ_DIR$\Release\List\main.lst</file>
+      <file>$PROJ_DIR$\Release\List\main.s79</file>
+      <file>$PROJ_DIR$\Release\List\_cpp2.s79</file>
+      <file>$PROJ_DIR$\Release\Obj\_cpp2.r79</file>
+      <file>$TOOLKIT_DIR$\lib\dl5tpainl8n.r79</file>
+      <file>$PROJ_DIR$\Release\Exe\ImageConverter.elf</file>
+      <file>$PROJ_DIR$\..\include\DYN_mac.asm</file>
+    </outputs>
+    <file>
+      <name>$PROJ_DIR$\..\C++\_cpp2.cpp</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 15</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 22 21 14</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 10 3 4 5 7 8</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 10 3 4 5 7 8</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\include\func.asm</name>
+      <outputs>
+        <tool>
+          <name>AARM</name>
+          <file> 18</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>AARM</name>
+          <file> 5 25</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\main.cpp</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 13</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 16 20 19</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 11 10 3 4 5 7 8 6</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 11 10 3 4 5 7 8 6</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\Release\Obj\WallpaperChanger.pbd</name>
+      <inputs>
+        <tool>
+          <name>BILINK</name>
+          <file> 15 13</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\Release\Exe\ImageConverter.elf</name>
+      <outputs>
+        <tool>
+          <name>XLINK</name>
+          <file> 9</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>XLINK</name>
+          <file> 12 22 18 16 23</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>[ROOT_NODE]</name>
+      <outputs>
+        <tool>
+          <name>XLINK</name>
+          <file> 24 9</file>
+        </tool>
+      </outputs>
+    </file>
+  </configuration>
+  <configuration>
+    <name>debag2</name>
+    <outputs>
+      <file>$PROJ_DIR$\..\C++\_cpp2.cpp</file>
+      <file>$PROJ_DIR$\..\include\func.asm</file>
+      <file>$PROJ_DIR$\main.cpp</file>
+      <file>$PROJ_DIR$\..\include\Types.h</file>
+      <file>$PROJ_DIR$\..\include\DYN_ext.h</file>
+      <file>$PROJ_DIR$\..\include\DYN_tag.h</file>
+      <file>$PROJ_DIR$\..\include\dir.h</file>
+      <file>$PROJ_DIR$\..\include\Colors.h</file>
+      <file>$PROJ_DIR$\..\include\obsolete.h</file>
+      <file>$PROJ_DIR$\..\include\Lib_Clara.h</file>
+      <file>$PROJ_DIR$\main.h</file>
+      <file>$PROJ_DIR$\..\include\1.xcl</file>
+      <file>$TOOLKIT_DIR$\lib\dl5tpainl8n.r79</file>
+      <file>$PROJ_DIR$\..\include\DYN_mac.asm</file>
+      <file>$PROJ_DIR$\..\deleaker\mem2.cpp</file>
+      <file>$PROJ_DIR$\debag2\List\ImageConverter.map</file>
+      <file>$PROJ_DIR$\debag2\Obj\mem2.pbi</file>
+      <file>$PROJ_DIR$\..\deleaker\mem2.h</file>
+      <file>$PROJ_DIR$\debag2\List\_cpp2.s79</file>
+      <file>$PROJ_DIR$\..\deleaker\Lib_Clara_original.h</file>
+      <file>$PROJ_DIR$\debag2\List\_cpp2.lst</file>
+      <file>$PROJ_DIR$\debag2\List\main.s79</file>
+      <file>$PROJ_DIR$\debag2\List\mem2.s79</file>
+      <file>$PROJ_DIR$\debag2\Exe\ImageConverter.elf</file>
+      <file>$PROJ_DIR$\debag2\Obj\main.pbi</file>
+      <file>$PROJ_DIR$\debag2\Obj\WallpaperChanger.pbd</file>
+      <file>$PROJ_DIR$\debag2\Obj\func.r79</file>
+      <file>$PROJ_DIR$\debag2\Obj\main.r79</file>
+      <file>$PROJ_DIR$\debag2\Obj\_cpp2.pbi</file>
+      <file>$PROJ_DIR$\debag2\Obj\_cpp2.r79</file>
+      <file>$PROJ_DIR$\debag2\List\main.lst</file>
+      <file>$PROJ_DIR$\debag2\List\mem2.lst</file>
+      <file>$PROJ_DIR$\debag2\Obj\mem2.r79</file>
+    </outputs>
+    <file>
+      <name>$PROJ_DIR$\..\C++\_cpp2.cpp</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 28</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 29 18 20</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 9 3 4 5 7 8</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 9 3 4 5 7 8</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\include\func.asm</name>
+      <outputs>
+        <tool>
+          <name>AARM</name>
+          <file> 26</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>AARM</name>
+          <file> 5 13</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\main.cpp</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 24</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 27 21 30</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 10 9 3 4 5 7 8 6</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 10 9 3 4 5 7 8 6</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\deleaker\mem2.cpp</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 16</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 32 22 31</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 9 3 4 5 7 8</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 17 9 3 4 5 7 8 19 6</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>[ROOT_NODE]</name>
+      <outputs>
+        <tool>
+          <name>XLINK</name>
+          <file> 15 23</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\debag2\Exe\ImageConverter.elf</name>
+      <outputs>
+        <tool>
+          <name>XLINK</name>
+          <file> 15</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>XLINK</name>
+          <file> 11 29 26 27 12</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\debag2\Obj\WallpaperChanger.pbd</name>
+      <inputs>
+        <tool>
+          <name>BILINK</name>
+          <file> 24 16</file>
+        </tool>
+      </inputs>
+    </file>
+  </configuration>
+</project>
+
+

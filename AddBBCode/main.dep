@@ -1,0 +1,1281 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<project>
+  <fileVersion>2</fileVersion>
+  <fileChecksum>3054357424</fileChecksum>
+  <configuration>
+    <name>Debug</name>
+    <outputs>
+      <file>$PROJ_DIR$\conf_loader.cpp</file>
+      <file>$PROJ_DIR$\colorGUI.c</file>
+      <file>C:\Embedded Workbench 4.0 Evaluation\Project\C++\_cpp2.cpp</file>
+      <file>$PROJ_DIR$\config_data.c</file>
+      <file>$PROJ_DIR$\fontGUI.c</file>
+      <file>$PROJ_DIR$\header\LANGUAGE_ENG.h</file>
+      <file>$PROJ_DIR$\pictureGUI.c</file>
+      <file>C:\Embedded Workbench 4.0 Evaluation\Project\include\func.asm</file>
+      <file>$PROJ_DIR$\gui.c</file>
+      <file>$PROJ_DIR$\header\LANGUAGE_RUS.h</file>
+      <file>$PROJ_DIR$\SmilesMenu.c</file>
+      <file>$PROJ_DIR$\..\include\DYN_ext.h</file>
+      <file>$PROJ_DIR$\Debug\Obj\list.r79</file>
+      <file>$PROJ_DIR$\Debug\Obj\fontGUI.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\colorGUI.r79</file>
+      <file>$TOOLKIT_DIR$\include\DYN_mac.asm</file>
+      <file>$PROJ_DIR$\Debug\List\config_data.s79</file>
+      <file>$TOOLKIT_DIR$\include\Types.h</file>
+      <file>$PROJ_DIR$\config_data.h</file>
+      <file>$PROJ_DIR$\..\include\func.asm</file>
+      <file>$PROJ_DIR$\Debug\List\colorGUI.lst</file>
+      <file>D:\IAR\Embedded Workbench 4.0 Evaluation\Project\deleaker\mem2.cpp</file>
+      <file>$PROJ_DIR$\Debug\List\func.lst</file>
+      <file>$PROJ_DIR$\..\C++\_cpp2.cpp</file>
+      <file>$PROJ_DIR$\Debug\List\list.lst</file>
+      <file>$PROJ_DIR$\Debug\Obj\_cpp.r79</file>
+      <file>$PROJ_DIR$\..\deleaker\mem2.h</file>
+      <file>$PROJ_DIR$\Debug\Obj\mem2.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\config_data.r79</file>
+      <file>$PROJ_DIR$\Debug\Obj\colorGUI.pbi</file>
+      <file>$TOOLKIT_DIR$\include\dir.h</file>
+      <file>$PROJ_DIR$\Debug\List\conf_loader.lst</file>
+      <file>$PROJ_DIR$\Debug\Obj\main.pbd</file>
+      <file>$PROJ_DIR$\Debug\List\colorGUI.s79</file>
+      <file>$PROJ_DIR$\Debug\Obj\fontGUI.r79</file>
+      <file>$PROJ_DIR$\Debug\Obj\list.pbi</file>
+      <file>$PROJ_DIR$\Debug\List\conf_loader.s79</file>
+      <file>$TOOLKIT_DIR$\include\Colors.h</file>
+      <file>$PROJ_DIR$\Debug\Exe\main.elf</file>
+      <file>$TOOLKIT_DIR$\include\DYN_tag.h</file>
+      <file>$PROJ_DIR$\..\include\cfg_items.h</file>
+      <file>$PROJ_DIR$\Debug\Obj\main.r79</file>
+      <file>$PROJ_DIR$\..\C++\_cpp.C</file>
+      <file>$PROJ_DIR$\Debug\Obj\mem2.r79</file>
+      <file>$PROJ_DIR$\header\fontGUI.h</file>
+      <file>$PROJ_DIR$\header\gui.h</file>
+      <file>$PROJ_DIR$\conf_loader.h</file>
+      <file>$PROJ_DIR$\Debug\List\config_data.lst</file>
+      <file>$PROJ_DIR$\Debug\Obj\main.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\_cpp2.r79</file>
+      <file>$PROJ_DIR$\list.c</file>
+      <file>C:\Embedded Workbench 4.0 Evaluation\Project\include\Lib_Clara.h</file>
+      <file>$PROJ_DIR$\..\deleaker\Lib_Clara_original.h</file>
+      <file>$PROJ_DIR$\..\include\DYN_tag.h</file>
+      <file>$PROJ_DIR$\..\..\ARM\include\func.asm</file>
+      <file>$PROJ_DIR$\Debug\Obj\gui.r79</file>
+      <file>D:\IAR\Embedded Workbench 4.0 Evaluation\Project\include\func.asm</file>
+      <file>$PROJ_DIR$\Debug\List\mem2.s79</file>
+      <file>$PROJ_DIR$\Debug\List\main.s79</file>
+      <file>$TOOLKIT_DIR$\include\obsolete.h</file>
+      <file>$PROJ_DIR$\header\main.h</file>
+      <file>$PROJ_DIR$\list.h</file>
+      <file>$PROJ_DIR$\..\include\Lib_Clara.h</file>
+      <file>$TOOLKIT_DIR$\include\DYN_ext.h</file>
+      <file>$PROJ_DIR$\Debug\List\softkeys.s79</file>
+      <file>$PROJ_DIR$\Debug\Obj\softkeys.pbi</file>
+      <file>$PROJ_DIR$\Debug\Exe\AddBBCode_debag.elf</file>
+      <file>$PROJ_DIR$\gui.h</file>
+      <file>$PROJ_DIR$\Debug\List\SmilesMenu.lst</file>
+      <file>$PROJ_DIR$\main.h</file>
+      <file>$PROJ_DIR$\Debug\List\softkeys.lst</file>
+      <file>$PROJ_DIR$\..\include\1.xcl</file>
+      <file>$PROJ_DIR$\Debug\Obj\gui.pbi</file>
+      <file>$TOOLKIT_DIR$\include\Lib_Clara.h</file>
+      <file>C:\Embedded Workbench 4.0 Evaluation\Project\include\Types.h</file>
+      <file>$PROJ_DIR$\Debug\List\gui.lst</file>
+      <file>$PROJ_DIR$\..\include\DYN_mac.asm</file>
+      <file>$PROJ_DIR$\Debug\List\fontGUI.lst</file>
+      <file>$PROJ_DIR$\Debug\List\SmilesMenu.s79</file>
+      <file>$PROJ_DIR$\Debug\Obj\conf_loader.pbi</file>
+      <file>$PROJ_DIR$\..\include\obsolete.h</file>
+      <file>$PROJ_DIR$\Debug\Obj\func.r79</file>
+      <file>$PROJ_DIR$\Debug\List\_cpp2.lst</file>
+      <file>$PROJ_DIR$\Debug\List\_cpp2.s79</file>
+      <file>$PROJ_DIR$\Debug\List\mem2.lst</file>
+      <file>$PROJ_DIR$\main.cpp</file>
+      <file>$PROJ_DIR$\softkeys.cpp</file>
+      <file>$PROJ_DIR$\Debug\Obj\pictureGUI.r79</file>
+      <file>$PROJ_DIR$\Debug\List\list.s79</file>
+      <file>$PROJ_DIR$\Debug\List\pictureGUI.lst</file>
+      <file>$PROJ_DIR$\Debug\Obj\SmilesMenu.r79</file>
+      <file>C:\Embedded Workbench 4.0 Evaluation\Project\include\DYN_tag.h</file>
+      <file>$PROJ_DIR$\header\colorGUI.h</file>
+      <file>$PROJ_DIR$\Debug\Obj\_cpp.pbi</file>
+      <file>$PROJ_DIR$\Debug\List\pictureGUI.s79</file>
+      <file>$PROJ_DIR$\Debug\Obj\conf_loader.r79</file>
+      <file>$PROJ_DIR$\header\SmilesMenu.h</file>
+      <file>C:\Embedded Workbench 4.0 Evaluation\Project\include\Colors.h</file>
+      <file>$PROJ_DIR$\..\deleaker\mem2.cpp</file>
+      <file>$PROJ_DIR$\main.c</file>
+      <file>C:\Embedded Workbench 4.0 Evaluation\Project\include\DYN_ext.h</file>
+      <file>C:\Embedded Workbench 4.0 Evaluation\Project\include\obsolete.h</file>
+      <file>$PROJ_DIR$\Debug\Obj\_cpp2.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\SmilesMenu.pbi</file>
+      <file>$TOOLKIT_DIR$\lib\dl5tpainl8n.r79</file>
+      <file>$PROJ_DIR$\Debug\Obj\config_data.pbi</file>
+      <file>$PROJ_DIR$\Debug\List\main.lst</file>
+      <file>$PROJ_DIR$\header\pictureGUI.h</file>
+      <file>$PROJ_DIR$\Debug\Obj\softkeys.r79</file>
+      <file>$PROJ_DIR$\Debug\List\AddBBCode_debag.map</file>
+      <file>$PROJ_DIR$\header\softkeys.h</file>
+      <file>$PROJ_DIR$\Debug\List\fontGUI.s79</file>
+      <file>$PROJ_DIR$\..\include\Colors.h</file>
+      <file>$PROJ_DIR$\..\include\Types.h</file>
+      <file>$PROJ_DIR$\..\include\dir.h</file>
+      <file>$PROJ_DIR$\Debug\Obj\pictureGUI.pbi</file>
+      <file>$PROJ_DIR$\..\include\var_arg.h</file>
+      <file>$PROJ_DIR$\Debug\List\gui.s79</file>
+      <file>$PROJ_DIR$\..\..\ARM\C++\_cpp2.cpp</file>
+    </outputs>
+    <file>
+      <name>$PROJ_DIR$\conf_loader.cpp</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 79</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 95 36 31</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 62 113 11 53 112 80 114 40 46</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 62 113 11 53 112 80 114 40 46</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\colorGUI.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 29</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 14 33 20</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 62 113 11 53 112 80 45 60 92</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 62 113 11 53 112 80 45 60 114 40 46 18 96 92 9</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>C:\Embedded Workbench 4.0 Evaluation\Project\C++\_cpp2.cpp</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 102</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 49 83 82</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 51 74 100 91 97 101</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 51 74 100 91 97 101</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\config_data.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 105</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 28 16 47</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 40 113 18</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 40 113 18</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\fontGUI.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 13</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 34 111 77</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 62 113 11 53 112 80 45 44 9</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 62 113 11 53 112 80 45 44 9</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\pictureGUI.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 115</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 87 94 89</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 62 113 11 53 112 80 45 107 9</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 62 113 11 53 112 80 45 107 9</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>C:\Embedded Workbench 4.0 Evaluation\Project\include\func.asm</name>
+      <outputs>
+        <tool>
+          <name>AARM</name>
+          <file> 81</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\gui.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 72</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 55 117 75</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 62 113 11 53 112 80 114 116 60 45 107 44 92 96 9</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 62 113 11 53 112 80 114 116 60 40 46 18 45 96 92 9 107 44</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\SmilesMenu.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 103</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 90 78 68</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 62 113 11 53 112 80 114 46 18 45 92 96 9</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 62 113 11 53 112 80 114 46 18 45 92 96 9</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>[ROOT_NODE]</name>
+      <outputs>
+        <tool>
+          <name>XLINK</name>
+          <file> 66 109</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\include\func.asm</name>
+      <outputs>
+        <tool>
+          <name>AARM</name>
+          <file> 81 22</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>AARM</name>
+          <file> 53 76</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>D:\IAR\Embedded Workbench 4.0 Evaluation\Project\deleaker\mem2.cpp</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 27</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 43</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\C++\_cpp2.cpp</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 102</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 49 83 82</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 62 113 11 53 112 80</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 62 113 11 53 112 80</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\Debug\Obj\main.pbd</name>
+      <inputs>
+        <tool>
+          <name>BILINK</name>
+          <file> 103 102 29 79 105 13 72 48 115 65</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\Debug\Exe\main.elf</name>
+      <inputs>
+        <tool>
+          <name>XLINK</name>
+          <file> 71 81 55 12 41 43 104</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\C++\_cpp.C</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 93</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 25</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 26 62 113 11 53 112 80 52</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\list.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 35</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 12 88 24</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 62 113 11 53 112 80 114 67 61 69</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 26 62 113 11 53 112 80 52 114 67 61 69</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\ARM\include\func.asm</name>
+      <outputs>
+        <tool>
+          <name>AARM</name>
+          <file> 81 22</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>AARM</name>
+          <file> 39 15</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>D:\IAR\Embedded Workbench 4.0 Evaluation\Project\include\func.asm</name>
+      <outputs>
+        <tool>
+          <name>AARM</name>
+          <file> 81</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\Debug\Exe\AddBBCode_debag.elf</name>
+      <outputs>
+        <tool>
+          <name>XLINK</name>
+          <file> 109</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>XLINK</name>
+          <file> 71 90 49 14 95 28 34 81 55 41 87 108 104</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\main.cpp</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 48</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 41 58 106</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 110 60</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 110 62 113 11 53 112 80 60 114 40 46 18 45 96 92 9</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\softkeys.cpp</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 65</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 108 64 70</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 110 60</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 110 62 113 11 53 112 80 60 114 40 46 18 45 96 92 9</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\deleaker\mem2.cpp</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 27</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 43 57 84</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 26 62 113 11 53 112 80 52 114</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 26 62 113 11 53 112 80 52 114</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\main.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 48</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 41</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 73 17 63 39 37 59 30 67 61</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 73 17 63 39 37 59 30 67 61</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\ARM\C++\_cpp2.cpp</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 102</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 49</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 73 17 63 39 37 59</file>
+        </tool>
+      </inputs>
+    </file>
+    <forcedrebuild>
+      <name>$PROJ_DIR$\main.c</name>
+      <tool>ICCARM</tool>
+    </forcedrebuild>
+  </configuration>
+  <configuration>
+    <name>Release_ENG</name>
+    <outputs>
+      <file>$PROJ_DIR$\conf_loader.cpp</file>
+      <file>$PROJ_DIR$\colorGUI.c</file>
+      <file>$PROJ_DIR$\config_data.c</file>
+      <file>$PROJ_DIR$\fontGUI.c</file>
+      <file>$PROJ_DIR$\header\LANGUAGE_ENG.h</file>
+      <file>$PROJ_DIR$\pictureGUI.c</file>
+      <file>$PROJ_DIR$\gui.c</file>
+      <file>$PROJ_DIR$\SmilesMenu.c</file>
+      <file>$PROJ_DIR$\..\include\DYN_ext.h</file>
+      <file>$PROJ_DIR$\config_data.h</file>
+      <file>$PROJ_DIR$\..\include\func.asm</file>
+      <file>$PROJ_DIR$\..\C++\_cpp2.cpp</file>
+      <file>$PROJ_DIR$\..\include\cfg_items.h</file>
+      <file>$PROJ_DIR$\header\fontGUI.h</file>
+      <file>$PROJ_DIR$\header\gui.h</file>
+      <file>$PROJ_DIR$\conf_loader.h</file>
+      <file>$PROJ_DIR$\Release_ENG\List\gui.lst</file>
+      <file>$PROJ_DIR$\Release_ENG\List\main.s79</file>
+      <file>$PROJ_DIR$\Release_ENG\List\func.lst</file>
+      <file>$PROJ_DIR$\Release_ENG\List\gui.s79</file>
+      <file>$PROJ_DIR$\Release_ENG\List\pictureGUI.lst</file>
+      <file>$PROJ_DIR$\Release_ENG\List\AddBBCode_eng.map</file>
+      <file>$PROJ_DIR$\..\include\DYN_tag.h</file>
+      <file>$PROJ_DIR$\header\main.h</file>
+      <file>$PROJ_DIR$\..\include\Lib_Clara.h</file>
+      <file>$PROJ_DIR$\..\include\1.xcl</file>
+      <file>$PROJ_DIR$\..\include\DYN_mac.asm</file>
+      <file>$PROJ_DIR$\..\include\obsolete.h</file>
+      <file>$PROJ_DIR$\Release_ENG\List\main.lst</file>
+      <file>$PROJ_DIR$\Release_ENG\Exe\AddBBCode_eng.elf</file>
+      <file>$PROJ_DIR$\Release_ENG\Obj\_cpp2.r79</file>
+      <file>$PROJ_DIR$\Release_ENG\List\conf_loader.lst</file>
+      <file>$PROJ_DIR$\Release_ENG\List\fontGUI.lst</file>
+      <file>$PROJ_DIR$\Release_ENG\List\config_data.lst</file>
+      <file>$PROJ_DIR$\Release_ENG\List\_cpp2.lst</file>
+      <file>$PROJ_DIR$\Release_ENG\Obj\conf_loader.r79</file>
+      <file>$PROJ_DIR$\Release_ENG\Obj\SmilesMenu.r79</file>
+      <file>$PROJ_DIR$\Release_ENG\Obj\colorGUI.r79</file>
+      <file>$PROJ_DIR$\Release_ENG\Obj\main.r79</file>
+      <file>$PROJ_DIR$\Release_ENG\Obj\gui.r79</file>
+      <file>$PROJ_DIR$\Release_ENG\Obj\_cpp2.pbi</file>
+      <file>$PROJ_DIR$\Release_ENG\Obj\func.r79</file>
+      <file>$PROJ_DIR$\Release_ENG\Obj\colorGUI.pbi</file>
+      <file>$PROJ_DIR$\Release_ENG\Obj\config_data.r79</file>
+      <file>$PROJ_DIR$\Release_ENG\Obj\pictureGUI.r79</file>
+      <file>$PROJ_DIR$\Release_ENG\Obj\fontGUI.r79</file>
+      <file>$PROJ_DIR$\Release_ENG\Obj\main.pbi</file>
+      <file>$PROJ_DIR$\Release_ENG\Obj\conf_loader.pbi</file>
+      <file>$PROJ_DIR$\Release_ENG\Exe\AddBBCode.elf</file>
+      <file>$PROJ_DIR$\Release_ENG\Obj\gui.pbi</file>
+      <file>$PROJ_DIR$\Release_ENG\Obj\config_data.pbi</file>
+      <file>$PROJ_DIR$\Release_ENG\Obj\pictureGUI.pbi</file>
+      <file>$PROJ_DIR$\Release_ENG\Obj\main.pbd</file>
+      <file>$PROJ_DIR$\Release_ENG\Obj\SmilesMenu.pbi</file>
+      <file>$PROJ_DIR$\Release_ENG\List\colorGUI.s79</file>
+      <file>$PROJ_DIR$\Release_ENG\Obj\fontGUI.pbi</file>
+      <file>$PROJ_DIR$\Release_ENG\List\pictureGUI.s79</file>
+      <file>$PROJ_DIR$\Release_ENG\List\SmilesMenu.lst</file>
+      <file>$PROJ_DIR$\Release_ENG\List\SmilesMenu.s79</file>
+      <file>$PROJ_DIR$\Release_ENG\List\colorGUI.lst</file>
+      <file>$PROJ_DIR$\Release_ENG\List\_cpp2.s79</file>
+      <file>$PROJ_DIR$\Release_ENG\List\config_data.s79</file>
+      <file>$PROJ_DIR$\Release_ENG\List\conf_loader.s79</file>
+      <file>$PROJ_DIR$\Release_ENG\List\fontGUI.s79</file>
+      <file>$PROJ_DIR$\main.cpp</file>
+      <file>$PROJ_DIR$\header\colorGUI.h</file>
+      <file>$PROJ_DIR$\header\SmilesMenu.h</file>
+      <file>$TOOLKIT_DIR$\lib\dl5tpainl8n.r79</file>
+      <file>$PROJ_DIR$\header\pictureGUI.h</file>
+      <file>$PROJ_DIR$\..\include\Colors.h</file>
+      <file>$PROJ_DIR$\..\include\Types.h</file>
+      <file>$PROJ_DIR$\..\include\dir.h</file>
+      <file>$PROJ_DIR$\..\include\var_arg.h</file>
+    </outputs>
+    <file>
+      <name>$PROJ_DIR$\conf_loader.cpp</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 47</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 35 62 31</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 24 70 8 22 69 27 71 12 15</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 24 70 8 22 69 27 71 12 15</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\colorGUI.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 42</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 37 54 59</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 24 70 8 22 69 27 14 23 65 4</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 24 70 8 22 69 27 14 23 65 4</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\config_data.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 50</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 43 61 33</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 12 70 9</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 12 70 9</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\fontGUI.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 55</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 45 63 32</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 24 70 8 22 69 27 14 13 4</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 24 70 8 22 69 27 14 13 4</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\pictureGUI.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 51</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 44 56 20</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 24 70 8 22 69 27 14 68 4</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 24 70 8 22 69 27 14 68 4</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\gui.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 49</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 39 19 16</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 24 70 8 22 69 27 71 72 23 14 68 13 65 66 4</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 24 70 8 22 69 27 71 72 23 14 68 13 65 66 4</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\SmilesMenu.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 53</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 36 58 57</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 24 70 8 22 69 27 71 15 9 14 65 66 4</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 24 70 8 22 69 27 71 15 9 14 65 66 4</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>[ROOT_NODE]</name>
+      <outputs>
+        <tool>
+          <name>XLINK</name>
+          <file> 29 21</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\include\func.asm</name>
+      <outputs>
+        <tool>
+          <name>AARM</name>
+          <file> 41 18</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>AARM</name>
+          <file> 22 26</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\C++\_cpp2.cpp</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 40</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 30 60 34</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 24 70 8 22 69 27</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 24 70 8 22 69 27</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\Release_ENG\Exe\AddBBCode_eng.elf</name>
+      <outputs>
+        <tool>
+          <name>XLINK</name>
+          <file> 21</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>XLINK</name>
+          <file> 25 36 30 37 35 43 45 41 39 38 44 67</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\Release_ENG\Exe\AddBBCode.elf</name>
+      <inputs>
+        <tool>
+          <name>XLINK</name>
+          <file> 25 36 30 37 35 43 45 41 39 38 44 67</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\Release_ENG\Obj\main.pbd</name>
+      <inputs>
+        <tool>
+          <name>BILINK</name>
+          <file> 53 40 42 47 50 55 49 46 51</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\main.cpp</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 46</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 38 17 28</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 24 70 8 22 69 27 71 12 15 9 23 14 66 65 4</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 24 70 8 22 69 27 71 12 15 9 23 14 66 65 4</file>
+        </tool>
+      </inputs>
+    </file>
+    <forcedrebuild>
+      <name>[MULTI_TOOL]</name>
+      <tool>XLINK</tool>
+    </forcedrebuild>
+  </configuration>
+  <configuration>
+    <name>Release_RUS</name>
+    <outputs>
+      <file>$PROJ_DIR$\conf_loader.cpp</file>
+      <file>$PROJ_DIR$\colorGUI.c</file>
+      <file>$PROJ_DIR$\config_data.c</file>
+      <file>$PROJ_DIR$\fontGUI.c</file>
+      <file>$PROJ_DIR$\pictureGUI.c</file>
+      <file>$PROJ_DIR$\gui.c</file>
+      <file>$PROJ_DIR$\header\LANGUAGE_RUS.h</file>
+      <file>$PROJ_DIR$\SmilesMenu.c</file>
+      <file>$PROJ_DIR$\..\include\DYN_ext.h</file>
+      <file>$PROJ_DIR$\config_data.h</file>
+      <file>$PROJ_DIR$\..\include\func.asm</file>
+      <file>$PROJ_DIR$\..\C++\_cpp2.cpp</file>
+      <file>$PROJ_DIR$\..\include\cfg_items.h</file>
+      <file>$PROJ_DIR$\header\fontGUI.h</file>
+      <file>$PROJ_DIR$\header\gui.h</file>
+      <file>$PROJ_DIR$\conf_loader.h</file>
+      <file>$PROJ_DIR$\..\include\DYN_tag.h</file>
+      <file>$PROJ_DIR$\header\main.h</file>
+      <file>$PROJ_DIR$\..\include\Lib_Clara.h</file>
+      <file>$PROJ_DIR$\..\include\1.xcl</file>
+      <file>$PROJ_DIR$\..\include\DYN_mac.asm</file>
+      <file>$PROJ_DIR$\..\include\obsolete.h</file>
+      <file>$PROJ_DIR$\Release_RUS\List\conf_loader.s79</file>
+      <file>$PROJ_DIR$\Release_RUS\List\conf_loader.lst</file>
+      <file>$PROJ_DIR$\Release_RUS\List\config_data.s79</file>
+      <file>$PROJ_DIR$\Release_RUS\List\config_data.lst</file>
+      <file>$PROJ_DIR$\Release_RUS\Obj\main.r79</file>
+      <file>$PROJ_DIR$\Release_RUS\Obj\gui.r79</file>
+      <file>$PROJ_DIR$\Release_RUS\Obj\_cpp2.pbi</file>
+      <file>$PROJ_DIR$\Release_RUS\Obj\SmilesMenu.r79</file>
+      <file>$PROJ_DIR$\Release_RUS\Obj\func.r79</file>
+      <file>$PROJ_DIR$\Release_RUS\Obj\colorGUI.pbi</file>
+      <file>$PROJ_DIR$\Release_RUS\Obj\conf_loader.pbi</file>
+      <file>$PROJ_DIR$\Release_RUS\Obj\config_data.pbi</file>
+      <file>$PROJ_DIR$\Release_RUS\Obj\fontGUI.pbi</file>
+      <file>$PROJ_DIR$\Release_RUS\List\main.lst</file>
+      <file>$PROJ_DIR$\Release_RUS\Exe\AddBBCode.elf</file>
+      <file>$PROJ_DIR$\Release_RUS\List\main.s79</file>
+      <file>$PROJ_DIR$\Release_RUS\Obj\conf_loader.r79</file>
+      <file>$PROJ_DIR$\Release_RUS\Obj\SmilesMenu.pbi</file>
+      <file>$PROJ_DIR$\Release_RUS\Obj\gui.pbi</file>
+      <file>$PROJ_DIR$\Release_RUS\Obj\main.pbd</file>
+      <file>$PROJ_DIR$\Release_RUS\List\colorGUI.s79</file>
+      <file>$PROJ_DIR$\Release_RUS\List\SmilesMenu.lst</file>
+      <file>$PROJ_DIR$\Release_RUS\List\AddBBCode.map</file>
+      <file>$PROJ_DIR$\Release_RUS\Obj\pictureGUI.r79</file>
+      <file>$PROJ_DIR$\Release_RUS\Obj\fontGUI.r79</file>
+      <file>$PROJ_DIR$\Release_RUS\Obj\colorGUI.r79</file>
+      <file>$PROJ_DIR$\Release_RUS\Obj\config_data.r79</file>
+      <file>$PROJ_DIR$\Release_RUS\Obj\main.pbi</file>
+      <file>$PROJ_DIR$\Release_RUS\Obj\_cpp2.r79</file>
+      <file>$PROJ_DIR$\Release_RUS\Obj\pictureGUI.pbi</file>
+      <file>$PROJ_DIR$\Release_RUS\List\gui.s79</file>
+      <file>$PROJ_DIR$\Release_RUS\List\pictureGUI.lst</file>
+      <file>$PROJ_DIR$\Release_RUS\List\gui.lst</file>
+      <file>$PROJ_DIR$\Release_RUS\List\fontGUI.s79</file>
+      <file>$PROJ_DIR$\Release_RUS\List\func.lst</file>
+      <file>$PROJ_DIR$\Release_RUS\List\fontGUI.lst</file>
+      <file>$PROJ_DIR$\Release_RUS\List\pictureGUI.s79</file>
+      <file>$PROJ_DIR$\Release_RUS\List\SmilesMenu.s79</file>
+      <file>$PROJ_DIR$\Release_RUS\List\_cpp2.lst</file>
+      <file>$PROJ_DIR$\Release_RUS\List\colorGUI.lst</file>
+      <file>$PROJ_DIR$\Release_RUS\List\_cpp2.s79</file>
+      <file>$PROJ_DIR$\main.cpp</file>
+      <file>$PROJ_DIR$\header\colorGUI.h</file>
+      <file>$PROJ_DIR$\header\SmilesMenu.h</file>
+      <file>$TOOLKIT_DIR$\lib\dl5tpainl8n.r79</file>
+      <file>$PROJ_DIR$\header\pictureGUI.h</file>
+      <file>$PROJ_DIR$\..\include\Colors.h</file>
+      <file>$PROJ_DIR$\..\include\Types.h</file>
+      <file>$PROJ_DIR$\..\include\dir.h</file>
+      <file>$PROJ_DIR$\..\include\var_arg.h</file>
+    </outputs>
+    <file>
+      <name>$PROJ_DIR$\conf_loader.cpp</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 32</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 38 22 23</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 18 69 8 16 68 21 70 12 15</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 18 69 8 16 68 21 70 12 15</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\colorGUI.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 31</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 47 42 61</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 18 69 8 16 68 21 14 17 64 6</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 18 69 8 16 68 21 14 17 64 6</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\config_data.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 33</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 48 24 25</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 12 69 9</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 12 69 9</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\fontGUI.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 34</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 46 55 57</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 18 69 8 16 68 21 14 13 6</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 18 69 8 16 68 21 14 13 6</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\pictureGUI.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 51</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 45 58 53</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 18 69 8 16 68 21 14 67 6</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 18 69 8 16 68 21 14 67 6</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\gui.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 40</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 27 52 54</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 18 69 8 16 68 21 70 71 17 14 67 13 64 65 6</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 18 69 8 16 68 21 70 71 17 14 67 13 64 65 6</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\SmilesMenu.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 39</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 29 59 43</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 18 69 8 16 68 21 70 15 9 14 64 65 6</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 18 69 8 16 68 21 70 15 9 14 64 65 6</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>[ROOT_NODE]</name>
+      <outputs>
+        <tool>
+          <name>XLINK</name>
+          <file> 36 44</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\include\func.asm</name>
+      <outputs>
+        <tool>
+          <name>AARM</name>
+          <file> 30 56</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>AARM</name>
+          <file> 16 20</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\C++\_cpp2.cpp</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 28</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 50 62 60</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 18 69 8 16 68 21</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 18 69 8 16 68 21</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\Release_RUS\Exe\AddBBCode.elf</name>
+      <outputs>
+        <tool>
+          <name>XLINK</name>
+          <file> 44</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>XLINK</name>
+          <file> 19 29 50 47 38 48 46 30 27 26 45 66</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\Release_RUS\Obj\main.pbd</name>
+      <inputs>
+        <tool>
+          <name>BILINK</name>
+          <file> 39 28 31 32 33 34 40 49 51</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\main.cpp</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 49</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 26 37 35</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 18 69 8 16 68 21 70 12 15 9 17 14 65 64 6</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 18 69 8 16 68 21 70 12 15 9 17 14 65 64 6</file>
+        </tool>
+      </inputs>
+    </file>
+    <forcedrebuild>
+      <name>[MULTI_TOOL]</name>
+      <tool>XLINK</tool>
+    </forcedrebuild>
+  </configuration>
+</project>
+
+

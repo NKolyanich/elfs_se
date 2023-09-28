@@ -1,0 +1,1404 @@
+//////////////////////////////////////////////////////////////////////////////
+//                                                                           /
+// IAR ARM ANSI C/C++ Compiler V4.42A/W32 EVALUATION   15/Mar/2015  14:45:03 /
+// Copyright 1999-2005 IAR Systems. All rights reserved.                     /
+//                                                                           /
+//    Cpu mode        =  interwork                                           /
+//    Endian          =  little                                              /
+//    Stack alignment =  4                                                   /
+//    Source file     =  D:\kl\dev\Embedded Workbench 4.0                    /
+//                       Evaluation\Project\test_Read-Write_PNG\main.cpp     /
+//    Command line    =  "D:\kl\dev\Embedded Workbench 4.0                   /
+//                       Evaluation\Project\test_Read-Write_PNG\main.cpp"    /
+//                       -D NDEBUG -D PNG_DEPRECATED -D                      /
+//                       PNG_USER_MEM_SUPPORTED -lCN "D:\kl\dev\Embedded     /
+//                       Workbench 4.0 Evaluation\Project\test_Read-Write_PN /
+//                       G\Release\List\" -lA "D:\kl\dev\Embedded Workbench  /
+//                       4.0 Evaluation\Project\test_Read-Write_PNG\Release\ /
+//                       List\" -o "D:\kl\dev\Embedded Workbench 4.0         /
+//                       Evaluation\Project\test_Read-Write_PNG\Release\Obj\ /
+//                       " -s9 --no_unroll --no_code_motion --cpu_mode arm   /
+//                       --endian little --cpu ARM926EJ-S --stack_align 4    /
+//                       --interwork -e --enable_multibytes --fpu None       /
+//                       --eec++ --dlib_config "D:\kl\dev\Embedded           /
+//                       Workbench 4.0 Evaluation\ARM\LIB\dl5tpainl8n.h" -I  /
+//                       "D:\kl\dev\Embedded Workbench 4.0                   /
+//                       Evaluation\ARM\INC\" --inline_threshold=2           /
+//    List file       =  D:\kl\dev\Embedded Workbench 4.0                    /
+//                       Evaluation\Project\test_Read-Write_PNG\Release\List /
+//                       \main.s79                                           /
+//                                                                           /
+//                                                                           /
+//////////////////////////////////////////////////////////////////////////////
+
+        NAME main
+
+        RTMODEL "StackAlign4", "USED"
+        RTMODEL "__cpu_mode", "__pcs__interwork"
+        RTMODEL "__data_model", "absolute"
+        RTMODEL "__endian", "little"
+        RTMODEL "__rt_version", "6"
+
+        RSEG CSTACK:DATA:NOROOT(2)
+
+        ERROR
+//NOTE: This module defines or uses C++ features that are not
+//      accessible from assembler code. Assembling this file will
+//      not produce an equivalent object file to the one produced
+//      by the C++ compiler.
+
+        PUBLIC ??ReadWrite
+        FUNCTION ??ReadWrite,0203H
+        LOCFRAME CSTACK, 136, STACK
+        MULTWEAK ??ReadWrite??rT
+        PUBLIC ??elf_exit
+        FUNCTION ??elf_exit,0603H
+        LOCFRAME CSTACK, 4, STACK
+        MULTWEAK ??elf_exit??rT
+        MULTWEAK ??kill_data??rA
+        PUBLIC ??log
+        FUNCTION ??log,0203H
+        LOCFRAME CSTACK, 612, STACK
+        MULTWEAK ??log??rT
+        MULTWEAK ??main??rT
+        PUBLIC ??png_user_read
+        FUNCTION ??png_user_read,0603H
+        LOCFRAME CSTACK, 4, STACK
+        MULTWEAK ??png_user_read??rT
+        PUBLIC ??png_user_write
+        FUNCTION ??png_user_write,0603H
+        LOCFRAME CSTACK, 16, STACK
+        MULTWEAK ??png_user_write??rT
+        PUBWEAK ?init?tab?DATA_Z
+        PUBLIC bit_depth
+        PUBLIC color_type
+        PUBLIC dll
+        PUBLIC height
+        PUBLIC info_read_ptr
+        PUBLIC info_write_ptr
+        PUBLIC main
+        FUNCTION main,0a03H
+        LOCFRAME CSTACK, 16, STACK
+        PUBLIC png_read_ptr
+        PUBLIC png_write_ptr
+        PUBLIC row_pointers
+        PUBLIC width
+        PUBLIC x
+        PUBLIC y
+        
+        CFI Names cfiNames0
+        CFI StackFrame CFA R13 HUGEDATA
+        CFI Resource R0:32, R1:32, R2:32, R3:32, R4:32, R5:32, R6:32, R7:32
+        CFI Resource R8:32, R9:32, R10:32, R11:32, R12:32, CPSR:32, R13:32
+        CFI Resource R14:32, SPSR:32
+        CFI VirtualResource ?RET:32
+        CFI EndNames cfiNames0
+        
+        CFI Common cfiCommon0 Using cfiNames0
+        CFI CodeAlign 2
+        CFI DataAlign 4
+        CFI ReturnAddress ?RET CODE
+        CFI CFA R13+0
+        CFI R0 Undefined
+        CFI R1 Undefined
+        CFI R2 Undefined
+        CFI R3 Undefined
+        CFI R4 SameValue
+        CFI R5 SameValue
+        CFI R6 SameValue
+        CFI R7 SameValue
+        CFI R8 SameValue
+        CFI R9 SameValue
+        CFI R10 SameValue
+        CFI R11 SameValue
+        CFI R12 Undefined
+        CFI CPSR SameValue
+        CFI R14 Undefined
+        CFI SPSR SameValue
+        CFI ?RET R14
+        CFI EndCommon cfiCommon0
+        
+        
+        CFI Common cfiCommon1 Using cfiNames0
+        CFI CodeAlign 4
+        CFI DataAlign 4
+        CFI ReturnAddress ?RET CODE
+        CFI CFA R13+0
+        CFI R0 Undefined
+        CFI R1 Undefined
+        CFI R2 Undefined
+        CFI R3 Undefined
+        CFI R4 SameValue
+        CFI R5 SameValue
+        CFI R6 SameValue
+        CFI R7 SameValue
+        CFI R8 SameValue
+        CFI R9 SameValue
+        CFI R10 SameValue
+        CFI R11 SameValue
+        CFI R12 Undefined
+        CFI CPSR SameValue
+        CFI R14 Undefined
+        CFI SPSR SameValue
+        CFI ?RET R14
+        CFI EndCommon cfiCommon1
+        
+kill_data           SYMBOL "kill_data"
+
+??ReadWrite??rT     SYMBOL "??rT", ??ReadWrite
+
+??elf_exit??rT      SYMBOL "??rT", ??elf_exit
+??kill_data??rA     SYMBOL "??rA", kill_data
+
+??log??rT           SYMBOL "??rT", ??log
+main                SYMBOL "main"
+??main??rT          SYMBOL "??rT", main
+
+??png_user_read??rT SYMBOL "??rT", ??png_user_read
+
+??png_user_write??rT SYMBOL "??rT", ??png_user_write
+
+        EXTERN ELF_BEGIN
+        EXTERN kill_data
+        FUNCTION kill_data,0202H
+
+// D:\kl\dev\Embedded Workbench 4.0 Evaluation\Project\test_Read-Write_PNG\main.cpp
+//    1 #include "main.h"
+//    2 
+
+        RSEG DATA_Z:DATA:SORT:NOROOT(2)
+//    3 int x, y;
+x:
+        DS8 4
+
+        RSEG DATA_Z:DATA:SORT:NOROOT(2)
+y:
+        DS8 4
+//    4 pnglib_dll_t *dll;
+dll:
+        DS8 4
+//    5 png_uint_32 width, height;
+//    6 png_byte color_type;
+//    7 png_byte bit_depth;
+//    8 
+//    9 png_structp png_read_ptr;
+png_read_ptr:
+        DS8 4
+//   10 png_infop info_read_ptr;
+info_read_ptr:
+        DS8 4
+//   11 png_structp png_write_ptr;
+png_write_ptr:
+        DS8 4
+//   12 png_infop info_write_ptr;
+info_write_ptr:
+        DS8 4
+//   13 png_bytep * row_pointers;
+row_pointers:
+        DS8 4
+
+        RSEG DATA_Z:DATA:SORT:NOROOT(2)
+width:
+        DS8 4
+
+        RSEG DATA_Z:DATA:SORT:NOROOT(2)
+height:
+        DS8 4
+
+        RSEG DATA_Z:DATA:SORT:NOROOT(0)
+color_type:
+        DS8 1
+
+        RSEG DATA_Z:DATA:SORT:NOROOT(0)
+bit_depth:
+        DS8 1
+
+        RSEG CODE:CODE:NOROOT(2)
+        CFI Block cfiBlock0 Using cfiCommon0
+        CFI NoFunction
+        THUMB
+??log??rT:
+        BX       PC
+        Nop      
+        CFI EndBlock cfiBlock0
+        REQUIRE ??log
+//   14 
+//   15 //char *buf;
+//   16 
+//   17 int ReadWrite( wchar_t *fpath, wchar_t *fname, wchar_t *fname2 );
+//   18 
+
+        RSEG CODE:CODE:NOROOT(2)
+        CFI Block cfiBlock1 Using cfiCommon1
+        CFI Function ??log
+        ARM
+//   19 void log(char* str)
+//   20 {
+??log:
+        PUSH     {R4,R5,LR}
+        CFI ?RET Frame(CFA, -4)
+        CFI R5 Frame(CFA, -8)
+        CFI R4 Frame(CFA, -12)
+        CFI CFA R13+12
+        SUB      SP,SP,#+600
+        CFI CFA R13+612
+        MOV      R4,R0
+//   21 	char str0[600];
+//   22   int file;
+//   23   if((file=w_fopen(L"card/test/png/Log.txt", WA_Create+WA_Append, 0x1FF, 0))>-1)
+        LDR      R0,??log_1       ;; `?<Constant "\\n---------------\\n %s">` + 24
+        MOV      R3,#+0
+        MOV      R2,#+255
+        ORR      R2,R2,#0x100
+        MOV      R1,#+12
+        SWI      +760
+        MOVS     R5,R0
+        BMI      ??log_2
+//   24   {
+//   25     sprintf(str0,"\n---------------\n %s", str );
+        LDR      R1,??log_1+0x4   ;; `?<Constant "\\n---------------\\n %s">`
+        MOV      R2,R4
+        MOV      R0,SP
+        SWI      +276
+//   26     w_fwrite(file, str0, strlen(str0));                       
+        MOV      R0,SP
+        SWI      +346
+        MOV      R2,R0
+        MOV      R1,SP
+        MOV      R0,R5
+        SWI      +762
+//   27     w_fclose(file);
+        MOV      R0,R5
+        SWI      +765
+//   28   }
+//   29 }
+??log_2:
+        ADD      SP,SP,#+600      ;; stack cleaning
+        CFI CFA R13+12
+        POP      {R4,R5,PC}       ;; return
+        DATA
+??log_1:
+        DC32     `?<Constant "\\n---------------\\n %s">` + 24
+        DC32     `?<Constant "\\n---------------\\n %s">`
+        CFI EndBlock cfiBlock1
+
+        RSEG CODE:CODE:NOROOT(2)
+        CFI Block cfiBlock2 Using cfiCommon0
+        CFI NoFunction
+        THUMB
+??elf_exit??rT:
+        BX       PC
+        Nop      
+        CFI EndBlock cfiBlock2
+        REQUIRE ??elf_exit
+//   30 
+
+        RSEG CODE:CODE:NOROOT(2)
+        CFI Block cfiBlock3 Using cfiCommon1
+        CFI Function ??elf_exit
+        ARM
+//   31 void elf_exit(void)
+//   32 {
+??elf_exit:
+        PUSH     {LR}
+        CFI ?RET Frame(CFA, -4)
+        CFI CFA R13+4
+//   33   kill_data(&ELF_BEGIN, (void(*)(void*))mfree_adr());
+        SWI      +33028
+        MOV      R1,R0
+        LDR      R0,??elf_exit_1  ;; ELF_BEGIN
+        POP      {LR}             ;; Pop
+        CFI ?RET R14
+        CFI CFA R13+0
+        _BF      kill_data,??kill_data??rA  ;; tailcall
+        DATA
+??elf_exit_1:
+        DC32     ELF_BEGIN
+        CFI EndBlock cfiBlock3
+//   34 }
+
+        RSEG CODE:CODE:NOROOT(2)
+        CFI Block cfiBlock4 Using cfiCommon0
+        CFI NoFunction
+        THUMB
+??png_user_read??rT:
+        BX       PC
+        Nop      
+        CFI EndBlock cfiBlock4
+        REQUIRE ??png_user_read
+//   35 
+
+        RSEG CODE:CODE:NOROOT(2)
+        CFI Block cfiBlock5 Using cfiCommon1
+        CFI Function ??png_user_read
+        ARM
+//   36 void png_user_read(png_structp png_ptr, png_bytep data, png_size_t size)
+//   37 {
+??png_user_read:
+        PUSH     {LR}
+        CFI ?RET Frame(CFA, -4)
+        CFI CFA R13+4
+//   38 	
+//   39   int *f = (int*)png_ptr->io_ptr;
+//   40   fread(*f, data, size);
+        LDR      R0,[R0, #+20]
+        LDR      R0,[R0, #+0]
+        SWI      +280
+//   41 }
+        POP      {PC}             ;; return
+        CFI EndBlock cfiBlock5
+
+        RSEG CODE:CODE:NOROOT(2)
+        CFI Block cfiBlock6 Using cfiCommon0
+        CFI NoFunction
+        THUMB
+??png_user_write??rT:
+        BX       PC
+        Nop      
+        CFI EndBlock cfiBlock6
+        REQUIRE ??png_user_write
+//   42 
+
+        RSEG CODE:CODE:NOROOT(2)
+        CFI Block cfiBlock7 Using cfiCommon1
+        CFI Function ??png_user_write
+        ARM
+//   43 void png_user_write(png_structp png_ptr, png_bytep data, png_size_t size)
+//   44 {
+??png_user_write:
+        PUSH     {R4-R6,LR}
+        CFI ?RET Frame(CFA, -4)
+        CFI R6 Frame(CFA, -8)
+        CFI R5 Frame(CFA, -12)
+        CFI R4 Frame(CFA, -16)
+        CFI CFA R13+16
+        MOV      R4,R0
+//   45 	//---------------------
+//   46 	log("png_user_write");
+        LDR      R0,??png_user_write_1  ;; `?<Constant "png_user_write">`
+        MOV      R5,R1
+        MOV      R6,R2
+        BL       ??log
+//   47   //---------------------
+//   48   int *f = (int*)png_ptr->io_ptr;
+//   49   fwrite(*f, data, size);
+        LDR      R0,[R4, #+20]
+        MOV      R2,R6
+        LDR      R0,[R0, #+0]
+        MOV      R1,R5
+        SWI      +281
+//   50 }
+        POP      {R4-R6,PC}       ;; return
+        DATA
+??png_user_write_1:
+        DC32     `?<Constant "png_user_write">`
+        CFI EndBlock cfiBlock7
+
+        RSEG CODE:CODE:NOROOT(2)
+        CFI Block cfiBlock8 Using cfiCommon0
+        CFI NoFunction
+        THUMB
+??main??rT:
+        BX       PC
+        Nop      
+        CFI EndBlock cfiBlock8
+        REQUIRE main
+//   51 
+
+        RSEG CODE:CODE:NOROOT(2)
+        CFI Block cfiBlock9 Using cfiCommon1
+        CFI Function main
+        ARM
+//   52 int main(void)
+//   53 {
+main:
+        PUSH     {R4,LR}
+        CFI ?RET Frame(CFA, -4)
+        CFI R4 Frame(CFA, -8)
+        CFI CFA R13+8
+//   54   log("\n---------------\n main");
+        LDR      R4,??main_1      ;; `?<Constant L"\\x74\\x65\\x73\\x74\\x5f\\x69\\x6e\\x70\\`
+        ADD      R0,R4,#+32
+        BL       ??log
+//   55   
+//   56     switch(ReadWrite(L"card/test/png/",L"test_input.png", L"test_output.png"))
+        ADD      R2,R4,#+840
+        MOV      R1,R4
+        ADD      R0,R4,#+808
+        BL       ??ReadWrite
+        SUB      R0,R0,#+1
+        CMP      R0,#+8
+        BHI      ??main_2
+        ADR      R1,??main_0
+        LDRB     R1,[R1, R0]
+        ADD      PC,PC,R1, LSL #+2
+        DATA
+??main_0:
+        DC8      +2,+4,+19,+25
+        DC8      +31,+37,+43,+49
+        DC8      +55,+0,+0,+0
+        ARM
+//   57     {
+//   58       case 1: MessageBox(EMPTY_TEXTID,STR("PNG file convert\nERROR!!!\n нет входного файла"),NOIMAGE,1,5000,0); break;
+??main_3:
+        LDR      R0,??main_1+0x4  ;; `?<Constant L"\\x74\\x65\\x73\\x74\\x5f\\x69\\x6e\\x70\\` + 56
+        B        ??main_4
+//   59       case 2: MessageBox(EMPTY_TEXTID,STR("PNG file convert\nERROR!!!\n это не png"),NOIMAGE,1,5000,0); break;
+??main_5:
+        LDR      R0,??main_1+0x8  ;; `?<Constant L"\\x74\\x65\\x73\\x74\\x5f\\x69\\x6e\\x70\\` + 148
+        MOV      R4,#+255
+        ORR      R4,R4,#0xFF00
+        MOV      R2,R4
+        MOV      R1,#+0
+        SWI      +349
+        MOV      R1,R0
+        MOV      R0,#+0
+        PUSH     {R0}
+        CFI CFA R13+12
+        MOV      R3,#+1
+        MOV      R2,R4
+        MOV      R0,#+136
+        ORR      R0,R0,#0x1300
+        PUSH     {R0}
+        CFI CFA R13+16
+        B        ??main_6
+        CFI CFA R13+8
+//   60       case 3: MessageBox(EMPTY_TEXTID,STR("PNG file convert\nERROR!!!\n нет структуры reed"),NOIMAGE,1,5000,0); break;
+??main_7:
+        LDR      R0,??main_1+0xC  ;; `?<Constant L"\\x74\\x65\\x73\\x74\\x5f\\x69\\x6e\\x70\\` + 224
+        MOV      R4,#+255
+        ORR      R4,R4,#0xFF00
+        MOV      R2,R4
+        MOV      R1,#+0
+        B        ??main_8
+//   61       case 4: MessageBox(EMPTY_TEXTID,STR("PNG file convert\nERROR!!!\n нет структуры reed inf"),NOIMAGE,1,5000,0); break;
+??main_9:
+        LDR      R0,??main_1+0x10  ;; `?<Constant L"\\x74\\x65\\x73\\x74\\x5f\\x69\\x6e\\x70\\` + 316
+        MOV      R4,#+255
+        ORR      R4,R4,#0xFF00
+        MOV      R2,R4
+        MOV      R1,#+0
+        B        ??main_8
+//   62       case 5: MessageBox(EMPTY_TEXTID,STR("PNG file convert\nERROR!!!\n нет выходного файла"),NOIMAGE,1,5000,0); break;
+??main_10:
+        LDR      R0,??main_1+0x14  ;; `?<Constant L"\\x74\\x65\\x73\\x74\\x5f\\x69\\x6e\\x70\\` + 416
+        MOV      R4,#+255
+        ORR      R4,R4,#0xFF00
+        MOV      R2,R4
+        MOV      R1,#+0
+        B        ??main_8
+//   63       case 6: MessageBox(EMPTY_TEXTID,STR("PNG file convert\nERROR!!!\n нет структуры write"),NOIMAGE,1,5000,0); break;
+??main_11:
+        LDR      R0,??main_1+0x18  ;; `?<Constant L"\\x74\\x65\\x73\\x74\\x5f\\x69\\x6e\\x70\\` + 512
+        MOV      R4,#+255
+        ORR      R4,R4,#0xFF00
+        MOV      R2,R4
+        MOV      R1,#+0
+        B        ??main_8
+//   64       case 7: MessageBox(EMPTY_TEXTID,STR("PNG file convert\nERROR!!!\n нет се. wr. inf"),NOIMAGE,1,5000,0); break;
+??main_12:
+        LDR      R0,??main_1+0x1C  ;; `?<Constant L"\\x74\\x65\\x73\\x74\\x5f\\x69\\x6e\\x70\\` + 608
+        MOV      R4,#+255
+        ORR      R4,R4,#0xFF00
+        MOV      R2,R4
+        MOV      R1,#+0
+        B        ??main_8
+//   65       case 8: MessageBox(EMPTY_TEXTID,STR("PNG file convert\nERROR!!!\n нет входного файла"),NOIMAGE,1,5000,0); break;
+??main_13:
+        LDR      R0,??main_1+0x4  ;; `?<Constant L"\\x74\\x65\\x73\\x74\\x5f\\x69\\x6e\\x70\\` + 56
+        MOV      R4,#+255
+        ORR      R4,R4,#0xFF00
+        MOV      R2,R4
+        MOV      R1,#+0
+        B        ??main_8
+//   66       case 9: MessageBox(EMPTY_TEXTID,STR("PNG file convert\nERROR!!!\n нет DLL"),NOIMAGE,1,5000,0); break;
+??main_14:
+        LDR      R0,??main_1+0x20  ;; `?<Constant L"\\x74\\x65\\x73\\x74\\x5f\\x69\\x6e\\x70\\` + 696
+        MOV      R4,#+255
+        ORR      R4,R4,#0xFF00
+        MOV      R2,R4
+        MOV      R1,#+0
+        B        ??main_8
+//   67      default:  MessageBox(EMPTY_TEXTID,STR("PNG file convert ok"),NOIMAGE,1,5000,0); break;
+??main_2:
+        LDR      R0,??main_1+0x24  ;; `?<Constant L"\\x74\\x65\\x73\\x74\\x5f\\x69\\x6e\\x70\\` + 768
+??main_4:
+        MOV      R4,#+255
+        ORR      R4,R4,#0xFF00
+        MOV      R2,R4
+        MOV      R1,#+0
+??main_8:
+        SWI      +349
+        MOV      R1,#+0
+        PUSH     {R1}
+        CFI CFA R13+12
+        MOV      R3,#+1
+        MOV      R2,R4
+        MOV      R1,#+136
+        ORR      R1,R1,#0x1300
+        PUSH     {R1}
+        CFI CFA R13+16
+        MOV      R1,R0
+??main_6:
+        MVN      R0,#-1879048192
+        SWI      +599
+//   68     }  
+//   69     SUBPROC(elf_exit);
+        LDR      R0,??main_1+0x28  ;; ??elf_exit
+        ADD      SP,SP,#+8
+        CFI CFA R13+8
+        SWI      +264
+//   70    return 0;
+        MOV      R0,#+0
+        POP      {R4,PC}          ;; return
+        DATA
+??main_1:
+        DC32     `?<Constant L"\\x74\\x65\\x73\\x74\\x5f\\x69\\x6e\\x70\\`
+        DC32     `?<Constant L"\\x74\\x65\\x73\\x74\\x5f\\x69\\x6e\\x70\\` + 56
+        DC32     `?<Constant L"\\x74\\x65\\x73\\x74\\x5f\\x69\\x6e\\x70\\` + 148
+        DC32     `?<Constant L"\\x74\\x65\\x73\\x74\\x5f\\x69\\x6e\\x70\\` + 224
+        DC32     `?<Constant L"\\x74\\x65\\x73\\x74\\x5f\\x69\\x6e\\x70\\` + 316
+        DC32     `?<Constant L"\\x74\\x65\\x73\\x74\\x5f\\x69\\x6e\\x70\\` + 416
+        DC32     `?<Constant L"\\x74\\x65\\x73\\x74\\x5f\\x69\\x6e\\x70\\` + 512
+        DC32     `?<Constant L"\\x74\\x65\\x73\\x74\\x5f\\x69\\x6e\\x70\\` + 608
+        DC32     `?<Constant L"\\x74\\x65\\x73\\x74\\x5f\\x69\\x6e\\x70\\` + 696
+        DC32     `?<Constant L"\\x74\\x65\\x73\\x74\\x5f\\x69\\x6e\\x70\\` + 768
+        DC32     ??elf_exit
+        CFI EndBlock cfiBlock9
+//   71 }
+
+        RSEG CODE:CODE:NOROOT(2)
+        CFI Block cfiBlock10 Using cfiCommon0
+        CFI NoFunction
+        THUMB
+??ReadWrite??rT:
+        BX       PC
+        Nop      
+        CFI EndBlock cfiBlock10
+        REQUIRE ??ReadWrite
+//   72 //==============================================================================
+//   73 //==============================================================================
+//   74 //==============================================================================
+//   75 
+
+        RSEG CODE:CODE:NOROOT(2)
+        CFI Block cfiBlock11 Using cfiCommon1
+        CFI Function ??ReadWrite
+        ARM
+//   76 int ReadWrite( wchar_t *fpath, wchar_t *fname, wchar_t *fname2 )
+//   77 {
+??ReadWrite:
+        PUSH     {R4-R8,LR}
+        CFI ?RET Frame(CFA, -4)
+        CFI R8 Frame(CFA, -8)
+        CFI R7 Frame(CFA, -12)
+        CFI R6 Frame(CFA, -16)
+        CFI R5 Frame(CFA, -20)
+        CFI R4 Frame(CFA, -24)
+        CFI CFA R13+24
+//   78 
+//   79 	//---------------------
+//   80 	log("ReadWrite");
+        LDR      R7,??ReadWrite_1  ;; `?<Constant "dll->png_read_image(p...">`
+        SUB      SP,SP,#+92
+        CFI CFA R13+116
+        MOV      R4,R0
+        MOV      R8,R1
+        MOV      R5,R2
+        ADD      R0,R7,#+448
+        BL       ??log
+//   81   //---------------------
+//   82 //------------------------------------------------  
+//   83   png_uint_32 width, height;
+//   84   int bit_depth, color_type, interlace_type;
+//   85   int compression_type, filter_method;
+//   86 
+//   87   FSTAT _fstat_0;
+//   88   if (fstat(GetDir(DIR_DLL),L"pnglib.dll",&_fstat_0)!=-1)
+        MOV      R0,#+24
+        SWI      +261
+        ADD      R2,SP,#+36
+        ADD      R1,R7,#+460
+        SWI      +284
+        CMN      R0,#+1
+        BEQ      ??ReadWrite_2
+//   89   {
+//   90     dll = (pnglib_dll_t *)LoadDLL(PNG_DLL_FILE_NAME);
+        LDR      R6,??ReadWrite_1+0x4  ;; y
+        LDR      R0,??ReadWrite_1+0x8  ;; `?<Constant "dll->png_read_image(p...">` + 460
+        SWI      +270
+        STR      R0,[R6, #+4]
+//   91     if (!dll)  return 9;
+        CMP      R0,#+0
+        MOVEQ    R0,#+9
+        BEQ      ??ReadWrite_3
+//   92   }
+//   93   
+//   94   //------------------------------------------------
+//   95 	//---------------------
+//   96 	log("pnglib.dll");
+??ReadWrite_2:
+        LDR      R0,??ReadWrite_1+0xC  ;; `?<Constant "dll->png_read_image(p...">` + 484
+        BL       ??log
+//   97   //---------------------
+//   98 //------------------------------------------------
+//   99 
+//  100   int fpIn;
+//  101   int fpOut;
+//  102 
+//  103 
+//  104   FSTAT _fstat;
+//  105   //wchar_t path_card[256];
+//  106   //wstrcpy(path_card,GetDir(DIR_OTHER | MEM_EXTERNAL));
+//  107   //wstrcat(path_card,L"/test");
+//  108   if (fstat( fpath, fname, &_fstat)!=-1)
+        ADD      R2,SP,#+64
+        MOV      R1,R8
+        MOV      R0,R4
+        SWI      +284
+        CMN      R0,#+1
+        BEQ      ??ReadWrite_4
+//  109   {
+//  110     if (!((fpIn=_fopen(fpath, fname, WA_Read, 0x1FF,0))>=0))
+        MOV      R0,#+0
+        PUSH     {R0}
+        CFI CFA R13+120
+        MOV      R3,#+255
+        ORR      R3,R3,#0x100
+        MOV      R2,#+1
+        MOV      R1,R8
+        MOV      R0,R4
+        SWI      +278
+        STR      R0,[SP, #+12]
+        CMP      R0,#+0
+        ADD      SP,SP,#+4
+        CFI CFA R13+116
+        BPL      ??ReadWrite_5
+//  111         return 1;
+??ReadWrite_4:
+        MOV      R0,#+1
+        B        ??ReadWrite_6
+//  112   }
+//  113   else
+//  114     return 1;
+//  115     
+//  116 	//---------------------
+//  117 	log("fpIn=_fopen");
+//  118   //---------------------
+//  119   
+//  120   png_read_ptr = dll->png_create_read_struct_2(PNG_LIBPNG_VER_STRING,
+//  121         (png_voidp)0, 0, 0, (png_voidp)0, NULL, NULL);
+??ReadWrite_5:
+        LDR      R6,??ReadWrite_1+0x4  ;; y
+        ADD      R0,R7,#+496
+        BL       ??log
+        MOV      R0,#+0
+        PUSH     {R0}
+        CFI CFA R13+120
+        PUSH     {R0}
+        CFI CFA R13+124
+        PUSH     {R0}
+        CFI CFA R13+128
+        MOV      R2,R0
+        MOV      R1,R0
+        MOV      R3,#+0
+        ADD      R0,R7,#+508
+        LDR      R7,[R6, #+4]
+        LDR      R7,[R7, #+12]
+        BLX      R7
+        STR      R0,[R6, #+8]
+//  122   if (png_read_ptr == NULL)
+        CMP      R0,#+0
+        ADD      SP,SP,#+12
+        CFI CFA R13+116
+//  123       return 3;
+        MOVEQ    R0,#+3
+        BEQ      ??ReadWrite_3
+//  124   //---------------------
+//  125 	log("dll->png_create_read_struct_2");
+        LDR      R7,??ReadWrite_1  ;; `?<Constant "dll->png_read_image(p...">`
+        ADD      R0,R7,#+516
+        BL       ??log
+//  126   //---------------------
+//  127   info_read_ptr = dll->png_create_info_struct(png_read_ptr);
+        LDR      R0,[R6, #+8]
+        LDR      R1,[R6, #+4]
+        LDR      R1,[R1, #+20]
+        BLX      R1
+        STR      R0,[R6, #+12]
+//  128   //---------------------
+//  129 	log("dll->png_create_info_struct");
+        ADD      R0,R7,#+548
+        BL       ??log
+//  130   //---------------------
+//  131   
+//  132   if (info_read_ptr == NULL)
+        LDR      R0,[R6, #+12]
+        CMP      R0,#+0
+        BNE      ??ReadWrite_7
+//  133   {
+//  134     fclose(fpIn);
+        LDR      R0,[SP, #+8]
+        SWI      +279
+//  135     dll->png_destroy_read_struct(&png_read_ptr, 0, 0 );
+        LDR      R3,[R6, #+4]
+        MOV      R2,#+0
+        LDR      R3,[R3, #+72]
+        MOV      R1,#+0
+        ADD      R0,R6,#+8
+        BLX      R3
+//  136     //---------------------
+//  137   	log("dll->png_destroy_read_struct");
+        LDR      R0,??ReadWrite_1+0x10  ;; `?<Constant "dll->png_read_image(p...">` + 576
+        BL       ??log
+//  138     //---------------------
+//  139     return 4;
+        MOV      R0,#+4
+??ReadWrite_6:
+        ADD      SP,SP,#+92
+        CFI CFA R13+24
+        POP      {R4-R8,PC}
+        CFI CFA R13+116
+//  140   }
+//  141    
+//  142 
+//  143   dll->png_set_read_fn(png_read_ptr, &fpIn, (png_rw_ptr)png_user_read );
+??ReadWrite_7:
+        LDR      R3,[R6, #+4]
+        LDR      R2,??ReadWrite_1+0x14  ;; ??png_user_read
+        LDR      R0,[R6, #+8]
+        LDR      R3,[R3, #+24]
+        ADD      R1,SP,#+8
+        BLX      R3
+//  144   //---------------------
+//  145 	log("dll->png_set_read_fn(png_read_ptr...");
+        ADD      R0,R7,#+608
+        BL       ??log
+//  146   //---------------------
+//  147  
+//  148   dll->png_read_info(png_read_ptr, info_read_ptr);
+        LDR      R2,[R6, #+4]
+        LDR      R1,[R6, #+12]
+        LDR      R0,[R6, #+8]
+        LDR      R2,[R2, #+32]
+        BLX      R2
+//  149   //---------------------
+//  150 	log("dll->png_read_info(png_read_ptr, info_read_ptr)");
+        ADD      R0,R7,#+648
+        BL       ??log
+//  151   //---------------------
+//  152 
+//  153   dll->png_get_IHDR(png_read_ptr, info_read_ptr, &width, &height, &bit_depth,
+//  154   	                 &color_type, &interlace_type, &compression_type, &filter_method);
+        ADD      R0,SP,#+32
+        PUSH     {R0}
+        CFI CFA R13+120
+        ADD      R0,SP,#+32
+        PUSH     {R0}
+        CFI CFA R13+124
+        ADD      R0,SP,#+32
+        PUSH     {R0}
+        CFI CFA R13+128
+        ADD      R0,SP,#+32
+        PUSH     {R0}
+        CFI CFA R13+132
+        ADD      R0,SP,#+32
+        PUSH     {R0}
+        CFI CFA R13+136
+        LDR      R8,[R6, #+4]
+        LDR      R1,[R6, #+12]
+        LDR      R8,[R8, #+36]
+        LDR      R0,[R6, #+8]
+        ADD      R3,SP,#+20
+        ADD      R2,SP,#+32
+        BLX      R8
+//  155   	                 
+//  156   //---------------------
+//  157 	log("dll->png_get_IHDR(png_read_ptr...");
+        ADD      R0,R7,#+696
+        BL       ??log
+//  158   //---------------------
+//  159 
+//  160   row_pointers = (png_bytep*) malloc(sizeof(png_bytep) * height);
+        LDR      R0,[SP, #+20]
+        LSL      R0,R0,#+2
+        SWI      +259
+        STR      R0,[R6, #+24]
+//  161   for (y=0; y<height; y++)
+        MOV      R0,#+0
+        STR      R0,[R6, #+0]
+        LDR      R0,[SP, #+20]
+        ADD      SP,SP,#+20
+        CFI CFA R13+116
+        CMP      R0,#+0
+        BNE      ??ReadWrite_8
+        B        ??ReadWrite_9
+//  162       row_pointers[y] = (png_byte*) malloc(dll->png_get_rowbytes(png_read_ptr,info_read_ptr));
+??ReadWrite_10:
+        LDR      R2,[R6, #+4]
+        LDR      R1,[R6, #+12]
+        LDR      R0,[R6, #+8]
+        LDR      R2,[R2, #+64]
+        BLX      R2
+        SWI      +259
+        LDR      R1,[R6, #+0]
+        LDR      R2,[R6, #+24]
+        STR      R0,[R2, +R1, LSL #+2]
+        LDR      R0,[R6, #+0]
+        ADD      R0,R0,#+1
+        STR      R0,[R6, #+0]
+??ReadWrite_8:
+        LDR      R0,??ReadWrite_1+0x4  ;; y
+        LDR      R1,[SP, #+0]
+        LDR      R0,[R0, #+0]
+        CMP      R0,R1
+        BCC      ??ReadWrite_10
+//  163        
+//  164   //---------------------
+//  165 	log("row_pointers = (png_bytep*) malloc(...");
+??ReadWrite_9:
+        ADD      R0,R7,#+732
+        BL       ??log
+//  166   //---------------------  
+//  167 
+//  168   dll->png_read_image(png_read_ptr, row_pointers);
+        LDR      R2,[R6, #+4]
+        LDR      R1,[R6, #+24]
+        LDR      R0,[R6, #+8]
+        LDR      R2,[R2, #+68]
+        BLX      R2
+//  169   //---------------------
+//  170 	log("dll->png_read_image(png_read_ptr...");
+        MOV      R0,R7
+        BL       ??log
+//  171   //---------------------
+//  172 
+//  173   // освобождаем память выделенную для библиотеки libpng
+//  174   dll->png_destroy_read_struct(&png_read_ptr, 0, 0);
+        LDR      R3,[R6, #+4]
+        MOV      R2,#+0
+        LDR      R3,[R3, #+72]
+        MOV      R1,#+0
+        ADD      R0,R6,#+8
+        BLX      R3
+//  175   //---------------------
+//  176 	log("dll->png_destroy_read_struct(&png_read_ptr...");
+        ADD      R0,R7,#+36
+        BL       ??log
+//  177   //---------------------
+//  178   
+//  179   fclose(fpIn);
+        LDR      R0,[SP, #+8]
+        SWI      +279
+//  180 
+//  181 
+//  182   /*------ Запись png-файла -----*/
+//  183 
+//  184  
+//  185   if (!((fpOut=_fopen(fpath, fname2, WA_Create+WA_Write, 0x1FF ,0))>=0))
+        MOV      R0,#+0
+        PUSH     {R0}
+        CFI CFA R13+120
+        MOV      R3,#+255
+        ORR      R3,R3,#0x100
+        MOV      R2,#+10
+        MOV      R1,R5
+        MOV      R0,R4
+        SWI      +278
+        STR      R0,[SP, #+8]
+        CMP      R0,#+0
+        ADD      SP,SP,#+4
+        CFI CFA R13+116
+//  186         return 5;
+        MOVMI    R0,#+5
+        BMI      ??ReadWrite_3
+//  187         
+//  188   //---------------------
+//  189 	log("fpOut=_fopen");
+        ADD      R0,R7,#+84
+        BL       ??log
+//  190   //---------------------
+//  191 
+//  192   png_write_ptr = dll->png_create_write_struct_2(PNG_LIBPNG_VER_STRING,
+//  193                                    (png_voidp)0, 0, 0, (png_voidp)0, NULL, NULL);
+        MOV      R0,#+0
+        PUSH     {R0}
+        CFI CFA R13+120
+        PUSH     {R0}
+        CFI CFA R13+124
+        PUSH     {R0}
+        CFI CFA R13+128
+        LDR      R4,[R6, #+4]
+        MOV      R3,#+0
+        LDR      R4,[R4, #+76]
+        MOV      R2,R0
+        MOV      R1,R0
+        ADD      R0,R7,#+508
+        BLX      R4
+        STR      R0,[R6, #+16]
+//  194   //---------------------
+//  195 	log("png_write_ptr = dll->png_create_write_struct_2(PNG_LIB");
+        ADD      R0,R7,#+100
+        BL       ??log
+//  196   //---------------------
+//  197 
+//  198   if (png_write_ptr == NULL)
+        LDR      R0,[R6, #+16]
+        ADD      SP,SP,#+12
+        CFI CFA R13+116
+        CMP      R0,#+0
+        BNE      ??ReadWrite_11
+//  199   {
+//  200     fclose(fpOut);
+        LDR      R0,[SP, #+4]
+        SWI      +279
+//  201     //---------------------
+//  202 	  log("png_write_ptr == NULL");
+        LDR      R0,??ReadWrite_1+0x18  ;; `?<Constant "dll->png_read_image(p...">` + 156
+        BL       ??log
+//  203     //---------------------
+//  204     return 6;
+        MOV      R0,#+6
+        B        ??ReadWrite_6
+//  205   }
+//  206    
+//  207 
+//  208   info_write_ptr = dll->png_create_info_struct(png_write_ptr);
+??ReadWrite_11:
+        LDR      R1,[R6, #+4]
+        LDR      R1,[R1, #+20]
+        BLX      R1
+        STR      R0,[R6, #+20]
+//  209   if (info_write_ptr == NULL)
+        CMP      R0,#+0
+        BNE      ??ReadWrite_12
+//  210   {
+//  211     fclose(fpOut);
+        LDR      R0,[SP, #+4]
+        SWI      +279
+//  212     dll->png_destroy_read_struct(&png_write_ptr,  NULL, NULL);
+        LDR      R3,[R6, #+4]
+        MOV      R2,#+0
+        LDR      R3,[R3, #+72]
+        MOV      R1,#+0
+        ADD      R0,R6,#+16
+        BLX      R3
+//  213     //---------------------
+//  214 	  log("info_write_ptr == NULL)..");
+        LDR      R0,??ReadWrite_1+0x1C  ;; `?<Constant "dll->png_read_image(p...">` + 420
+        BL       ??log
+//  215     //---------------------
+//  216     return 7;
+        MOV      R0,#+7
+        B        ??ReadWrite_6
+//  217   }
+//  218   
+//  219   dll->png_set_write_fn(png_write_ptr, &fpOut, (png_rw_ptr)png_user_write, NULL);
+??ReadWrite_12:
+        LDR      R4,[R6, #+4]
+        LDR      R2,??ReadWrite_1+0x20  ;; ??png_user_write
+        LDR      R0,[R6, #+16]
+        LDR      R4,[R4, #+92]
+        MOV      R3,#+0
+        ADD      R1,SP,#+4
+        BLX      R4
+//  220   //---------------------
+//  221 	log("dll->png_set_write_fn(png_write_ptr...");
+        ADD      R0,R7,#+180
+        BL       ??log
+//  222   //---------------------
+//  223 
+//  224   
+//  225   dll->png_set_IHDR(png_write_ptr, info_write_ptr, width, height, bit_depth,
+//  226 	                  color_type, interlace_type, compression_type, filter_method);
+        LDR      R0,[SP, #+32]
+        PUSH     {R0}
+        CFI CFA R13+120
+        LDR      R0,[SP, #+32]
+        PUSH     {R0}
+        CFI CFA R13+124
+        LDR      R0,[SP, #+32]
+        PUSH     {R0}
+        CFI CFA R13+128
+        LDR      R0,[SP, #+32]
+        PUSH     {R0}
+        CFI CFA R13+132
+        LDR      R0,[SP, #+32]
+        PUSH     {R0}
+        CFI CFA R13+136
+        LDR      R4,[R6, #+4]
+        LDR      R3,[SP, #+20]
+        LDR      R2,[SP, #+32]
+        LDR      R1,[R6, #+20]
+        LDR      R0,[R6, #+16]
+        LDR      R4,[R4, #+96]
+        BLX      R4
+//  227 	//---------------------
+//  228 	log("dll->png_set_IHDR(png_write_ptr...");
+        ADD      R0,R7,#+220
+        BL       ??log
+//  229   //---------------------
+//  230 
+//  231   dll->png_write_info(png_write_ptr, info_write_ptr);
+        LDR      R2,[R6, #+4]
+        LDR      R1,[R6, #+20]
+        LDR      R0,[R6, #+16]
+        LDR      R2,[R2, #+104]
+//  232   //---------------------
+//  233 	log("dll->png_write_info(png_writ...");
+//  234   //---------------------
+//  235 
+//  236 
+//  237   // write bytes 
+//  238 
+//  239   for(unsigned int i = 0; i < height; i++) // (unsigned int i = height; i > 0; --i)
+        MOV      R4,#+0
+        BLX      R2
+        ADD      R0,R7,#+256
+        BL       ??log
+        LDR      R0,[SP, #+20]
+        ADD      SP,SP,#+20
+        CFI CFA R13+116
+        CMP      R0,#+0
+        BNE      ??ReadWrite_13
+        B        ??ReadWrite_14
+//  240   {
+//  241     dll->png_write_row(png_write_ptr, row_pointers[i]);
+??ReadWrite_15:
+        LDR      R0,[R6, #+24]
+        LDR      R2,[R6, #+4]
+        LDR      R1,[R0, +R4, LSL #+2]
+        LDR      R0,[R6, #+16]
+        LDR      R2,[R2, #+108]
+//  242   }
+        ADD      R4,R4,#+1
+        BLX      R2
+??ReadWrite_13:
+        LDR      R0,[SP, #+0]
+        CMP      R4,R0
+        BCC      ??ReadWrite_15
+//  243   //---------------------
+//  244 	log("(unsigned int i = height; i > 0; --i)");
+??ReadWrite_14:
+        ADD      R0,R7,#+288
+        BL       ??log
+//  245   //---------------------
+//  246   
+//  247   dll->png_write_end(png_write_ptr, info_write_ptr);
+        LDR      R2,[R6, #+4]
+        LDR      R1,[R6, #+20]
+        LDR      R0,[R6, #+16]
+        LDR      R2,[R2, #+112]
+//  248   //---------------------
+//  249 	log("dll->png_write_end(png_write_ptr, info_write_ptr);");
+//  250   //---------------------
+//  251      
+//  252   
+//  253   /* cleanup heap allocation */
+//  254   for(int i=0; i<height; i++) //(y=height; y > 0; --y)
+        MOV      R4,#+0
+        BLX      R2
+        ADD      R0,R7,#+328
+        BL       ??log
+        LDR      R0,[SP, #+0]
+        CMP      R0,#+0
+        BNE      ??ReadWrite_16
+        B        ??ReadWrite_17
+//  255     mfree(row_pointers[i]);
+??ReadWrite_18:
+        LDR      R0,??ReadWrite_1+0x24  ;; y + 24
+        LDR      R0,[R0, #+0]
+        LDR      R0,[R0, +R4, LSL #+2]
+        ADD      R4,R4,#+1
+        SWI      +260
+??ReadWrite_16:
+        LDR      R0,[SP, #+0]
+        CMP      R4,R0
+        BCC      ??ReadWrite_18
+//  256   mfree(row_pointers);
+??ReadWrite_17:
+        LDR      R0,[R6, #+24]
+        SWI      +260
+//  257   //---------------------
+//  258 //	log("mfree(row_pointers);");
+//  259   //---------------------
+//  260 
+//  261   dll->png_destroy_write_struct(&png_write_ptr, &info_write_ptr);
+        LDR      R2,[R6, #+4]
+        ADD      R1,R6,#+20
+        LDR      R2,[R2, #+88]
+        ADD      R0,R6,#+16
+        BLX      R2
+//  262   //---------------------
+//  263 	log("dll->png_destroy_write_struct(&png...");
+        LDR      R0,??ReadWrite_1+0x28  ;; `?<Constant "dll->png_read_image(p...">` + 380
+        BL       ??log
+//  264   //---------------------
+//  265   
+//  266   fclose(fpOut);
+        LDR      R0,[SP, #+4]
+        SWI      +279
+//  267  
+//  268   if(dll)
+        LDR      R0,[R6, #+4]
+        CMP      R0,#+0
+        BEQ      ??ReadWrite_3
+//  269     UnLoadDLL(dll);
+        LDR      R0,??ReadWrite_1+0x2C  ;; y + 4
+        LDR      R0,[R0, #+0]
+        SWI      +271
+//  270 
+//  271   return 0;
+        MOV      R0,#+0
+??ReadWrite_3:
+        ADD      SP,SP,#+92       ;; stack cleaning
+        CFI CFA R13+24
+        POP      {R4-R8,PC}       ;; return
+        DATA
+??ReadWrite_1:
+        DC32     `?<Constant "dll->png_read_image(p...">`
+        DC32     y
+        DC32     `?<Constant "dll->png_read_image(p...">` + 460
+        DC32     `?<Constant "dll->png_read_image(p...">` + 484
+        DC32     `?<Constant "dll->png_read_image(p...">` + 576
+        DC32     ??png_user_read
+        DC32     `?<Constant "dll->png_read_image(p...">` + 156
+        DC32     `?<Constant "dll->png_read_image(p...">` + 420
+        DC32     ??png_user_write
+        DC32     y + 24
+        DC32     `?<Constant "dll->png_read_image(p...">` + 380
+        DC32     y + 4
+        CFI EndBlock cfiBlock11
+//  272  }
+
+        RSEG CODE:CODE:NOROOT(2)
+        CFI Block cfiBlock12 Using cfiCommon1
+        CFI NoFunction
+        ARM
+??kill_data??rA:
+        LDR      R12,??Subroutine6_0  ;; kill_data
+        BX       R12
+        DATA
+??Subroutine6_0:
+        DC32     kill_data
+        CFI EndBlock cfiBlock12
+
+        RSEG INITTAB:CODE:ROOT(2)
+        DATA
+?init?tab?DATA_Z:
+        DCD      sfe(DATA_Z) - sfb(DATA_Z), sfb(DATA_Z), sfb(DATA_Z)
+
+        RSEG DATA_C:CONST:SORT:NOROOT(2)
+`?<Constant "\\n---------------\\n %s">`:
+        DATA
+        DC8 "\012---------------\012 %s"
+        DC8 0, 0, 0
+        DC8 63H, 0, 61H, 0, 72H, 0, 64H, 0
+        DC8 2FH, 0, 74H, 0, 65H, 0, 73H, 0
+        DC8 74H, 0, 2FH, 0, 70H, 0, 6EH, 0
+        DC8 67H, 0, 2FH, 0, 4CH, 0, 6FH, 0
+        DC8 67H, 0, 2EH, 0, 74H, 0, 78H, 0
+        DC8 74H, 0, 0, 0
+
+        RSEG DATA_C:CONST:SORT:NOROOT(2)
+`?<Constant "dll->png_read_image(p...">`:
+        DATA
+        DC8 "dll->png_read_image(png_read_ptr..."
+        DC8 "dll->png_destroy_read_struct(&png_read_ptr..."
+        DC8 0, 0
+        DC8 "fpOut=_fopen"
+        DC8 0, 0, 0
+        DC8 70H, 6EH, 67H, 5FH, 77H, 72H, 69H, 74H
+        DC8 65H, 5FH, 70H, 74H, 72H, 20H, 3DH, 20H
+        DC8 64H, 6CH, 6CH, 2DH, 3EH, 70H, 6EH, 67H
+        DC8 5FH, 63H, 72H, 65H, 61H, 74H, 65H, 5FH
+        DC8 77H, 72H, 69H, 74H, 65H, 5FH, 73H, 74H
+        DC8 72H, 75H, 63H, 74H, 5FH, 32H, 28H, 50H
+        DC8 4EH, 47H, 5FH, 4CH, 49H, 42H, 0
+        DC8 0
+        DC8 "png_write_ptr == NULL"
+        DC8 0, 0
+        DC8 "dll->png_set_write_fn(png_write_ptr..."
+        DC8 0
+        DC8 "dll->png_set_IHDR(png_write_ptr..."
+        DC8 0
+        DC8 "dll->png_write_info(png_writ..."
+        DC8 "(unsigned int i = height; i > 0; --i)"
+        DC8 0, 0
+        DC8 64H, 6CH, 6CH, 2DH, 3EH, 70H, 6EH, 67H
+        DC8 5FH, 77H, 72H, 69H, 74H, 65H, 5FH, 65H
+        DC8 6EH, 64H, 28H, 70H, 6EH, 67H, 5FH, 77H
+        DC8 72H, 69H, 74H, 65H, 5FH, 70H, 74H, 72H
+        DC8 2CH, 20H, 69H, 6EH, 66H, 6FH, 5FH, 77H
+        DC8 72H, 69H, 74H, 65H, 5FH, 70H, 74H, 72H
+        DC8 29H, 3BH, 0
+        DC8 0
+        DC8 "dll->png_destroy_write_struct(&png..."
+        DC8 0, 0
+        DC8 "info_write_ptr == NULL).."
+        DC8 0, 0
+        DC8 "ReadWrite"
+        DC8 0, 0
+        DC8 70H, 0, 6EH, 0, 67H, 0, 6CH, 0
+        DC8 69H, 0, 62H, 0, 2EH, 0, 64H, 0
+        DC8 6CH, 0, 6CH, 0, 0, 0
+        DC8 0, 0
+        DC8 "pnglib.dll"
+        DC8 0
+        DC8 "fpIn=_fopen"
+        DC8 "1.4.2"
+        DC8 0, 0
+        DC8 "dll->png_create_read_struct_2"
+        DC8 0, 0
+        DC8 "dll->png_create_info_struct"
+        DC8 "dll->png_destroy_read_struct"
+        DC8 0, 0, 0
+        DC8 "dll->png_set_read_fn(png_read_ptr..."
+        DC8 0, 0, 0
+        DC8 "dll->png_read_info(png_read_ptr, info_read_ptr)"
+        DC8 "dll->png_get_IHDR(png_read_ptr..."
+        DC8 0, 0
+        DC8 "row_pointers = (png_bytep*) malloc(..."
+        DC8 0
+
+        RSEG DATA_C:CONST:SORT:NOROOT(2)
+`?<Constant L"\\x74\\x65\\x73\\x74\\x5f\\x69\\x6e\\x70\\`:
+        DATA
+        DC8 74H, 0, 65H, 0, 73H, 0, 74H, 0
+        DC8 5FH, 0, 69H, 0, 6EH, 0, 70H, 0
+        DC8 75H, 0, 74H, 0, 2EH, 0, 70H, 0
+        DC8 6EH, 0, 67H, 0, 0, 0
+        DC8 0, 0
+        DC8 "\012---------------\012 main"
+        DC8 0
+        DC8 50H, 0, 4EH, 0, 47H, 0, 20H, 0
+        DC8 66H, 0, 69H, 0, 6CH, 0, 65H, 0
+        DC8 20H, 0, 63H, 0, 6FH, 0, 6EH, 0
+        DC8 76H, 0, 65H, 0, 72H, 0, 74H, 0
+        DC8 0AH, 0, 45H, 0, 52H, 0, 52H, 0
+        DC8 4FH, 0, 52H, 0, 21H, 0, 21H, 0
+        DC8 21H, 0, 0AH, 0, 20H, 0, 3DH, 4
+        DC8 35H, 4, 42H, 4, 20H, 0, 32H, 4
+        DC8 45H, 4, 3EH, 4, 34H, 4, 3DH, 4
+        DC8 3EH, 4, 33H, 4, 3EH, 4, 20H, 0
+        DC8 44H, 4, 30H, 4, 39H, 4, 3BH, 4
+        DC8 30H, 4, 0, 0
+        DC8 50H, 0, 4EH, 0, 47H, 0, 20H, 0
+        DC8 66H, 0, 69H, 0, 6CH, 0, 65H, 0
+        DC8 20H, 0, 63H, 0, 6FH, 0, 6EH, 0
+        DC8 76H, 0, 65H, 0, 72H, 0, 74H, 0
+        DC8 0AH, 0, 45H, 0, 52H, 0, 52H, 0
+        DC8 4FH, 0, 52H, 0, 21H, 0, 21H, 0
+        DC8 21H, 0, 0AH, 0, 20H, 0, 4DH, 4
+        DC8 42H, 4, 3EH, 4, 20H, 0, 3DH, 4
+        DC8 35H, 4, 20H, 0, 70H, 0, 6EH, 0
+        DC8 67H, 0, 0, 0
+        DC8 50H, 0, 4EH, 0, 47H, 0, 20H, 0
+        DC8 66H, 0, 69H, 0, 6CH, 0, 65H, 0
+        DC8 20H, 0, 63H, 0, 6FH, 0, 6EH, 0
+        DC8 76H, 0, 65H, 0, 72H, 0, 74H, 0
+        DC8 0AH, 0, 45H, 0, 52H, 0, 52H, 0
+        DC8 4FH, 0, 52H, 0, 21H, 0, 21H, 0
+        DC8 21H, 0, 0AH, 0, 20H, 0, 3DH, 4
+        DC8 35H, 4, 42H, 4, 20H, 0, 41H, 4
+        DC8 42H, 4, 40H, 4, 43H, 4, 3AH, 4
+        DC8 42H, 4, 43H, 4, 40H, 4, 4BH, 4
+        DC8 20H, 0, 72H, 0, 65H, 0, 65H, 0
+        DC8 64H, 0, 0, 0
+        DC8 50H, 0, 4EH, 0, 47H, 0, 20H, 0
+        DC8 66H, 0, 69H, 0, 6CH, 0, 65H, 0
+        DC8 20H, 0, 63H, 0, 6FH, 0, 6EH, 0
+        DC8 76H, 0, 65H, 0, 72H, 0, 74H, 0
+        DC8 0AH, 0, 45H, 0, 52H, 0, 52H, 0
+        DC8 4FH, 0, 52H, 0, 21H, 0, 21H, 0
+        DC8 21H, 0, 0AH, 0, 20H, 0, 3DH, 4
+        DC8 35H, 4, 42H, 4, 20H, 0, 41H, 4
+        DC8 42H, 4, 40H, 4, 43H, 4, 3AH, 4
+        DC8 42H, 4, 43H, 4, 40H, 4, 4BH, 4
+        DC8 20H, 0, 72H, 0, 65H, 0, 65H, 0
+        DC8 64H, 0, 20H, 0, 69H, 0, 6EH, 0
+        DC8 66H, 0, 0, 0
+        DC8 50H, 0, 4EH, 0, 47H, 0, 20H, 0
+        DC8 66H, 0, 69H, 0, 6CH, 0, 65H, 0
+        DC8 20H, 0, 63H, 0, 6FH, 0, 6EH, 0
+        DC8 76H, 0, 65H, 0, 72H, 0, 74H, 0
+        DC8 0AH, 0, 45H, 0, 52H, 0, 52H, 0
+        DC8 4FH, 0, 52H, 0, 21H, 0, 21H, 0
+        DC8 21H, 0, 0AH, 0, 20H, 0, 3DH, 4
+        DC8 35H, 4, 42H, 4, 20H, 0, 32H, 4
+        DC8 4BH, 4, 45H, 4, 3EH, 4, 34H, 4
+        DC8 3DH, 4, 3EH, 4, 33H, 4, 3EH, 4
+        DC8 20H, 0, 44H, 4, 30H, 4, 39H, 4
+        DC8 3BH, 4, 30H, 4, 0, 0
+        DC8 0, 0
+        DC8 50H, 0, 4EH, 0, 47H, 0, 20H, 0
+        DC8 66H, 0, 69H, 0, 6CH, 0, 65H, 0
+        DC8 20H, 0, 63H, 0, 6FH, 0, 6EH, 0
+        DC8 76H, 0, 65H, 0, 72H, 0, 74H, 0
+        DC8 0AH, 0, 45H, 0, 52H, 0, 52H, 0
+        DC8 4FH, 0, 52H, 0, 21H, 0, 21H, 0
+        DC8 21H, 0, 0AH, 0, 20H, 0, 3DH, 4
+        DC8 35H, 4, 42H, 4, 20H, 0, 41H, 4
+        DC8 42H, 4, 40H, 4, 43H, 4, 3AH, 4
+        DC8 42H, 4, 43H, 4, 40H, 4, 4BH, 4
+        DC8 20H, 0, 77H, 0, 72H, 0, 69H, 0
+        DC8 74H, 0, 65H, 0, 0, 0
+        DC8 0, 0
+        DC8 50H, 0, 4EH, 0, 47H, 0, 20H, 0
+        DC8 66H, 0, 69H, 0, 6CH, 0, 65H, 0
+        DC8 20H, 0, 63H, 0, 6FH, 0, 6EH, 0
+        DC8 76H, 0, 65H, 0, 72H, 0, 74H, 0
+        DC8 0AH, 0, 45H, 0, 52H, 0, 52H, 0
+        DC8 4FH, 0, 52H, 0, 21H, 0, 21H, 0
+        DC8 21H, 0, 0AH, 0, 20H, 0, 3DH, 4
+        DC8 35H, 4, 42H, 4, 20H, 0, 41H, 4
+        DC8 35H, 4, 2EH, 0, 20H, 0, 77H, 0
+        DC8 72H, 0, 2EH, 0, 20H, 0, 69H, 0
+        DC8 6EH, 0, 66H, 0, 0, 0
+        DC8 0, 0
+        DC8 50H, 0, 4EH, 0, 47H, 0, 20H, 0
+        DC8 66H, 0, 69H, 0, 6CH, 0, 65H, 0
+        DC8 20H, 0, 63H, 0, 6FH, 0, 6EH, 0
+        DC8 76H, 0, 65H, 0, 72H, 0, 74H, 0
+        DC8 0AH, 0, 45H, 0, 52H, 0, 52H, 0
+        DC8 4FH, 0, 52H, 0, 21H, 0, 21H, 0
+        DC8 21H, 0, 0AH, 0, 20H, 0, 3DH, 4
+        DC8 35H, 4, 42H, 4, 20H, 0, 44H, 0
+        DC8 4CH, 0, 4CH, 0, 0, 0
+        DC8 0, 0
+        DC8 50H, 0, 4EH, 0, 47H, 0, 20H, 0
+        DC8 66H, 0, 69H, 0, 6CH, 0, 65H, 0
+        DC8 20H, 0, 63H, 0, 6FH, 0, 6EH, 0
+        DC8 76H, 0, 65H, 0, 72H, 0, 74H, 0
+        DC8 20H, 0, 6FH, 0, 6BH, 0, 0, 0
+        DC8 63H, 0, 61H, 0, 72H, 0, 64H, 0
+        DC8 2FH, 0, 74H, 0, 65H, 0, 73H, 0
+        DC8 74H, 0, 2FH, 0, 70H, 0, 6EH, 0
+        DC8 67H, 0, 2FH, 0, 0, 0
+        DC8 0, 0
+        DC8 74H, 0, 65H, 0, 73H, 0, 74H, 0
+        DC8 5FH, 0, 6FH, 0, 75H, 0, 74H, 0
+        DC8 70H, 0, 75H, 0, 74H, 0, 2EH, 0
+        DC8 70H, 0, 6EH, 0, 67H, 0, 0, 0
+
+        RSEG DATA_C:CONST:SORT:NOROOT(2)
+`?<Constant "png_user_write">`:
+        DATA
+        DC8 "png_user_write"
+        DC8 0
+
+        END
+//  273 
+//  274 
+// 
+// 2 004 bytes in segment CODE
+// 1 728 bytes in segment DATA_C
+//    42 bytes in segment DATA_Z
+//    12 bytes in segment INITTAB
+// 
+// 1 968 bytes of CODE  memory (+ 48 bytes shared)
+// 1 728 bytes of CONST memory
+//    42 bytes of DATA  memory
+//
+//Errors: none
+//Warnings: none

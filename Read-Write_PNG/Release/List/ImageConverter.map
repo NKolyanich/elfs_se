@@ -1,0 +1,225 @@
+################################################################################
+#                                                                              #
+#      IAR Universal Linker V4.60I/386                                         #
+#                                                                              #
+#           Link time     =  15/Jan/2013  18:36:38                             #
+#           Target CPU    =  ARM                                               #
+#           List file     =  "C:\Embedded Workbench 4.0 Evaluation\Project\Rea #
+#                            d-Write_PNG\Release\List\ImageConverter.map"      #
+#           Output file 1 =  "C:\Embedded Workbench 4.0 Evaluation\Project\Rea #
+#                            d-Write_PNG\Release\Exe\ImageConverter.elf"       #
+#                            Format: elf, variant: -ynpra                      #
+#           Command line  =  "C:\Embedded Workbench 4.0 Evaluation\Project\Rea #
+#                            d-Write_PNG\Release\Obj\_cpp2.r79"                #
+#                            "C:\Embedded Workbench 4.0 Evaluation\Project\Rea #
+#                            d-Write_PNG\Release\Obj\func.r79"                 #
+#                            "C:\Embedded Workbench 4.0 Evaluation\Project\Rea #
+#                            d-Write_PNG\Release\Obj\main.r79"                 #
+#                            -o                                                #
+#                            "C:\Embedded Workbench 4.0 Evaluation\Project\Rea #
+#                            d-Write_PNG\Release\Exe\ImageConverter.elf"       #
+#                            -Felf -l                                          #
+#                            "C:\Embedded Workbench 4.0 Evaluation\Project\Rea #
+#                            d-Write_PNG\Release\List\ImageConverter.map"      #
+#                            -xms                                              #
+#                            "-IC:\Embedded Workbench 4.0 Evaluation\ARM\LIB\" #
+#                            -f                                                #
+#                            "C:\Embedded Workbench 4.0 Evaluation\Project\Rea #
+#                            d-Write_PNG\..\include\1.xcl"                     #
+#                            (-carm -ynpra -V(CODE)CODE_AREA,12                #
+#                            -V(DATA)DATA_AREA,12                              #
+#                            -Z(CODE_AREA)ELFBEGIN,DATA_ID,START,CODE,DATA_C,I #
+#                            NITTAB,DATA_Z,DATA_N,CONFIG_C,DYN_CONST,DYN_CONST #
+#                            _DESC,DYN_PAGE,DYN_PAGE_DESC=0-FFFFFFFF           #
+#                            -Z(DATA_AREA)DATA_I=0-FFFFFFFF)                   #
+#                            "C:\Embedded Workbench 4.0 Evaluation\ARM\LIB\dl5 #
+#                            tpainl8n.r79"                                     #
+#                            -s main                                           #
+#                                                                              #
+#                        Copyright 1987-2007 IAR Systems. All rights reserved. #
+################################################################################
+
+
+
+
+
+                ****************************************
+                *                                      *
+                *           CROSS REFERENCE            *
+                *                                      *
+                ****************************************
+
+       Program entry at : CODE_AREA 0000004C  Relocatable, from module : main
+
+
+
+
+                ****************************************
+                *                                      *
+                *            RUNTIME MODEL             *
+                *                                      *
+                ****************************************
+
+  ARMv4M                 = USED
+  ARMv4T                 = USED
+  ARMv5T                 = USED
+  StackAlign4            = USED
+  __cpu_mode             = __pcs__interwork
+  __data_model           = absolute
+  __dlib_file_descriptor = 1
+  __endian               = little
+  __rt_version           = 6
+
+
+
+                ****************************************
+                *                                      *
+                *              MODULE MAP              *
+                *                                      *
+                ****************************************
+
+
+  DEFINED ABSOLUTE ENTRIES
+    *************************************************************************
+
+  DEFINED ABSOLUTE ENTRIES
+    *************************************************************************
+
+  FILE NAME : C:\Embedded Workbench 4.0 Evaluation\Project\Read-Write_PNG\Release\Obj\_cpp2.r79
+    *************************************************************************
+
+  FILE NAME : C:\Embedded Workbench 4.0 Evaluation\Project\Read-Write_PNG\Release\Obj\func.r79
+  PROGRAM MODULE, NAME : func
+
+  SEGMENTS IN THE MODULE
+  ======================
+ELFBEGIN
+  Relative segment, address: CODE_AREA 00000000, align: 0
+  Segment part 0. ROOT.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           ELF_BEGIN               00000000        elf_exit() (main)
+    -------------------------------------------------------------------------
+CODE
+  Relative segment, address: CODE_AREA 00000000 - 00000017 (0x18 bytes), align: 2
+  Segment part 1. ROOT.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           kill_data               00000000        elf_exit() (main)
+           seqkill                 00000004 
+           ASYNC                   00000014 
+           SYNC                    00000010 
+    -------------------------------------------------------------------------
+DYN_CONST_DESC
+  Relative segment, address: CODE_AREA 0000058C - 0000058F (0x4 bytes), align: 2
+  Segment part 681. ROOT.
+    -------------------------------------------------------------------------
+DYN_PAGE
+  Relative segment, address: CODE_AREA 00000590, align: 2
+  Segment part 682.
+    -------------------------------------------------------------------------
+DYN_PAGE_DESC
+  Relative segment, address: CODE_AREA 00000590 - 00000593 (0x4 bytes), align: 2
+  Segment part 683. ROOT.
+
+    *************************************************************************
+
+  FILE NAME : C:\Embedded Workbench 4.0 Evaluation\Project\Read-Write_PNG\Release\Obj\main.r79
+  PROGRAM MODULE, NAME : main
+
+  SEGMENTS IN THE MODULE
+  ======================
+CODE
+  Relative segment, address: CODE_AREA 00000018 - 00000033 (0x1c bytes), align: 2
+  Segment part 11.            Intra module refs:   main
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           elf_exit()              00000018 
+               stack 1 = 00000000 ( 00000004 )
+    -------------------------------------------------------------------------
+CODE
+  Relative segment, address: CODE_AREA 00000034 - 00000047 (0x14 bytes), align: 2
+  Segment part 15.            Intra module refs:   ReadWrite(wchar_t *, wchar_t *, wchar_t *)
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           png_user_write(png_structp, png_bytep, size_t)
+                                   00000034 
+               stack 1 = 00000000 ( 00000004 )
+    -------------------------------------------------------------------------
+CODE
+  Relative segment, address: CODE_AREA 00000048 - 0000004B (0x4 bytes), align: 2
+  Segment part 17.            Intra module refs:   ReadWrite(wchar_t *, wchar_t *, wchar_t *)
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           png_user_flush(png_structp)
+                                   00000048 
+    -------------------------------------------------------------------------
+CODE
+  Relative segment, address: CODE_AREA 0000004C - 000000F7 (0xac bytes), align: 2
+  Segment part 21.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           main                    0000004C        Absolute parts (?ABS_ENTRY_MOD)
+               stack 1 = 00000000 ( 00000010 )
+    -------------------------------------------------------------------------
+CODE
+  Relative segment, address: CODE_AREA 000000F8 - 0000048B (0x394 bytes), align: 2
+  Segment part 23.            Intra module refs:   main
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           ReadWrite(wchar_t *, wchar_t *, wchar_t *)
+                                   000000F8 
+               stack 1 = 00000000 ( 0000009C )
+    -------------------------------------------------------------------------
+INITTAB
+  Relative segment, address: CODE_AREA 00000580 - 0000058B (0xc bytes), align: 2
+  Segment part 25. ROOT.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           ?init?tab?DATA_Z        00000580 
+    -------------------------------------------------------------------------
+DATA_C
+  Relative segment, address: CODE_AREA 0000048C - 00000533 (0xa8 bytes), align: 2
+  Segment part 2.             Intra module refs:   main
+    -------------------------------------------------------------------------
+DATA_C
+  Relative segment, address: CODE_AREA 00000534 - 0000057F (0x4c bytes), align: 2
+  Segment part 3.             Intra module refs:   ReadWrite(wchar_t *, wchar_t *, wchar_t *)
+
+
+
+
+                ****************************************
+                *                                      *
+                *      SEGMENTS IN ADDRESS ORDER       *
+                *                                      *
+                ****************************************
+
+
+SEGMENT              SPACE    START ADDRESS   END ADDRESS     SIZE  TYPE  ALIGN
+=======              =====    =============   ===========     ====  ====  =====
+DATA_ID              CODE_AREA           00000000                     dse    0
+START                CODE_AREA           00000000                     dse    0
+ELFBEGIN             CODE_AREA           00000000                     rel    0
+CODE                 CODE_AREA      00000000 - 0000048B         48C   rel    2
+DATA_C               CODE_AREA      0000048C - 0000057F          F4   rel    2
+INITTAB              CODE_AREA      00000580 - 0000058B           C   rel    2
+DATA_Z               CODE_AREA           0000058C                     dse    0
+DATA_N               CODE_AREA           0000058C                     dse    0
+CONFIG_C             CODE_AREA           0000058C                     dse    0
+DYN_CONST            CODE_AREA           0000058C                     dse    0
+DYN_CONST_DESC       CODE_AREA      0000058C - 0000058F           4   rel    2
+DYN_PAGE             CODE_AREA           00000590                     rel    2
+DYN_PAGE_DESC        CODE_AREA      00000590 - 00000593           4   rel    2
+
+                ****************************************
+                *                                      *
+                *        END OF CROSS REFERENCE        *
+                *                                      *
+                ****************************************
+
+ 1 428 bytes of CODE memory
+
+Errors: none
+Warnings: none
+

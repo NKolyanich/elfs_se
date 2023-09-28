@@ -1,0 +1,128 @@
+##############################################################################
+#                                                                            #
+# IAR ARM ANSI C/C++ Compiler V4.42A/W32 EVALUATION    17/Jul/2011  00:28:56 #
+# Copyright 1999-2005 IAR Systems. All rights reserved.                      #
+#                                                                            #
+#    Cpu mode        =  interwork                                            #
+#    Endian          =  little                                               #
+#    Stack alignment =  4                                                    #
+#    Source file     =  C:\Embedded Workbench 4.0 Evaluation\Project\Hello   #
+#                       World\gui.c                                          #
+#    Command line    =  "C:\Embedded Workbench 4.0 Evaluation\Project\Hello  #
+#                       World\gui.c" -D NDEBUG -D OLDFUNCTIONS -lC           #
+#                       "C:\Embedded Workbench 4.0 Evaluation\Project\Hello  #
+#                       World\Release\List\" -lA "C:\Embedded Workbench 4.0  #
+#                       Evaluation\Project\Hello World\Release\List\" -o     #
+#                       "C:\Embedded Workbench 4.0 Evaluation\Project\Hello  #
+#                       World\Release\Obj\" -s9 --no_unroll --no_inline      #
+#                       --cpu_mode arm --endian little --cpu ARM926EJ-S      #
+#                       --stack_align 4 --interwork -e --fpu None --eec++    #
+#                       --dlib_config "C:\Embedded Workbench 4.0             #
+#                       Evaluation\ARM\LIB\dl5tpainl8n.h" -I "C:\Embedded    #
+#                       Workbench 4.0 Evaluation\ARM\INC\"                   #
+#    List file       =  C:\Embedded Workbench 4.0 Evaluation\Project\Hello   #
+#                       World\Release\List\gui.lst                           #
+#    Object file     =  C:\Embedded Workbench 4.0 Evaluation\Project\Hello   #
+#                       World\Release\Obj\gui.r79                            #
+#                                                                            #
+#                                                                            #
+##############################################################################
+
+C:\Embedded Workbench 4.0 Evaluation\Project\Hello World\gui.c
+      1          
+      2          #include "..\\\\include\\Lib_Clara.h"
+      3          #include "..\\\\include\\Dir.h"
+      4          #include "gui.h"
+
+  extern void GuiCreateGuiList(void * r0, BOOK * bk);
+                                                     ^
+"C:\Embedded Workbench 4.0 Evaluation\Project\Hello World\gui.h",7  Warning[Pe001]: 
+          last line of file ends without a newline
+      5          #define GUI_NAME L"Example"
+      6          
+      7          void GuiBack(BOOK *bk, void *lt)
+      8          {  
+      9            FreeBook((BOOK*)myBook);
+     10          }
+     11          
+     12          void GuiOnEnterPressed(BOOK *bk, void *lt)
+     13          {     
+     14            int item=ListMenu_GetSelectedItem(myBook->gui);
+     15            if(item==0)
+     16            {
+     17                MessageBox(0x6fFFFFFF,STR("Ёлемент 1"),0, 1 ,5000,0);
+     18            }
+     19            if(item==1)
+     20            {
+     21                MessageBox(0x6fFFFFFF,STR("Ёлемент 2"),0, 1 ,5000,0);
+     22            }
+     23          }
+     24          
+     25          int GuiOnLBMessage(GUI_MESSAGE * msg)
+     26          {
+     27            int item;  
+     28            switch(msg->msg)
+                               ^
+Error[Pe135]: class "GUI_MESSAGE" has no member "msg"
+     29            {    
+     30            case 1:
+     31              item=GUIonMessage_GetCreatedItemIndex(msg);    
+     32              if(item==0)    
+     33                SetMenuItemText0(msg,Str2ID(L"Ёлемент 1",0,SID_ANY_LEN));  
+                                                                  ^
+Error[Pe020]: identifier "SID_ANY_LEN" is undefined
+
+        SetMenuItemText0(msg,Str2ID(L"Ёлемент 1",0,SID_ANY_LEN));  
+                                                 ^
+"C:\Embedded Workbench 4.0 Evaluation\Project\Hello World\gui.c",33  Error[Pe167]: 
+          argument of type "int" is incompatible with parameter of type
+          "TEXT_ENCODING"
+     34              if(item==1)    
+     35                SetMenuItemText0(msg,Str2ID(L"Ёлемент 2",0,SID_ANY_LEN)); 
+                                                                  ^
+Error[Pe020]: identifier "SID_ANY_LEN" is undefined
+
+        SetMenuItemText0(msg,Str2ID(L"Ёлемент 2",0,SID_ANY_LEN)); 
+                                                 ^
+"C:\Embedded Workbench 4.0 Evaluation\Project\Hello World\gui.c",35  Error[Pe167]: 
+          argument of type "int" is incompatible with parameter of type
+          "TEXT_ENCODING"
+     36            }
+     37            return(1);
+     38          };
+     39          
+     40          void GuiCreateGuiList(void * r0, BOOK * bk)
+     41          {  
+     42            myBook->gui=CreateListObject(bk,0);
+     43            GuiObject_SetTitleText(myBook->gui,Str2ID(GUI_NAME,0,SID_ANY_LEN));
+                                                                        ^
+Error[Pe020]: identifier "SID_ANY_LEN" is undefined
+
+    GuiObject_SetTitleText(myBook->gui,Str2ID(GUI_NAME,0,SID_ANY_LEN));
+                                                       ^
+"C:\Embedded Workbench 4.0 Evaluation\Project\Hello World\gui.c",43  Error[Pe167]: 
+          argument of type "int" is incompatible with parameter of type
+          "TEXT_ENCODING"
+     44            SetNumOfMenuItem(myBook->gui,2);
+     45            OneOfMany_SetonMessage((GUI_ONEOFMANY*)myBook->gui,GuiOnLBMessage);
+     46            SetCursorToItem(myBook->gui,0);
+     47            SetMenuItemStyle(myBook->gui,15);
+     48            GUIObject_Softkey_SetAction(myBook->gui,ACTION_BACK, GuiBack);  
+                                                                        ^
+Error[Pe167]: argument of type "void (*)(BOOK *, void *)" is incompatible with
+          parameter of type "SKACTIONPROC"
+     49            GUIObject_Softkey_SetAction(myBook->gui,ACTION_LONG_BACK, GuiBack);  
+                                                                             ^
+Error[Pe167]: argument of type "void (*)(BOOK *, void *)" is incompatible with
+          parameter of type "SKACTIONPROC"
+     50            GUIObject_Softkey_SetAction(myBook->gui,ACTION_SELECT1,GuiOnEnterPressed);     
+                                                                          ^
+Error[Pe167]: argument of type "void (*)(BOOK *, void *)" is incompatible with
+          parameter of type "SKACTIONPROC"
+     51            ShowWindow(myBook->gui);  
+     52          };
+                   ^
+Warning[Pe001]: last line of file ends without a newline
+
+Errors: 10
+Warnings: 2

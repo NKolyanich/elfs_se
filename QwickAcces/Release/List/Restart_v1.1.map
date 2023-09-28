@@ -1,0 +1,363 @@
+################################################################################
+#                                                                              #
+#      IAR Universal Linker V4.60I/386                                         #
+#                                                                              #
+#           Link time     =  25/Aug/2011  02:09:41                             #
+#           Target CPU    =  ARM                                               #
+#           List file     =  "C:\Embedded Workbench 4.0 Evaluation\Project\Res #
+#                            tart_v1.2\Release\List\Restart_v1.1.map"          #
+#           Output file 1 =  "C:\Embedded Workbench 4.0 Evaluation\Project\Res #
+#                            tart_v1.2\Release\Exe\Restart_v1.1.elf"           #
+#                            Format: elf, variant: -ynpra                      #
+#           Command line  =  "C:\Embedded Workbench 4.0 Evaluation\Project\Res #
+#                            tart_v1.2\Release\Obj\_cpp2.r79"                  #
+#                            "C:\Embedded Workbench 4.0 Evaluation\Project\Res #
+#                            tart_v1.2\Release\Obj\config_data.r79"            #
+#                            "C:\Embedded Workbench 4.0 Evaluation\Project\Res #
+#                            tart_v1.2\Release\Obj\func.r79"                   #
+#                            "C:\Embedded Workbench 4.0 Evaluation\Project\Res #
+#                            tart_v1.2\Release\Obj\main.r79"                   #
+#                            -o                                                #
+#                            "C:\Embedded Workbench 4.0 Evaluation\Project\Res #
+#                            tart_v1.2\Release\Exe\Restart_v1.1.elf"           #
+#                            -Felf -l                                          #
+#                            "C:\Embedded Workbench 4.0 Evaluation\Project\Res #
+#                            tart_v1.2\Release\List\Restart_v1.1.map"          #
+#                            -xms -f                                           #
+#                            "C:\Embedded Workbench 4.0 Evaluation\Project\Res #
+#                            tart_v1.2\..\include\1.xcl"                       #
+#                            (-carm -ynpra -V(CODE)CODE_AREA,12                #
+#                            -V(DATA)DATA_AREA,12                              #
+#                            -Z(CODE_AREA)ELFBEGIN,DATA_ID,START,CODE,DATA_C,I #
+#                            NITTAB,DATA_Z,DATA_N,CONFIG_C,DYN_CONST,DYN_CONST #
+#                            _DESC,DYN_PAGE,DYN_PAGE_DESC=0-FFFFFFFF           #
+#                            -Z(DATA_AREA)DATA_I=0-FFFFFFFF)                   #
+#                            "C:\Embedded Workbench 4.0 Evaluation\ARM\LIB\dl5 #
+#                            tpainl8n.r79"                                     #
+#                            -s main                                           #
+#                                                                              #
+#                        Copyright 1987-2007 IAR Systems. All rights reserved. #
+################################################################################
+
+
+
+
+
+                ****************************************
+                *                                      *
+                *           CROSS REFERENCE            *
+                *                                      *
+                ****************************************
+
+       Program entry at : CODE_AREA 00000210  Relocatable, from module : main
+
+
+
+
+                ****************************************
+                *                                      *
+                *            RUNTIME MODEL             *
+                *                                      *
+                ****************************************
+
+  ARMv4M                 = USED
+  ARMv4T                 = USED
+  ARMv5T                 = USED
+  StackAlign4            = USED
+  __cpu_mode             = __pcs__interwork
+  __data_model           = absolute
+  __dlib_file_descriptor = 1
+  __endian               = little
+  __rt_version           = 6
+
+
+
+                ****************************************
+                *                                      *
+                *              MODULE MAP              *
+                *                                      *
+                ****************************************
+
+
+  DEFINED ABSOLUTE ENTRIES
+    *************************************************************************
+
+  DEFINED ABSOLUTE ENTRIES
+    *************************************************************************
+
+  FILE NAME : C:\Embedded Workbench 4.0 Evaluation\Project\Restart_v1.2\Release\Obj\_cpp2.r79
+  PROGRAM MODULE, NAME : _cpp2
+
+  SEGMENTS IN THE MODULE
+  ======================
+CODE
+  Relative segment, address: CODE_AREA 00000010 - 0000001B (0xc bytes), align: 2
+  Segment part 3.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           operator new(size_t)    00000010        CreateHWBook() (main)
+               stack 1 = 00000000 ( 00000004 )
+
+    *************************************************************************
+
+  FILE NAME : C:\Embedded Workbench 4.0 Evaluation\Project\Restart_v1.2\Release\Obj\config_data.r79
+  PROGRAM MODULE, NAME : config_data
+
+  SEGMENTS IN THE MODULE
+  ======================
+CONFIG_C
+  Relative segment, address: CODE_AREA 00000338 - 00000363 (0x2c bytes), align: 2
+  Segment part 2. ROOT.
+    -------------------------------------------------------------------------
+CONFIG_C
+  Relative segment, address: CODE_AREA 00000364 - 00000367 (0x4 bytes), align: 2
+  Segment part 3. ROOT.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           WorkIn                  00000364 
+    -------------------------------------------------------------------------
+CONFIG_C
+  Relative segment, address: CODE_AREA 00000368 - 000003A7 (0x40 bytes), align: 2
+  Segment part 4. ROOT.
+    -------------------------------------------------------------------------
+CONFIG_C
+  Relative segment, address: CODE_AREA 000003A8 - 000003D3 (0x2c bytes), align: 2
+  Segment part 5. ROOT.
+    -------------------------------------------------------------------------
+CONFIG_C
+  Relative segment, address: CODE_AREA 000003D4 - 000003D7 (0x4 bytes), align: 2
+  Segment part 6. ROOT.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           RewindEnable            000003D4 
+
+    *************************************************************************
+
+  FILE NAME : C:\Embedded Workbench 4.0 Evaluation\Project\Restart_v1.2\Release\Obj\func.r79
+  PROGRAM MODULE, NAME : func
+
+  SEGMENTS IN THE MODULE
+  ======================
+ELFBEGIN
+  Relative segment, address: CODE_AREA 00000000, align: 0
+  Segment part 0. ROOT.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           ELF_BEGIN               00000000        elf_exit() (main)
+    -------------------------------------------------------------------------
+CODE
+  Relative segment, address: CODE_AREA 0000001C - 00000033 (0x18 bytes), align: 2
+  Segment part 1. ROOT.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           kill_data               0000001C        elf_exit() (main)
+           seqkill                 00000020 
+           ASYNC                   00000030 
+           SYNC                    0000002C 
+    -------------------------------------------------------------------------
+DYN_CONST
+  Relative segment, address: CODE_AREA 000003D8 - 000003DB (0x4 bytes), align: 2
+  Segment part 43.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           KEY_POWER               000003D8        KeyPr(int, int, int, LPARAM, DISP_OBJ *) (main)
+    -------------------------------------------------------------------------
+DYN_CONST
+  Relative segment, address: CODE_AREA 000003DC - 000003DF (0x4 bytes), align: 2
+  Segment part 48.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           KBD_REPEAT              000003DC        KeyPr(int, int, int, LPARAM, DISP_OBJ *) (main)
+    -------------------------------------------------------------------------
+DYN_CONST_DESC
+  Relative segment, address: CODE_AREA 000003E0 - 000003E3 (0x4 bytes), align: 2
+  Segment part 564. ROOT.
+    -------------------------------------------------------------------------
+DYN_PAGE
+  Relative segment, address: CODE_AREA 000003E4, align: 2
+  Segment part 565.
+    -------------------------------------------------------------------------
+DYN_PAGE_DESC
+  Relative segment, address: CODE_AREA 000003FC - 000003FF (0x4 bytes), align: 2
+  Segment part 566. ROOT.
+
+    *************************************************************************
+
+  FILE NAME : C:\Embedded Workbench 4.0 Evaluation\Project\Restart_v1.2\Release\Obj\main.r79
+  PROGRAM MODULE, NAME : main
+
+  SEGMENTS IN THE MODULE
+  ======================
+CODE
+  Relative segment, address: CODE_AREA 00000034 - 0000003B (0x8 bytes), align: 2
+  Segment part 8.             Intra module refs:   main
+                                                   onCloseHWBook(BOOK *)
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           LPARAM::LPARAM(int)     00000034 
+    -------------------------------------------------------------------------
+CODE
+  Relative segment, address: CODE_AREA 0000003C - 00000067 (0x2c bytes), align: 2
+  Segment part 10.            Intra module refs:   KeyPr(int, int, int, LPARAM, DISP_OBJ *)
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           vibra()                 0000003C 
+               stack 1 = 00000000 ( 00000004 )
+    -------------------------------------------------------------------------
+CODE
+  Relative segment, address: CODE_AREA 00000068 - 000000B7 (0x50 bytes), align: 2
+  Segment part 12.            Intra module refs:   Segment part 29
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           KeyPr(int, int, int, LPARAM, DISP_OBJ *)
+                                   00000068 
+               stack 1 = 00000000 ( 00000004 )
+    -------------------------------------------------------------------------
+CODE
+  Relative segment, address: CODE_AREA 000000B8 - 000000D3 (0x1c bytes), align: 2
+  Segment part 14.            Intra module refs:   Segment part 28
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           elf_exit()              000000B8 
+               stack 1 = 00000000 ( 00000004 )
+    -------------------------------------------------------------------------
+CODE
+  Relative segment, address: CODE_AREA 000000D4 - 000000E7 (0x14 bytes), align: 2
+  Segment part 16.            Intra module refs:   Segment part 7
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           TerminateElf(void *, BOOK *)
+                                   000000D4 
+               stack 1 = 00000000 ( 00000004 )
+    -------------------------------------------------------------------------
+CODE
+  Relative segment, address: CODE_AREA 000000E8 - 00000163 (0x7c bytes), align: 2
+  Segment part 18.            Intra module refs:   Segment part 7
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           ShowAuthorInfo(void *, BOOK *)
+                                   000000E8 
+               stack 1 = 00000000 ( 0000021C )
+    -------------------------------------------------------------------------
+DYN_PAGE
+  Relative segment, address: CODE_AREA 000003E4 - 000003FB (0x18 bytes), align: 2
+  Segment part 7.             Intra module refs:   Segment part 6
+    -------------------------------------------------------------------------
+DATA_I
+  Relative segment, address: DATA_AREA 00000000 - 0000000F (0x10 bytes), align: 2
+  Segment part 5.             Intra module refs:   CreateHWBook()
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           HWBook                  00000000 
+           base_page               00000004 
+    -------------------------------------------------------------------------
+CODE
+  Relative segment, address: CODE_AREA 00000164 - 0000019B (0x38 bytes), align: 2
+  Segment part 20.            Intra module refs:   CreateHWBook()
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           onCloseHWBook(BOOK *)   00000164 
+               stack 1 = 00000000 ( 00000008 )
+    -------------------------------------------------------------------------
+CODE
+  Relative segment, address: CODE_AREA 0000019C - 000001E3 (0x48 bytes), align: 2
+  Segment part 22.            Intra module refs:   main
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           CreateHWBook()          0000019C 
+               stack 1 = 00000000 ( 00000010 )
+    -------------------------------------------------------------------------
+CODE
+  Relative segment, address: CODE_AREA 000001E4 - 0000020B (0x28 bytes), align: 2
+  Segment part 24.            Intra module refs:   main
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           myFind(BOOK *)          000001E4 
+               stack 1 = 00000000 ( 00000004 )
+    -------------------------------------------------------------------------
+CODE
+  Relative segment, address: CODE_AREA 0000020C - 0000020F (0x4 bytes), align: 2
+  Segment part 25.            Intra module refs:   CreateHWBook()
+                                                   myFind(BOOK *)
+    -------------------------------------------------------------------------
+CODE
+  Relative segment, address: CODE_AREA 00000210 - 000002AB (0x9c bytes), align: 2
+  Segment part 27.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           main                    00000210        Absolute parts (?ABS_ENTRY_MOD)
+               stack 1 = 00000000 ( 00000014 )
+    -------------------------------------------------------------------------
+CODE
+  Relative segment, address: CODE_AREA 000002AC - 000002AF (0x4 bytes), align: 2
+  Segment part 28.            Intra module refs:   main
+                                                   onCloseHWBook(BOOK *)
+    -------------------------------------------------------------------------
+CODE
+  Relative segment, address: CODE_AREA 000002B0 - 000002B3 (0x4 bytes), align: 2
+  Segment part 29.            Intra module refs:   main
+                                                   onCloseHWBook(BOOK *)
+    -------------------------------------------------------------------------
+DATA_ID
+  Relative segment, address: CODE_AREA 00000000 - 0000000F (0x10 bytes), align: 2
+  Segment part 6.             Intra module refs:   Segment part 5
+    -------------------------------------------------------------------------
+INITTAB
+  Relative segment, address: CODE_AREA 0000032C - 00000337 (0xc bytes), align: 2
+  Segment part 34. ROOT.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           ?init?tab?DATA_I        0000032C 
+    -------------------------------------------------------------------------
+DATA_C
+  Relative segment, address: CODE_AREA 000002B4 - 000002BF (0xc bytes), align: 2
+  Segment part 2.             Intra module refs:   Segment part 6
+    -------------------------------------------------------------------------
+DATA_C
+  Relative segment, address: CODE_AREA 000002C0 - 0000030B (0x4c bytes), align: 2
+  Segment part 3.             Intra module refs:   Segment part 25
+                                                   ShowAuthorInfo(void *, BOOK *)
+    -------------------------------------------------------------------------
+DATA_C
+  Relative segment, address: CODE_AREA 0000030C - 0000032B (0x20 bytes), align: 2
+  Segment part 4.             Intra module refs:   main
+
+
+
+
+                ****************************************
+                *                                      *
+                *      SEGMENTS IN ADDRESS ORDER       *
+                *                                      *
+                ****************************************
+
+
+SEGMENT              SPACE    START ADDRESS   END ADDRESS     SIZE  TYPE  ALIGN
+=======              =====    =============   ===========     ====  ====  =====
+ELFBEGIN             CODE_AREA           00000000                     rel    0
+DATA_ID              CODE_AREA      00000000 - 0000000F          10   rel    2
+START                CODE_AREA           00000010                     dse    0
+CODE                 CODE_AREA      00000010 - 000002B3         2A4   rel    2
+DATA_C               CODE_AREA      000002B4 - 0000032B          78   rel    2
+INITTAB              CODE_AREA      0000032C - 00000337           C   rel    2
+DATA_Z               CODE_AREA           00000338                     dse    0
+DATA_N               CODE_AREA           00000338                     dse    0
+CONFIG_C             CODE_AREA      00000338 - 000003D7          A0   rel    2
+DYN_CONST            CODE_AREA      000003D8 - 000003DF           8   rel    2
+DYN_CONST_DESC       CODE_AREA      000003E0 - 000003E3           4   rel    2
+DYN_PAGE             CODE_AREA      000003E4 - 000003FB          18   rel    2
+DYN_PAGE_DESC        CODE_AREA      000003FC - 000003FF           4   rel    2
+DATA_I               DATA_AREA      00000000 - 0000000F          10   rel    2
+
+                ****************************************
+                *                                      *
+                *        END OF CROSS REFERENCE        *
+                *                                      *
+                ****************************************
+
+ 1 024 bytes of CODE memory
+    16 bytes of DATA memory
+
+Errors: none
+Warnings: none
+

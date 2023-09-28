@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<Workspace>
+  <ConfigDictionary>
+    
+  <CurrentConfigs><Project>main/Debug</Project></CurrentConfigs></ConfigDictionary>
+  <Desktop>
+    <Static>
+      <Workspace>
+        <ColumnWidths>
+          
+          
+          
+          
+        <Column0>160</Column0><Column1>27</Column1><Column2>27</Column2><Column3>27</Column3></ColumnWidths>
+      </Workspace>
+      <Build>
+        
+        
+        
+        
+      <ColumnWidth0>20</ColumnWidth0><ColumnWidth1>1035</ColumnWidth1><ColumnWidth2>276</ColumnWidth2><ColumnWidth3>69</ColumnWidth3></Build>
+    </Static>
+    <Windows>
+      
+      
+    <Wnd2>
+        <Tabs>
+          <Tab>
+            <Identity>TabID-32259-11365</Identity>
+            <TabName>Workspace</TabName>
+            <Factory>Workspace</Factory>
+            <Session>
+              
+            <NodeDict><ExpandedNode>main</ExpandedNode></NodeDict></Session>
+          </Tab>
+        </Tabs>
+        
+      <SelectedTab>0</SelectedTab></Wnd2><Wnd3>
+        <Tabs>
+          <Tab>
+            <Identity>TabID-29646-11414</Identity>
+            <TabName>Build</TabName>
+            <Factory>Build</Factory>
+            <Session/>
+          </Tab>
+        </Tabs>
+        
+      <SelectedTab>0</SelectedTab></Wnd3></Windows>
+    <Editor>
+      
+      
+      
+      
+    <Pane><Tab><Factory>TextEditor</Factory><Filename>F:\Embedded Workbench 4.0 Evaluation\Project\AddBBCode\main.cpp</Filename><XPos>0</XPos><YPos>297</YPos><SelStart>8604</SelStart><SelEnd>8604</SelEnd></Tab><Tab><Factory>TextEditor</Factory><Filename>C:\Embedded Workbench 4.0 Evaluation\Project\C++\_cpp2.cpp</Filename><XPos>0</XPos><YPos>0</YPos><SelStart>33</SelStart><SelEnd>33</SelEnd></Tab><Tab><Factory>TextEditor</Factory><Filename>F:\Embedded Workbench 4.0 Evaluation\Project\AddBBCode\gui.c</Filename><XPos>0</XPos><YPos>353</YPos><SelStart>10016</SelStart><SelEnd>10016</SelEnd></Tab><Tab><Factory>TextEditor</Factory><Filename>F:\Embedded Workbench 4.0 Evaluation\Project\AddBBCode\header\gui.h</Filename><XPos>0</XPos><YPos>0</YPos><SelStart>261</SelStart><SelEnd>261</SelEnd></Tab><Tab><Factory>TextEditor</Factory><Filename>F:\Embedded Workbench 4.0 Evaluation\Project\AddBBCode\pictureGUI.c</Filename><XPos>0</XPos><YPos>21</YPos><SelStart>753</SelStart><SelEnd>753</SelEnd></Tab><Tab><Factory>TextEditor</Factory><Filename>F:\Embedded Workbench 4.0 Evaluation\Project\AddBBCode\SmilesMenu.c</Filename><XPos>0</XPos><YPos>316</YPos><SelStart>12110</SelStart><SelEnd>12110</SelEnd></Tab><ActiveTab>5</ActiveTab><Tab><Factory>TextEditor</Factory><Filename>F:\Embedded Workbench 4.0 Evaluation\Project\AddBBCode\colorGUI.c</Filename><XPos>0</XPos><YPos>442</YPos><SelStart>14216</SelStart><SelEnd>14216</SelEnd></Tab><Tab><Factory>TextEditor</Factory><Filename>F:\Embedded Workbench 4.0 Evaluation\Project\AddBBCode\fontGUI.c</Filename><XPos>0</XPos><YPos>31</YPos><SelStart>986</SelStart><SelEnd>986</SelEnd></Tab></Pane><ActivePane>0</ActivePane><Sizes><Pane><X>1000000</X><Y>1000000</Y></Pane></Sizes><SplitMode>1</SplitMode></Editor>
+    <Positions>
+      
+      
+      
+      
+      
+    <Top><Row0><Sizes><Toolbar-013f2a30><key>iaridepm.enu1</key></Toolbar-013f2a30></Sizes></Row0></Top><Left><Row0><Sizes><Wnd2><Rect><Top>-2</Top><Left>-2</Left><Bottom>632</Bottom><Right>234</Right><x>-2</x><y>-2</y><xscreen>0</xscreen><yscreen>0</yscreen><sizeHorzCX>0</sizeHorzCX><sizeHorzCY>0</sizeHorzCY><sizeVertCX>163889</sizeVertCX><sizeVertCY>765700</sizeVertCY></Rect></Wnd2></Sizes></Row0></Left><Right><Row0><Sizes/></Row0></Right><Bottom><Row0><Sizes><Wnd3><Rect><Top>-2</Top><Left>-2</Left><Bottom>151</Bottom><Right>1442</Right><x>-2</x><y>-2</y><xscreen>1444</xscreen><yscreen>153</yscreen><sizeHorzCX>1002778</sizeHorzCX><sizeHorzCY>184783</sizeHorzCY><sizeVertCX>0</sizeVertCX><sizeVertCY>0</sizeVertCY></Rect></Wnd3></Sizes></Row0></Bottom><Float><Sizes/></Float></Positions>
+  </Desktop>
+</Workspace>
+
+

@@ -1,0 +1,2765 @@
+//////////////////////////////////////////////////////////////////////////////
+//                                                                           /
+// IAR ARM ANSI C/C++ Compiler V4.42A/W32 EVALUATION   18/Aug/2015  23:03:05 /
+// Copyright 1999-2005 IAR Systems. All rights reserved.                     /
+//                                                                           /
+//    Cpu mode        =  interwork                                           /
+//    Endian          =  little                                              /
+//    Stack alignment =  4                                                   /
+//    Source file     =  D:\kl\dev\Embedded Workbench 4.0                    /
+//                       Evaluation\Project\QwickAcces\main.c                /
+//    Command line    =  "D:\kl\dev\Embedded Workbench 4.0                   /
+//                       Evaluation\Project\QwickAcces\main.c" -D NDEBUG -D  /
+//                       OLDFUNCTIONS -lC "D:\kl\dev\Embedded Workbench 4.0  /
+//                       Evaluation\Project\QwickAcces\Release\List\" -lA    /
+//                       "D:\kl\dev\Embedded Workbench 4.0                   /
+//                       Evaluation\Project\QwickAcces\Release\List\" -o     /
+//                       "D:\kl\dev\Embedded Workbench 4.0                   /
+//                       Evaluation\Project\QwickAcces\Release\Obj\" -s9     /
+//                       --no_unroll --cpu_mode arm --endian little --cpu    /
+//                       ARM926EJ-S --stack_align 4 --interwork -e           /
+//                       --enable_multibytes --fpu None --eec++              /
+//                       --dlib_config "D:\kl\dev\Embedded Workbench 4.0     /
+//                       Evaluation\ARM\LIB\dl5tpainl8n.h" -I                /
+//                       "D:\kl\dev\Embedded Workbench 4.0                   /
+//                       Evaluation\ARM\INC\" --inline_threshold=2           /
+//    List file       =  D:\kl\dev\Embedded Workbench 4.0                    /
+//                       Evaluation\Project\QwickAcces\Release\List\main.s79 /
+//                                                                           /
+//                                                                           /
+//////////////////////////////////////////////////////////////////////////////
+
+        NAME main
+
+        RTMODEL "StackAlign4", "USED"
+        RTMODEL "__cpu_mode", "__pcs__interwork"
+        RTMODEL "__data_model", "absolute"
+        RTMODEL "__endian", "little"
+        RTMODEL "__rt_version", "6"
+
+        RSEG CSTACK:DATA:NOROOT(2)
+
+        ERROR
+//NOTE: This module defines or uses C++ features that are not
+//      accessible from assembler code. Assembling this file will
+//      not produce an equivalent object file to the one produced
+//      by the C++ compiler.
+
+        PUBWEAK `?*?DATA_ID`
+        PUBLIC ??Create_QuestionReboot
+        FUNCTION ??Create_QuestionReboot,0203H
+        LOCFRAME CSTACK, 36, STACK
+        MULTWEAK ??Create_QuestionReboot??rT
+        PUBLIC ??Create_QuestionShutdown
+        FUNCTION ??Create_QuestionShutdown,0203H
+        LOCFRAME CSTACK, 36, STACK
+        MULTWEAK ??Create_QuestionShutdown??rT
+        PUBLIC ??Create_QuickAccessBook
+        FUNCTION ??Create_QuickAccessBook,0203H
+        LOCFRAME CSTACK, 16, STACK
+        MULTWEAK ??Create_QuickAccessBook??rT
+        PUBLIC ??Create_QuickAccessMenu
+        FUNCTION ??Create_QuickAccessMenu,0203H
+        LOCFRAME CSTACK, 4, STACK
+        MULTWEAK ??Create_QuickAccessMenu??rT
+        PUBLIC ??Create_QuickAccessMenuBook
+        FUNCTION ??Create_QuickAccessMenuBook,0203H
+        LOCFRAME CSTACK, 16, STACK
+        MULTWEAK ??Create_QuickAccessMenuBook??rT
+??DataTable0 EQU 0
+??DataTable1 EQU 0
+??DataTable15 EQU 0
+??DataTable16 EQU 0
+??DataTable17 EQU 0
+??DataTable18 EQU 0
+??DataTable19 EQU 0
+??DataTable2 EQU 0
+??DataTable20 EQU 0
+??DataTable21 EQU 0
+??DataTable22 EQU 0
+??DataTable29 EQU 0
+??DataTable30 EQU 0
+??DataTable31 EQU 0
+??DataTable4 EQU 0
+??DataTable5 EQU 0
+??DataTable6 EQU 0
+??DataTable7 EQU 0
+??DataTable8 EQU 0
+??DataTable9 EQU 0
+        PUBLIC ??Find_QuickAccessBook
+        FUNCTION ??Find_QuickAccessBook,0603H
+        LOCFRAME CSTACK, 4, STACK
+        MULTWEAK ??Find_QuickAccessBook??rT
+        PUBLIC ??GuiBack
+        FUNCTION ??GuiBack,0603H
+        LOCFRAME CSTACK, 8, STACK
+        MULTWEAK ??GuiBack??rT
+        PUBLIC ??GuiOnEnterPressed
+        FUNCTION ??GuiOnEnterPressed,0603H
+        LOCFRAME CSTACK, 12, STACK
+        MULTWEAK ??GuiOnEnterPressed??rT
+        PUBLIC ??GuiOnLBMessage
+        FUNCTION ??GuiOnLBMessage,0603H
+        LOCFRAME CSTACK, 28, STACK
+        MULTWEAK ??GuiOnLBMessage??rT
+        PUBLIC ??KeyPr
+        FUNCTION ??KeyPr,0603H
+        LOCFRAME CSTACK, 32, STACK
+        MULTWEAK ??KeyPr??rT
+        PUBLIC ??OnClose_QuickAccessBook
+        FUNCTION ??OnClose_QuickAccessBook,0603H
+        LOCFRAME CSTACK, 4, STACK
+        MULTWEAK ??OnClose_QuickAccessBook??rT
+        PUBLIC ??OnNo_QuestionReboot
+        FUNCTION ??OnNo_QuestionReboot,0603H
+        LOCFRAME CSTACK, 8, STACK
+        MULTWEAK ??OnNo_QuestionReboot??rT
+        PUBLIC ??OnNo_QuestionShutdown
+        FUNCTION ??OnNo_QuestionShutdown,0603H
+        LOCFRAME CSTACK, 8, STACK
+        MULTWEAK ??OnNo_QuestionShutdown??rT
+        PUBLIC ??OnYes_QuestionReboot
+        FUNCTION ??OnYes_QuestionReboot,0603H
+        LOCFRAME CSTACK, 8, STACK
+        MULTWEAK ??OnYes_QuestionReboot??rT
+        PUBLIC ??OnYes_QuestionShutdown
+        FUNCTION ??OnYes_QuestionShutdown,0603H
+        LOCFRAME CSTACK, 8, STACK
+        MULTWEAK ??OnYes_QuestionShutdown??rT
+        PUBLIC ??QuickAccess_menu
+        FUNCTION ??QuickAccess_menu,0203H
+        LOCFRAME CSTACK, 68, STACK
+        MULTWEAK ??QuickAccess_menu??rT
+        PUBLIC ??SelectMenuItem_FlashLight
+        FUNCTION ??SelectMenuItem_FlashLight,0203H
+        LOCFRAME CSTACK, 4, STACK
+        MULTWEAK ??SelectMenuItem_FlashLight??rT
+        PUBLIC ??SelectMenuItem_KeyLock
+        FUNCTION ??SelectMenuItem_KeyLock,0203H
+        LOCFRAME CSTACK, 4, STACK
+        MULTWEAK ??SelectMenuItem_KeyLock??rT
+        PUBLIC ??SelectMenuItem_Reboot
+        FUNCTION ??SelectMenuItem_Reboot,0203H
+        LOCFRAME CSTACK, 4, STACK
+        MULTWEAK ??SelectMenuItem_Reboot??rT
+        PUBLIC ??SelectMenuItem_SelectProfile
+        FUNCTION ??SelectMenuItem_SelectProfile,0203H
+        LOCFRAME CSTACK, 4, STACK
+        MULTWEAK ??SelectMenuItem_SelectProfile??rT
+        PUBLIC ??SelectMenuItem_Shutdown
+        FUNCTION ??SelectMenuItem_Shutdown,0203H
+        LOCFRAME CSTACK, 4, STACK
+        MULTWEAK ??SelectMenuItem_Shutdown??rT
+        PUBLIC ??SelectMenuItem_SilenceMode
+        FUNCTION ??SelectMenuItem_SilenceMode,0203H
+        LOCFRAME CSTACK, 16, STACK
+        MULTWEAK ??SelectMenuItem_SilenceMode??rT
+        PUBLIC ??ShowAuthorInfo
+        FUNCTION ??ShowAuthorInfo,0603H
+        LOCFRAME CSTACK, 540, STACK
+        MULTWEAK ??ShowAuthorInfo??rT
+        PUBLIC ??TerminateElf
+        FUNCTION ??TerminateElf,0603H
+        LOCFRAME CSTACK, 4, STACK
+        MULTWEAK ??TerminateElf??rT
+        PUBLIC ??elf_exit
+        FUNCTION ??elf_exit,0603H
+        LOCFRAME CSTACK, 4, STACK
+        MULTWEAK ??elf_exit??rT
+        PUBLIC ??isBook
+        FUNCTION ??isBook,0603H
+        LOCFRAME CSTACK, 4, STACK
+        MULTWEAK ??isBook??rT
+        PUBLIC ??isCallListBook
+        FUNCTION ??isCallListBook,0203H
+        LOCFRAME CSTACK, 4, STACK
+        MULTWEAK ??isCallListBook??rT
+        PUBLIC ??isMyQABook
+        FUNCTION ??isMyQABook,0603H
+        LOCFRAME CSTACK, 4, STACK
+        MULTWEAK ??isMyQABook??rT
+        MULTWEAK ??kill_data??rA
+        MULTWEAK ??main??rT
+        PUBLIC ??onTimer
+        FUNCTION ??onTimer,0603H
+        LOCFRAME CSTACK, 548, STACK
+        MULTWEAK ??onTimer??rT
+        MULTWEAK `??operator new??rA`
+        PUBWEAK ?init?tab?DATA_I
+        PUBWEAK ?init?tab?DATA_Z
+        PUBLIC QuestionReboot_GUI
+        PUBLIC QuestionShutdown_GUI
+        PUBLIC QuickAccessBook
+        PUBLIC base_page
+        PUBLIC imageid
+        PUBLIC main
+        FUNCTION main,0a03H
+        LOCFRAME CSTACK, 16, STACK
+        PUBLIC mbk
+        PUBLIC names_str
+        PUBLIC names_textid
+        PUBLIC timer
+        
+        CFI Names cfiNames0
+        CFI StackFrame CFA R13 HUGEDATA
+        CFI Resource R0:32, R1:32, R2:32, R3:32, R4:32, R5:32, R6:32, R7:32
+        CFI Resource R8:32, R9:32, R10:32, R11:32, R12:32, CPSR:32, R13:32
+        CFI Resource R14:32, SPSR:32
+        CFI VirtualResource ?RET:32
+        CFI EndNames cfiNames0
+        
+        CFI Common cfiCommon0 Using cfiNames0
+        CFI CodeAlign 2
+        CFI DataAlign 4
+        CFI ReturnAddress ?RET CODE
+        CFI CFA R13+0
+        CFI R0 Undefined
+        CFI R1 Undefined
+        CFI R2 Undefined
+        CFI R3 Undefined
+        CFI R4 SameValue
+        CFI R5 SameValue
+        CFI R6 SameValue
+        CFI R7 SameValue
+        CFI R8 SameValue
+        CFI R9 SameValue
+        CFI R10 SameValue
+        CFI R11 SameValue
+        CFI R12 Undefined
+        CFI CPSR SameValue
+        CFI R14 Undefined
+        CFI SPSR SameValue
+        CFI ?RET R14
+        CFI EndCommon cfiCommon0
+        
+        
+        CFI Common cfiCommon1 Using cfiNames0
+        CFI CodeAlign 4
+        CFI DataAlign 4
+        CFI ReturnAddress ?RET CODE
+        CFI CFA R13+0
+        CFI R0 Undefined
+        CFI R1 Undefined
+        CFI R2 Undefined
+        CFI R3 Undefined
+        CFI R4 SameValue
+        CFI R5 SameValue
+        CFI R6 SameValue
+        CFI R7 SameValue
+        CFI R8 SameValue
+        CFI R9 SameValue
+        CFI R10 SameValue
+        CFI R11 SameValue
+        CFI R12 Undefined
+        CFI CPSR SameValue
+        CFI R14 Undefined
+        CFI SPSR SameValue
+        CFI ?RET R14
+        CFI EndCommon cfiCommon1
+        
+
+kill_data           SYMBOL "kill_data"
+
+??Create_QuestionReboot??rT SYMBOL "??rT", ??Create_QuestionReboot
+
+??Create_QuestionShutdown??rT SYMBOL "??rT", ??Create_QuestionShutdown
+
+??Create_QuickAccessBook??rT SYMBOL "??rT", ??Create_QuickAccessBook
+
+??Create_QuickAccessMenu??rT SYMBOL "??rT", ??Create_QuickAccessMenu
+
+??Create_QuickAccessMenuBook??rT SYMBOL "??rT", ??Create_QuickAccessMenuBook
+
+??Find_QuickAccessBook??rT SYMBOL "??rT", ??Find_QuickAccessBook
+
+??GuiBack??rT       SYMBOL "??rT", ??GuiBack
+
+??GuiOnEnterPressed??rT SYMBOL "??rT", ??GuiOnEnterPressed
+
+??GuiOnLBMessage??rT SYMBOL "??rT", ??GuiOnLBMessage
+
+??KeyPr??rT         SYMBOL "??rT", ??KeyPr
+
+??OnClose_QuickAccessBook??rT SYMBOL "??rT", ??OnClose_QuickAccessBook
+
+??OnNo_QuestionReboot??rT SYMBOL "??rT", ??OnNo_QuestionReboot
+
+??OnNo_QuestionShutdown??rT SYMBOL "??rT", ??OnNo_QuestionShutdown
+
+??OnYes_QuestionReboot??rT SYMBOL "??rT", ??OnYes_QuestionReboot
+
+??OnYes_QuestionShutdown??rT SYMBOL "??rT", ??OnYes_QuestionShutdown
+
+??QuickAccess_menu??rT SYMBOL "??rT", ??QuickAccess_menu
+
+??SelectMenuItem_FlashLight??rT SYMBOL "??rT", ??SelectMenuItem_FlashLight
+
+??SelectMenuItem_KeyLock??rT SYMBOL "??rT", ??SelectMenuItem_KeyLock
+
+??SelectMenuItem_Reboot??rT SYMBOL "??rT", ??SelectMenuItem_Reboot
+
+??SelectMenuItem_SelectProfile??rT SYMBOL "??rT", ??SelectMenuItem_SelectProfile
+
+??SelectMenuItem_Shutdown??rT SYMBOL "??rT", ??SelectMenuItem_Shutdown
+
+??SelectMenuItem_SilenceMode??rT SYMBOL "??rT", ??SelectMenuItem_SilenceMode
+
+??ShowAuthorInfo??rT SYMBOL "??rT", ??ShowAuthorInfo
+
+??TerminateElf??rT  SYMBOL "??rT", ??TerminateElf
+
+??elf_exit??rT      SYMBOL "??rT", ??elf_exit
+
+??isBook??rT        SYMBOL "??rT", ??isBook
+
+??isCallListBook??rT SYMBOL "??rT", ??isCallListBook
+
+??isMyQABook??rT    SYMBOL "??rT", ??isMyQABook
+??kill_data??rA     SYMBOL "??rA", kill_data
+main                SYMBOL "main"
+??main??rT          SYMBOL "??rT", main
+
+??onTimer??rT       SYMBOL "??rT", ??onTimer
+`??operator new??rA` SYMBOL "??rA", `??operator new`
+
+        EXTERN `??operator new`
+        FUNCTION `??operator new`,0202H
+        EXTERN ACTION_BACK
+        EXTERN ACTION_LONG_BACK
+        EXTERN ACTION_SELECT1
+        EXTERN ELF_BEGIN
+        EXTERN KBD_LONG_PRESS
+        EXTERN KBD_SHORT_PRESS
+        EXTERN KBD_SHORT_RELEASE
+        EXTERN KEY_DIEZ
+        EXTERN KEY_DIGITAL_0
+        EXTERN KEY_DOWN
+        EXTERN KEY_STAR
+        EXTERN KEY_UP
+        EXTERN SYNC
+        EXTERN UI_KEYLOCK_ACTIVATE_EVENT
+        EXTERN UI_SLEEPMODE_ACTIVATE_EVENT
+        EXTERN VAR_ARG_BOOK
+        EXTERN VAR_ARG_YESNO_NO_ACTION
+        EXTERN VAR_ARG_YESNO_PRE_QUESTION
+        EXTERN VAR_ARG_YESNO_YES_ACTION
+        EXTERN kill_data
+        FUNCTION kill_data,0202H
+
+// D:\kl\dev\Embedded Workbench 4.0 Evaluation\Project\QwickAcces\main.c
+//    1 #include "..\\include\Lib_Clara.h"
+//    2 #include "..\\include\Dir.h"
+//    3 #include "..\\include\Types.h"
+//    4 #include "..\\include\var_arg.h"
+//    5 #include "main.h"
+//    6 
+//    7 #define ELF_NAME "QuickAccess"
+//    8 #define ELF_VER  "1.0"
+//    9 #define QUICKACCESS_MENU_BOOK_NAME "QAMenu_Book"
+//   10 
+//   11 #define LIST_ITEM_COUNT 13
+//   12 
+//   13 void QuickAccess_menu( void* r0,BOOK* bk,GUI_LIST* gui );
+//   14 //=====================
+//   15 
+//   16 BOOK * QuickAccessBook;
+
+        RSEG DATA_Z:DATA:SORT:NOROOT(2)
+//   17 MyBOOK * mbk;
+mbk:
+        DS8 4
+
+        RSEG DATA_Z:DATA:SORT:NOROOT(1)
+//   18 u16 timer;
+timer:
+        DS8 2
+//   19 
+
+        RSEG DATA_Z:DATA:SORT:NOROOT(2)
+//   20 GUI* QuestionReboot_GUI;
+QuestionReboot_GUI:
+        DS8 4
+
+        RSEG DATA_Z:DATA:SORT:NOROOT(2)
+//   21 GUI* QuestionShutdown_GUI;
+QuestionShutdown_GUI:
+        DS8 4
+
+        RSEG CODE:CODE:NOROOT(2)
+        CFI Block cfiBlock0 Using cfiCommon0
+        CFI NoFunction
+        THUMB
+??isBook??rT:
+        BX       PC
+        Nop      
+        CFI EndBlock cfiBlock0
+        REQUIRE ??isBook
+//   22 
+//   23 TEXTID names_textid[LIST_ITEM_COUNT];
+//   24 
+//   25 wchar_t* names_str[] = {
+//   26   L"Перезагрузка",      
+//   27   L"Выключение",       
+//   28   L"Блокировка",
+//   29   L" ", // Беззвучный    
+//   30   L"Фонарик", 
+//   31   L" "
+//   32 };
+//   33 
+//   34 int imageid[] = {
+//   35   0x8FE,
+//   36   0x13F,
+//   37   0x47A,
+//   38   0x81E,
+//   39   0x2E1,
+//   40   NOIMAGE,
+//   41   0x7DD,
+//   42   0x7DA,
+//   43   0x7D4,
+//   44   0x7E3,
+//   45   0x7E9,
+//   46   0x7D1,
+//   47   0x7E0
+//   48 };
+//   49 
+//   50 
+
+        RSEG CODE:CODE:NOROOT(2)
+        CFI Block cfiBlock1 Using cfiCommon1
+        CFI Function ??isBook
+        ARM
+//   51 int isBook(BOOK* book, int* param)
+//   52 {
+??isBook:
+        PUSH     {LR}
+        CFI ?RET Frame(CFA, -4)
+        CFI CFA R13+4
+//   53   if(!strcmp( book->xbook->name, (char*)param)) return (1);
+        LDR      R0,[R0, #+0]
+        LDR      R0,[R0, #+4]
+        SWI      +345
+        CMP      R0,#+0
+        MOVEQ    R0,#+1
+        POPEQ    {PC}
+//   54   return (0);
+        MOV      R0,#+0
+        POP      {PC}             ;; return
+        CFI EndBlock cfiBlock1
+//   55 }
+
+        RSEG CODE:CODE:NOROOT(2)
+        CFI Block cfiBlock2 Using cfiCommon0
+        CFI NoFunction
+        THUMB
+??isCallListBook??rT:
+        BX       PC
+        Nop      
+        CFI EndBlock cfiBlock2
+        REQUIRE ??isCallListBook
+//   56 
+
+        RSEG CODE:CODE:NOROOT(2)
+        CFI Block cfiBlock3 Using cfiCommon1
+        CFI Function ??isCallListBook
+        ARM
+//   57 int isCallListBook( BOOK* book )
+//   58 {
+//   59   return 0 == strcmp( book->xbook->name, "PB_UI_CallListBook" );
+??isCallListBook:
+        LDR      R1,??isCallListBook_1  ;; `?<Constant "PB_UI_CallListBook">`
+        PUSH     {LR}
+        CFI ?RET Frame(CFA, -4)
+        CFI CFA R13+4
+        LDR      R0,[R0, #+0]
+        LDR      R0,[R0, #+4]
+        SWI      +345
+        CMP      R0,#+0
+        MOVEQ    R0,#+1
+        POPEQ    {PC}
+        MOV      R0,#+0
+        POP      {PC}             ;; return
+        DATA
+??isCallListBook_1:
+        DC32     `?<Constant "PB_UI_CallListBook">`
+        CFI EndBlock cfiBlock3
+//   60 }
+
+        RSEG CODE:CODE:NOROOT(2)
+        CFI Block cfiBlock4 Using cfiCommon0
+        CFI NoFunction
+        THUMB
+??isMyQABook??rT:
+        BX       PC
+        Nop      
+        CFI EndBlock cfiBlock4
+        REQUIRE ??isMyQABook
+//   61 
+
+        RSEG CODE:CODE:NOROOT(2)
+        CFI Block cfiBlock5 Using cfiCommon1
+        CFI Function ??isMyQABook
+        ARM
+//   62 int isMyQABook( BOOK* book )
+//   63 {
+//   64   return 0 == strcmp( book->xbook->name, QUICKACCESS_MENU_BOOK_NAME );
+??isMyQABook:
+        LDR      R1,??DataTable26  ;; `?<Constant "QAMenu_Book">`
+        PUSH     {LR}
+        CFI ?RET Frame(CFA, -4)
+        CFI CFA R13+4
+        LDR      R0,[R0, #+0]
+        LDR      R0,[R0, #+4]
+        SWI      +345
+        CMP      R0,#+0
+        MOVEQ    R0,#+1
+        POPEQ    {PC}
+        MOV      R0,#+0
+        POP      {PC}             ;; return
+        CFI EndBlock cfiBlock5
+//   65 }
+
+        RSEG CODE:CODE:NOROOT(2)
+        CFI Block cfiBlock6 Using cfiCommon0
+        CFI NoFunction
+        THUMB
+??OnNo_QuestionReboot??rT:
+        BX       PC
+        Nop      
+        CFI EndBlock cfiBlock6
+        REQUIRE ??OnNo_QuestionReboot
+//   66 
+//   67 //-- YesNoQuestionVA Reboot ----------------------------------------------------------------------------------
+
+        RSEG CODE:CODE:NOROOT(2)
+        CFI Block cfiBlock7 Using cfiCommon1
+        CFI Function ??OnNo_QuestionReboot
+        ARM
+//   68 void OnNo_QuestionReboot(BOOK * bk, void *)
+//   69 {
+??OnNo_QuestionReboot:
+        PUSH     {R4,LR}
+        CFI ?RET Frame(CFA, -4)
+        CFI R4 Frame(CFA, -8)
+        CFI CFA R13+8
+//   70   FREE_GUI(QuestionReboot_GUI);
+        LDR      R4,??DataTable3  ;; QuestionReboot_GUI
+        LDR      R0,[R4, #+0]
+        CMP      R0,#+0
+        POPEQ    {R4,PC}
+        SWI      +462
+        STR      R0,[R4, #+0]
+//   71 }
+        POP      {R4,PC}          ;; return
+        CFI EndBlock cfiBlock7
+
+        RSEG CODE:CODE:NOROOT(2)
+        CFI Block cfiBlock8 Using cfiCommon0
+        CFI NoFunction
+        THUMB
+??OnYes_QuestionReboot??rT:
+        BX       PC
+        Nop      
+        CFI EndBlock cfiBlock8
+        REQUIRE ??OnYes_QuestionReboot
+//   72  
+
+        RSEG CODE:CODE:NOROOT(2)
+        CFI Block cfiBlock9 Using cfiCommon1
+        CFI Function ??OnYes_QuestionReboot
+        ARM
+//   73 void OnYes_QuestionReboot(BOOK * bk, void *)
+//   74 {
+??OnYes_QuestionReboot:
+        PUSH     {R4,LR}
+        CFI ?RET Frame(CFA, -4)
+        CFI R4 Frame(CFA, -8)
+        CFI CFA R13+8
+//   75   FREE_GUI(QuestionReboot_GUI);
+        LDR      R4,??DataTable3  ;; QuestionReboot_GUI
+        LDR      R0,[R4, #+0]
+        CMP      R0,#+0
+        BEQ      ??OnYes_QuestionReboot_1
+        SWI      +462
+        STR      R0,[R4, #+0]
+//   76   REQUEST_SYSTEM_RESTART();
+??OnYes_QuestionReboot_1:
+        SWI      +454
+//   77 }
+        POP      {R4,PC}          ;; return
+        CFI EndBlock cfiBlock9
+
+        RSEG CODE:CODE:NOROOT(2)
+        CFI Block cfiBlock10 Using cfiCommon0
+        CFI NoFunction
+        THUMB
+??Create_QuestionReboot??rT:
+        BX       PC
+        Nop      
+        CFI EndBlock cfiBlock10
+        REQUIRE ??Create_QuestionReboot
+//   78  
+
+        RSEG CODE:CODE:NOROOT(2)
+        CFI Block cfiBlock11 Using cfiCommon1
+        CFI Function ??Create_QuestionReboot
+        ARM
+//   79 void Create_QuestionReboot(BOOK* bk)
+//   80 {
+??Create_QuestionReboot:
+        PUSH     {R4,R5,LR}
+        CFI ?RET Frame(CFA, -4)
+        CFI R5 Frame(CFA, -8)
+        CFI R4 Frame(CFA, -12)
+        CFI CFA R13+12
+//   81   QuestionReboot_GUI = CreateYesNoQuestionVA(0,
+//   82                         VAR_BOOK( bk ),
+//   83                         VAR_YESNO_PRE_QUESTION( STR("Перезагрузить телефон?") ),
+//   84                         //VAR_YESNO_QUESTION( STR("Продолжить?") ),
+//   85                         VAR_YESNO_YES_ACTION( OnYes_QuestionReboot ),
+//   86                         VAR_YESNO_NO_ACTION( OnNo_QuestionReboot ),
+//   87                         0);
+        MOV      R2,#+255
+        MOV      R4,R0
+        LDR      R0,??Create_QuestionReboot_1  ;; `?<Constant L"\\x41f\\x435\\x440\\x435\\x437\\x430\\x4_1`
+        ORR      R2,R2,#0xFF00
+        LDR      R5,??DataTable3  ;; QuestionReboot_GUI
+        MOV      R1,#+0
+        SWI      +349
+        LDR      R3,??DataTable11  ;; VAR_ARG_YESNO_PRE_QUESTION
+        MOV      R1,#+0
+        PUSH     {R1}
+        CFI CFA R13+16
+        LDR      R1,??Create_QuestionReboot_1+0x4  ;; ??OnNo_QuestionReboot
+        MOV      R2,R4
+        PUSH     {R1}
+        CFI CFA R13+20
+        LDR      R1,??DataTable12  ;; VAR_ARG_YESNO_NO_ACTION
+        PUSH     {R1}
+        CFI CFA R13+24
+        LDR      R1,??Create_QuestionReboot_1+0x8  ;; ??OnYes_QuestionReboot
+        PUSH     {R1}
+        CFI CFA R13+28
+        LDR      R1,??DataTable13  ;; VAR_ARG_YESNO_YES_ACTION
+        PUSH     {R1}
+        CFI CFA R13+32
+        LDR      R1,??DataTable14  ;; VAR_ARG_BOOK
+        PUSH     {R0}
+        CFI CFA R13+36
+        MOV      R0,#+0
+        SWI      +677
+        STR      R0,[R5, #+0]
+//   88   YesNoQuestion_SetIcon( QuestionReboot_GUI, 0x140);
+        MOV      R1,#+320
+        SWI      +959
+//   89 }
+        ADD      SP,SP,#+24
+        CFI CFA R13+12
+        POP      {R4,R5,PC}       ;; return
+        DATA
+??Create_QuestionReboot_1:
+        DC32     `?<Constant L"\\x41f\\x435\\x440\\x435\\x437\\x430\\x4_1`
+        DC32     ??OnNo_QuestionReboot
+        DC32     ??OnYes_QuestionReboot
+        CFI EndBlock cfiBlock11
+
+        RSEG CODE:CODE:NOROOT(2)
+        DATA
+??DataTable3:
+        DC32     QuestionReboot_GUI
+
+        RSEG CODE:CODE:NOROOT(2)
+        CFI Block cfiBlock12 Using cfiCommon0
+        CFI NoFunction
+        THUMB
+??OnNo_QuestionShutdown??rT:
+        BX       PC
+        Nop      
+        CFI EndBlock cfiBlock12
+        REQUIRE ??OnNo_QuestionShutdown
+//   90 //------------------------------------------------------------------------------------------------------------
+//   91 
+//   92 //-- YesNoQuestionVA Shutdown --------------------------------------------------------------------------------
+
+        RSEG CODE:CODE:NOROOT(2)
+        CFI Block cfiBlock13 Using cfiCommon1
+        CFI Function ??OnNo_QuestionShutdown
+        ARM
+//   93 void OnNo_QuestionShutdown(BOOK * bk, void *)
+//   94 {
+??OnNo_QuestionShutdown:
+        PUSH     {R4,LR}
+        CFI ?RET Frame(CFA, -4)
+        CFI R4 Frame(CFA, -8)
+        CFI CFA R13+8
+//   95   FREE_GUI(QuestionShutdown_GUI);
+        LDR      R4,??DataTable10  ;; QuestionShutdown_GUI
+        LDR      R0,[R4, #+0]
+        CMP      R0,#+0
+        POPEQ    {R4,PC}
+        SWI      +462
+        STR      R0,[R4, #+0]
+//   96 }
+        POP      {R4,PC}          ;; return
+        CFI EndBlock cfiBlock13
+
+        RSEG CODE:CODE:NOROOT(2)
+        CFI Block cfiBlock14 Using cfiCommon0
+        CFI NoFunction
+        THUMB
+??OnYes_QuestionShutdown??rT:
+        BX       PC
+        Nop      
+        CFI EndBlock cfiBlock14
+        REQUIRE ??OnYes_QuestionShutdown
+//   97  
+
+        RSEG CODE:CODE:NOROOT(2)
+        CFI Block cfiBlock15 Using cfiCommon1
+        CFI Function ??OnYes_QuestionShutdown
+        ARM
+//   98 void OnYes_QuestionShutdown(BOOK * bk, void *)
+//   99 {
+??OnYes_QuestionShutdown:
+        PUSH     {R4,LR}
+        CFI ?RET Frame(CFA, -4)
+        CFI R4 Frame(CFA, -8)
+        CFI CFA R13+8
+//  100   FREE_GUI(QuestionShutdown_GUI);
+        LDR      R4,??DataTable10  ;; QuestionShutdown_GUI
+        LDR      R0,[R4, #+0]
+        CMP      R0,#+0
+        BEQ      ??OnYes_QuestionShutdown_1
+        SWI      +462
+        STR      R0,[R4, #+0]
+//  101   REQUEST_SYSTEM_SHUTDOWN();
+??OnYes_QuestionShutdown_1:
+        SWI      +453
+//  102 }
+        POP      {R4,PC}          ;; return
+        CFI EndBlock cfiBlock15
+
+        RSEG CODE:CODE:NOROOT(2)
+        CFI Block cfiBlock16 Using cfiCommon0
+        CFI NoFunction
+        THUMB
+??Create_QuestionShutdown??rT:
+        BX       PC
+        Nop      
+        CFI EndBlock cfiBlock16
+        REQUIRE ??Create_QuestionShutdown
+//  103  
+
+        RSEG CODE:CODE:NOROOT(2)
+        CFI Block cfiBlock17 Using cfiCommon1
+        CFI Function ??Create_QuestionShutdown
+        ARM
+//  104 void Create_QuestionShutdown(BOOK* bk)
+//  105 {
+??Create_QuestionShutdown:
+        PUSH     {R4,R5,LR}
+        CFI ?RET Frame(CFA, -4)
+        CFI R5 Frame(CFA, -8)
+        CFI R4 Frame(CFA, -12)
+        CFI CFA R13+12
+//  106   QuestionShutdown_GUI = CreateYesNoQuestionVA(0,
+//  107                         VAR_BOOK( bk ),
+//  108                         VAR_YESNO_PRE_QUESTION( STR("Выключить телефон?") ),
+//  109                         //VAR_YESNO_QUESTION( STR("Продолжить?") ),
+//  110                         VAR_YESNO_YES_ACTION( OnYes_QuestionShutdown ),
+//  111                         VAR_YESNO_NO_ACTION( OnNo_QuestionShutdown ),
+//  112                         0);
+        MOV      R2,#+255
+        MOV      R4,R0
+        LDR      R0,??Create_QuestionShutdown_1  ;; `?<Constant L"\\x412\\x44b\\x43a\\x43b\\x44e\\x447\\x4_1`
+        ORR      R2,R2,#0xFF00
+        LDR      R5,??DataTable10  ;; QuestionShutdown_GUI
+        MOV      R1,#+0
+        SWI      +349
+        LDR      R3,??DataTable11  ;; VAR_ARG_YESNO_PRE_QUESTION
+        MOV      R1,#+0
+        PUSH     {R1}
+        CFI CFA R13+16
+        LDR      R1,??Create_QuestionShutdown_1+0x4  ;; ??OnNo_QuestionShutdown
+        MOV      R2,R4
+        PUSH     {R1}
+        CFI CFA R13+20
+        LDR      R1,??DataTable12  ;; VAR_ARG_YESNO_NO_ACTION
+        PUSH     {R1}
+        CFI CFA R13+24
+        LDR      R1,??Create_QuestionShutdown_1+0x8  ;; ??OnYes_QuestionShutdown
+        PUSH     {R1}
+        CFI CFA R13+28
+        LDR      R1,??DataTable13  ;; VAR_ARG_YESNO_YES_ACTION
+        PUSH     {R1}
+        CFI CFA R13+32
+        LDR      R1,??DataTable14  ;; VAR_ARG_BOOK
+        PUSH     {R0}
+        CFI CFA R13+36
+        MOV      R0,#+0
+        SWI      +677
+        STR      R0,[R5, #+0]
+//  113   YesNoQuestion_SetIcon( QuestionShutdown_GUI, 0x140);
+        MOV      R1,#+320
+        SWI      +959
+//  114 }
+        ADD      SP,SP,#+24
+        CFI CFA R13+12
+        POP      {R4,R5,PC}       ;; return
+        DATA
+??Create_QuestionShutdown_1:
+        DC32     `?<Constant L"\\x412\\x44b\\x43a\\x43b\\x44e\\x447\\x4_1`
+        DC32     ??OnNo_QuestionShutdown
+        DC32     ??OnYes_QuestionShutdown
+        CFI EndBlock cfiBlock17
+
+        RSEG CODE:CODE:NOROOT(2)
+        DATA
+??DataTable10:
+        DC32     QuestionShutdown_GUI
+
+        RSEG CODE:CODE:NOROOT(2)
+        DATA
+??DataTable11:
+        DC32     VAR_ARG_YESNO_PRE_QUESTION
+
+        RSEG CODE:CODE:NOROOT(2)
+        DATA
+??DataTable12:
+        DC32     VAR_ARG_YESNO_NO_ACTION
+
+        RSEG CODE:CODE:NOROOT(2)
+        DATA
+??DataTable13:
+        DC32     VAR_ARG_YESNO_YES_ACTION
+
+        RSEG CODE:CODE:NOROOT(2)
+        DATA
+??DataTable14:
+        DC32     VAR_ARG_BOOK
+
+        RSEG CODE:CODE:NOROOT(2)
+        CFI Block cfiBlock18 Using cfiCommon0
+        CFI NoFunction
+        THUMB
+??GuiBack??rT:
+        BX       PC
+        Nop      
+        CFI EndBlock cfiBlock18
+        REQUIRE ??GuiBack
+//  115 //------------------------------------------------------------------------------------------------------------
+//  116 //======* i?e ia?aoee "iacaa" *=================================================
+
+        RSEG CODE:CODE:NOROOT(2)
+        CFI Block cfiBlock19 Using cfiCommon1
+        CFI Function ??GuiBack
+        ARM
+//  117 void GuiBack(BOOK* bk,GUI_LIST* gui)
+//  118 {
+??GuiBack:
+        PUSH     {R4,LR}
+        CFI ?RET Frame(CFA, -4)
+        CFI R4 Frame(CFA, -8)
+        CFI CFA R13+8
+        MOV      R4,R1
+//  119   //if(timer) Timer_Kill(&timer);
+//  120   ListMenu_DestroyItems(gui);
+        MOV      R0,R4
+        SWI      +955
+//  121   GUI_Free(gui);               // oaeaaai  aoe
+        MOV      R0,R4
+        SWI      +462
+//  122   FreeBook(&(mbk->book));                // oaeaaai aoe
+        LDR      R0,??DataTable23  ;; mbk
+        LDR      R0,[R0, #+0]
+        SWI      +303
+//  123 }
+        POP      {R4,PC}          ;; return
+        CFI EndBlock cfiBlock19
+
+        RSEG CODE:CODE:NOROOT(2)
+        CFI Block cfiBlock20 Using cfiCommon0
+        CFI NoFunction
+        THUMB
+??SelectMenuItem_Reboot??rT:
+        BX       PC
+        Nop      
+        CFI EndBlock cfiBlock20
+        REQUIRE ??SelectMenuItem_Reboot
+//  124 
+//  125 //------------------------------------------------------------------------------------------------------------
+
+        RSEG CODE:CODE:NOROOT(2)
+        CFI Block cfiBlock21 Using cfiCommon1
+        CFI Function ??SelectMenuItem_Reboot
+        ARM
+//  126 void SelectMenuItem_Reboot(BOOK* book)
+//  127 {
+//  128   Create_QuestionReboot(book);
+??SelectMenuItem_Reboot:
+        B        ??Create_QuestionReboot  ;; tailcall
+        CFI EndBlock cfiBlock21
+//  129 }
+
+        RSEG CODE:CODE:NOROOT(2)
+        CFI Block cfiBlock22 Using cfiCommon0
+        CFI NoFunction
+        THUMB
+??SelectMenuItem_Shutdown??rT:
+        BX       PC
+        Nop      
+        CFI EndBlock cfiBlock22
+        REQUIRE ??SelectMenuItem_Shutdown
+//  130 
+
+        RSEG CODE:CODE:NOROOT(2)
+        CFI Block cfiBlock23 Using cfiCommon1
+        CFI Function ??SelectMenuItem_Shutdown
+        ARM
+//  131 void SelectMenuItem_Shutdown(BOOK* book)
+//  132 {
+//  133   Create_QuestionShutdown(book);
+??SelectMenuItem_Shutdown:
+        B        ??Create_QuestionShutdown  ;; tailcall
+        CFI EndBlock cfiBlock23
+//  134 } 
+
+        RSEG CODE:CODE:NOROOT(2)
+        CFI Block cfiBlock24 Using cfiCommon0
+        CFI NoFunction
+        THUMB
+??SelectMenuItem_KeyLock??rT:
+        BX       PC
+        Nop      
+        CFI EndBlock cfiBlock24
+        REQUIRE ??SelectMenuItem_KeyLock
+//  135 
+
+        RSEG CODE:CODE:NOROOT(2)
+        CFI Block cfiBlock25 Using cfiCommon1
+        CFI Function ??SelectMenuItem_KeyLock
+        ARM
+//  136 void SelectMenuItem_KeyLock(void)
+//  137 {
+//  138   UI_Event(UI_KEYLOCK_ACTIVATE_EVENT);
+??SelectMenuItem_KeyLock:
+        LDR      R0,??DataTable27  ;; UI_KEYLOCK_ACTIVATE_EVENT
+        PUSH     {LR}
+        CFI ?RET Frame(CFA, -4)
+        CFI CFA R13+4
+        LDR      R0,[R0, #+0]
+        SWI      +424
+//  139   UI_Event(UI_SLEEPMODE_ACTIVATE_EVENT);
+        LDR      R0,??DataTable28  ;; UI_SLEEPMODE_ACTIVATE_EVENT
+        LDR      R0,[R0, #+0]
+        SWI      +424
+//  140 }
+        POP      {PC}             ;; return
+        CFI EndBlock cfiBlock25
+
+        RSEG CODE:CODE:NOROOT(2)
+        CFI Block cfiBlock26 Using cfiCommon0
+        CFI NoFunction
+        THUMB
+??SelectMenuItem_SilenceMode??rT:
+        BX       PC
+        Nop      
+        CFI EndBlock cfiBlock26
+        REQUIRE ??SelectMenuItem_SilenceMode
+//  141 
+
+        RSEG CODE:CODE:NOROOT(2)
+        CFI Block cfiBlock27 Using cfiCommon1
+        CFI Function ??SelectMenuItem_SilenceMode
+        ARM
+//  142 void SelectMenuItem_SilenceMode(void)
+//  143 {
+??SelectMenuItem_SilenceMode:
+        PUSH     {R4,LR}
+        CFI ?RET Frame(CFA, -4)
+        CFI R4 Frame(CFA, -8)
+        CFI CFA R13+8
+//  144   int current_profile;
+//  145       char mute;
+//  146       REQUEST_PROFILE_GETACTIVEPROFILE(SYNC, &current_profile);
+        LDR      R4,??DataTable25  ;; SYNC
+        SUB      SP,SP,#+8
+        CFI CFA R13+16
+        LDR      R0,[R4, #+0]
+        MOV      R1,SP
+        SWI      +436
+//  147       REQUEST_SETTING_SILENCE_GET(SYNC, current_profile, &mute); //получаем настройки режима "без звука"
+        LDR      R1,[SP, #+0]
+        LDR      R0,[R4, #+0]
+        ADD      R2,SP,#+4
+        MOV      R1,R1, LSL #+16
+        MOV      R1,R1, LSR #+16
+        SWI      +513
+//  148       if(mute == 1)
+        LDRB     R0,[SP, #+4]
+        CMP      R0,#+1
+        BNE      ??SelectMenuItem_SilenceMode_1
+//  149       {  //если режим "без звука" включен
+//  150         REQUEST_SETTING_SILENCE_SET(SYNC,(u16)current_profile,(u16)0);
+        LDR      R1,[SP, #+0]
+        LDR      R0,[R4, #+0]
+        MOV      R2,#+0
+        B        ??SelectMenuItem_SilenceMode_2
+//  151       }
+//  152       else
+//  153       if(mute == 0)
+??SelectMenuItem_SilenceMode_1:
+        CMP      R0,#+0
+        POPNE    {R0,R1,R4,PC}
+//  154       {  //если режим "без звука" выключен
+//  155         REQUEST_SETTING_SILENCE_SET(SYNC,(u16)current_profile,(u16)1); 
+        LDR      R1,[SP, #+0]
+        LDR      R0,[R4, #+0]
+        MOV      R2,#+1
+??SelectMenuItem_SilenceMode_2:
+        MOV      R1,R1, LSL #+16
+        MOV      R1,R1, LSR #+16
+        SWI      +512
+//  156       }
+//  157 }
+        POP      {R0,R1,R4,PC}    ;; return
+        CFI EndBlock cfiBlock27
+
+        RSEG CODE:CODE:NOROOT(2)
+        CFI Block cfiBlock28 Using cfiCommon0
+        CFI NoFunction
+        THUMB
+??SelectMenuItem_FlashLight??rT:
+        BX       PC
+        Nop      
+        CFI EndBlock cfiBlock28
+        REQUIRE ??SelectMenuItem_FlashLight
+//  158 
+
+        RSEG CODE:CODE:NOROOT(2)
+        CFI Block cfiBlock29 Using cfiCommon1
+        CFI Function ??SelectMenuItem_FlashLight
+        ARM
+//  159 void SelectMenuItem_FlashLight(void)
+//  160 {
+??SelectMenuItem_FlashLight:
+        PUSH     {LR}
+        CFI ?RET Frame(CFA, -4)
+        CFI CFA R13+4
+//  161   SetLampLevel(1);
+        MOV      R0,#+1
+        SWI      +376
+//  162 }
+        POP      {PC}             ;; return
+        CFI EndBlock cfiBlock29
+
+        RSEG CODE:CODE:NOROOT(2)
+        CFI Block cfiBlock30 Using cfiCommon0
+        CFI NoFunction
+        THUMB
+??SelectMenuItem_SelectProfile??rT:
+        BX       PC
+        Nop      
+        CFI EndBlock cfiBlock30
+        REQUIRE ??SelectMenuItem_SelectProfile
+//  163 
+
+        RSEG CODE:CODE:NOROOT(2)
+        CFI Block cfiBlock31 Using cfiCommon1
+        CFI Function ??SelectMenuItem_SelectProfile
+        ARM
+//  164 void SelectMenuItem_SelectProfile(int NumProfile)
+//  165 {
+??SelectMenuItem_SelectProfile:
+        PUSH     {LR}
+        CFI ?RET Frame(CFA, -4)
+        CFI CFA R13+4
+//  166   Profile_SetActive(NumProfile, NumProfile);
+        MOV      R1,R0
+        SWI      +437
+//  167 }
+        POP      {PC}             ;; return
+        CFI EndBlock cfiBlock31
+
+        RSEG CODE:CODE:NOROOT(2)
+        CFI Block cfiBlock32 Using cfiCommon0
+        CFI NoFunction
+        THUMB
+??GuiOnEnterPressed??rT:
+        BX       PC
+        Nop      
+        CFI EndBlock cfiBlock32
+        REQUIRE ??GuiOnEnterPressed
+//  168 
+
+        RSEG CODE:CODE:NOROOT(2)
+        CFI Block cfiBlock33 Using cfiCommon1
+        CFI Function ??GuiOnEnterPressed
+        ARM
+//  169 void GuiOnEnterPressed(BOOK* book,GUI_LIST* gui)
+//  170 {
+??GuiOnEnterPressed:
+        PUSH     {R4,R5,LR}
+        CFI ?RET Frame(CFA, -4)
+        CFI R5 Frame(CFA, -8)
+        CFI R4 Frame(CFA, -12)
+        CFI CFA R13+12
+        MOV      R4,R0
+        MOV      R5,R1
+//  171   switch(ListMenu_GetSelectedItem(gui))
+        MOV      R0,R5
+        SWI      +318
+        CMP      R0,#+12
+        POPHI    {R4,R5,PC}
+        ADR      R1,??GuiOnEnterPressed_1
+        LDRB     R1,[R1, R0]
+        ADD      PC,PC,R1, LSL #+2
+        DATA
+??GuiOnEnterPressed_1:
+        DC8      +3,+6,+9,+11
+        DC8      +13,+21,+16,+18
+        DC8      +25,+27,+29,+31
+        DC8      +33,+0,+0,+0
+        ARM
+//  172   {
+//  173     case 0: 
+//  174       {
+//  175         SelectMenuItem_Reboot(book);
+??GuiOnEnterPressed_2:
+        MOV      R0,R4
+        BL       ??Create_QuestionReboot
+//  176         break;
+        POP      {R4,R5,PC}
+//  177       }
+//  178     case 1: 
+//  179       {
+//  180         SelectMenuItem_Shutdown(book);
+??GuiOnEnterPressed_3:
+        MOV      R0,R4
+        BL       ??Create_QuestionShutdown
+//  181         break;
+        POP      {R4,R5,PC}
+//  182       }
+//  183     case 2:
+//  184       {
+//  185         SelectMenuItem_KeyLock();
+??GuiOnEnterPressed_4:
+        BL       ??SelectMenuItem_KeyLock
+//  186         GuiBack(book, gui);
+        B        ??GuiOnEnterPressed_5
+//  187         break;
+//  188       }
+//  189     case 3:
+//  190       {
+//  191         SelectMenuItem_SilenceMode();
+??GuiOnEnterPressed_6:
+        BL       ??SelectMenuItem_SilenceMode
+//  192         GuiBack(book, gui);
+        B        ??GuiOnEnterPressed_5
+//  193         break;
+//  194       }
+//  195     case 4:
+//  196       {
+//  197         SelectMenuItem_FlashLight();
+??GuiOnEnterPressed_7:
+        MOV      R0,#+1
+        SWI      +376
+//  198         GuiBack(book, gui);
+        B        ??GuiOnEnterPressed_5
+//  199         break;
+//  200       }
+//  201     case 5:
+//  202       {
+//  203         GuiBack(book, gui);
+//  204         break;
+//  205       }
+//  206     case 6:
+//  207       {
+//  208         SelectMenuItem_SelectProfile(0);
+??GuiOnEnterPressed_8:
+        MOV      R1,#+0
+        B        ??GuiOnEnterPressed_9
+//  209         GuiBack(book, gui);
+//  210         break;
+//  211       }
+//  212     case 7:
+//  213       {
+//  214         SelectMenuItem_SelectProfile(1);
+??GuiOnEnterPressed_10:
+        MOV      R1,#+1
+??GuiOnEnterPressed_9:
+        MOV      R0,R1
+        SWI      +437
+//  215         GuiBack(book, gui);
+??GuiOnEnterPressed_5:
+        MOV      R1,R5
+        MOV      R0,R4
+        BL       ??GuiBack
+//  216         break;
+        POP      {R4,R5,PC}
+//  217       }
+//  218     case 8:
+//  219       {
+//  220         SelectMenuItem_SelectProfile(2);
+??GuiOnEnterPressed_11:
+        MOV      R1,#+2
+        B        ??GuiOnEnterPressed_9
+//  221         GuiBack(book, gui);
+//  222         break;
+//  223       }
+//  224     case 9:
+//  225       {
+//  226         SelectMenuItem_SelectProfile(3);
+??GuiOnEnterPressed_12:
+        MOV      R1,#+3
+        B        ??GuiOnEnterPressed_9
+//  227         GuiBack(book, gui);
+//  228         break;
+//  229       }
+//  230     case 10:
+//  231       {
+//  232         SelectMenuItem_SelectProfile(4);
+??GuiOnEnterPressed_13:
+        MOV      R1,#+4
+        B        ??GuiOnEnterPressed_9
+//  233         GuiBack(book, gui);
+//  234         break;
+//  235       }
+//  236     case 11:
+//  237       {
+//  238         SelectMenuItem_SelectProfile(5);
+??GuiOnEnterPressed_14:
+        MOV      R1,#+5
+        B        ??GuiOnEnterPressed_9
+//  239         GuiBack(book, gui);
+//  240         break;
+//  241       }
+//  242     case 12:
+//  243       {
+//  244         SelectMenuItem_SelectProfile(6);
+??GuiOnEnterPressed_15:
+        MOV      R1,#+6
+        MOV      R0,#+6
+        SWI      +437
+//  245         GuiBack(book, gui);
+        MOV      R1,R5
+        MOV      R0,R4
+        BL       ??GuiBack
+//  246         break;
+//  247       }
+//  248   }
+//  249    //GuiBack(book, gui);
+//  250 }
+??GuiOnEnterPressed_16:
+        POP      {R4,R5,PC}       ;; return
+        CFI EndBlock cfiBlock33
+
+        RSEG CODE:CODE:NOROOT(2)
+        CFI Block cfiBlock34 Using cfiCommon0
+        CFI NoFunction
+        THUMB
+??GuiOnLBMessage??rT:
+        BX       PC
+        Nop      
+        CFI EndBlock cfiBlock34
+        REQUIRE ??GuiOnLBMessage
+//  251 
+//  252 //=========* aiaaaeyai iacaaiey *===============================================
+
+        RSEG CODE:CODE:NOROOT(2)
+        CFI Block cfiBlock35 Using cfiCommon1
+        CFI Function ??GuiOnLBMessage
+        ARM
+//  253 int GuiOnLBMessage(GUI_MESSAGE* msg)
+//  254 {
+??GuiOnLBMessage:
+        PUSH     {R4-R7,LR}
+        CFI ?RET Frame(CFA, -4)
+        CFI R7 Frame(CFA, -8)
+        CFI R6 Frame(CFA, -12)
+        CFI R5 Frame(CFA, -16)
+        CFI R4 Frame(CFA, -20)
+        CFI CFA R13+20
+        SUB      SP,SP,#+8
+        CFI CFA R13+28
+        MOV      R4,R0
+//  255   int index;
+//  256   switch(msg->__msg)
+        LDRB     R0,[R4, #+0]
+        CMP      R0,#+1
+        BNE      ??GuiOnLBMessage_1
+//  257   {
+//  258     case 1:
+//  259     index = GUIonMessage_GetCreatedItemIndex(msg);
+//  260     if(index == 3)
+        LDR      R6,??DataTable24  ;; names_textid
+        MOV      R0,R4
+        SWI      +311
+        MOV      R5,R0
+        CMP      R5,#+3
+        BNE      ??GuiOnLBMessage_2
+//  261     {
+//  262       int current_profile;
+//  263       char mute;
+//  264       REQUEST_PROFILE_GETACTIVEPROFILE(SYNC, &current_profile);
+        LDR      R7,??DataTable25  ;; SYNC
+        ADD      R1,SP,#+4
+        LDR      R0,[R7, #+0]
+        SWI      +436
+//  265       REQUEST_SETTING_SILENCE_GET(SYNC, current_profile, &mute); //получаем настройки режима "без звука"
+        LDR      R1,[SP, #+4]
+        LDR      R0,[R7, #+0]
+        MOV      R2,SP
+        MOV      R1,R1, LSL #+16
+        MOV      R1,R1, LSR #+16
+        SWI      +513
+//  266       if(mute == 1)
+        LDRB     R1,[SP, #+0]
+        LDR      R0,??GuiOnLBMessage_3  ;; `?<Constant L"\\x41e\\x442\\x43a\\x43b\\x2e\\x20\\x431`
+        MOV      R2,#+255
+        ORR      R2,R2,#0xFF00
+        CMP      R1,#+1
+        MOV      R1,#+0
+        BNE      ??GuiOnLBMessage_4
+//  267       {  //если режим "без звука" включен
+//  268         GUIonMessage_SetMenuItemText(msg, TextID_Create(L"Откл. беззвучный", ENC_UCS2,TEXTID_ANY_LEN));
+??GuiOnLBMessage_5:
+        SWI      +349
+        MOV      R1,R0
+        B        ??GuiOnLBMessage_6
+//  269       }
+//  270       else
+//  271       {  //если режим "без звука" выключен
+//  272         GUIonMessage_SetMenuItemText(msg, TextID_Create(L"Вкл. беззвучный", ENC_UCS2,TEXTID_ANY_LEN)); 
+??GuiOnLBMessage_4:
+        ADD      R0,R0,#+36
+        B        ??GuiOnLBMessage_5
+//  273       }
+//  274     }
+//  275     else
+//  276     {
+//  277       GUIonMessage_SetMenuItemText(msg, names_textid[index]);
+??GuiOnLBMessage_2:
+        LDR      R1,[R6, +R5, LSL #+2]
+??GuiOnLBMessage_6:
+        MOV      R0,R4
+        SWI      +312
+//  278     }
+//  279     GUIonMessage_SetMenuItemIcon(msg, 0, imageid[index]);
+        ADD      R0,R6,R5, LSL #+2
+        LDR      R2,[R0, #+76]
+        MOV      R1,#+0
+        MOV      R2,R2, LSL #+16
+        MOV      R2,R2, LSR #+16
+        MOV      R0,R4
+        SWI      +316
+//  280     break;
+//  281   }
+//  282   return(1);
+??GuiOnLBMessage_1:
+        MOV      R0,#+1
+        POP      {R1,R2,R4-R7,PC}  ;; return
+        DATA
+??GuiOnLBMessage_3:
+        DC32     `?<Constant L"\\x41e\\x442\\x43a\\x43b\\x2e\\x20\\x431`
+        CFI EndBlock cfiBlock35
+//  283 }
+
+        RSEG CODE:CODE:NOROOT(2)
+        CFI Block cfiBlock36 Using cfiCommon0
+        CFI NoFunction
+        THUMB
+??Create_QuickAccessMenuBook??rT:
+        BX       PC
+        Nop      
+        CFI EndBlock cfiBlock36
+        REQUIRE ??Create_QuickAccessMenuBook
+//  284 
+//  285 //==============================================================================
+//  286 
+
+        RSEG CODE:CODE:NOROOT(2)
+        CFI Block cfiBlock37 Using cfiCommon1
+        CFI Function ??Create_QuickAccessMenuBook
+        ARM
+//  287 MyBOOK * Create_QuickAccessMenuBook()
+//  288 {
+??Create_QuickAccessMenuBook:
+        PUSH     {R4,LR}
+        CFI ?RET Frame(CFA, -4)
+        CFI R4 Frame(CFA, -8)
+        CFI CFA R13+8
+//  289   mbk = new MyBOOK;
+        LDR      R4,??DataTable23  ;; mbk
+        MOV      R0,#+28
+        _BLF     `??operator new`,`??operator new??rA`
+//  290   CreateBook(&(mbk->book), NULL, NULL, QUICKACCESS_MENU_BOOK_NAME, -1, NULL);
+        LDR      R3,??DataTable26  ;; `?<Constant "QAMenu_Book">`
+        STR      R0,[R4, #+0]
+        MOV      R0,#+0
+        PUSH     {R0}
+        CFI CFA R13+12
+        MOV      R2,#+0
+        MOV      R1,#+0
+        MVN      R0,R0
+        PUSH     {R0}
+        CFI CFA R13+16
+        LDR      R0,[R4, #+0]
+        SWI      +299
+//  291   return(mbk);
+        LDR      R0,[R4, #+0]
+        POP      {R1,R2,R4,PC}    ;; return
+        CFI EndBlock cfiBlock37
+//  292 }
+
+        RSEG CODE:CODE:NOROOT(2)
+        CFI Block cfiBlock38 Using cfiCommon0
+        CFI NoFunction
+        THUMB
+??Create_QuickAccessMenu??rT:
+        BX       PC
+        Nop      
+        CFI EndBlock cfiBlock38
+        REQUIRE ??Create_QuickAccessMenu
+//  293 
+//  294 
+//  295 //=========* Запускаем наше меню *==============================================
+//  296 
+
+        RSEG CODE:CODE:NOROOT(2)
+        CFI Block cfiBlock39 Using cfiCommon1
+        CFI Function ??Create_QuickAccessMenu
+        ARM
+//  297 void Create_QuickAccessMenu()
+//  298 {
+//  299   if( !FindBook(isMyQABook) )
+??Create_QuickAccessMenu:
+        LDR      R0,??Create_QuickAccessMenu_1  ;; ??isMyQABook
+        PUSH     {LR}
+        CFI ?RET Frame(CFA, -4)
+        CFI CFA R13+4
+        SWI      +304
+        CMP      R0,#+0
+        POPNE    {PC}
+//  300   {
+//  301     Create_QuickAccessMenuBook();
+        BL       ??Create_QuickAccessMenuBook
+//  302     QuickAccess_menu(0,&(mbk->book),mbk->gui); // gui.c
+        LDR      R0,??DataTable23  ;; mbk
+        LDR      R1,[R0, #+0]
+        MOV      R0,#+0
+        LDR      R2,[R1, #+24]
+        BL       ??QuickAccess_menu
+//  303   }
+//  304 }
+        POP      {PC}             ;; return
+        DATA
+??Create_QuickAccessMenu_1:
+        DC32     ??isMyQABook
+        CFI EndBlock cfiBlock39
+
+        RSEG CODE:CODE:NOROOT(2)
+        DATA
+??DataTable23:
+        DC32     mbk
+
+        RSEG CODE:CODE:NOROOT(2)
+        CFI Block cfiBlock40 Using cfiCommon0
+        CFI NoFunction
+        THUMB
+??onTimer??rT:
+        BX       PC
+        Nop      
+        CFI EndBlock cfiBlock40
+        REQUIRE ??onTimer
+//  305 //------------------------------------------------------------------------------
+
+        RSEG CODE:CODE:NOROOT(2)
+        CFI Block cfiBlock41 Using cfiCommon1
+        CFI Function ??onTimer
+        ARM
+//  306 void onTimer(u16 timerID , LPARAM gui)
+//  307 {
+??onTimer:
+        PUSH     {R4,LR}
+        CFI ?RET Frame(CFA, -4)
+        CFI R4 Frame(CFA, -8)
+        CFI CFA R13+8
+        SUB      SP,SP,#+520
+        CFI CFA R13+528
+//  308   DATETIME dt;
+//  309   int sec, min, hour, year, mon, day;
+//  310   REQUEST_DATEANDTIME_GET(0,&dt);
+        MOV      R0,#+0
+        MOV      R4,R1
+        MOV      R1,SP
+        SWI      +366
+//  311   hour = dt.time.hour;
+//  312   min = dt.time.min;
+//  313   sec = dt.time.sec;
+//  314   year = dt.date.year;
+//  315   mon = dt.date.mon;
+//  316   day = dt.date.day;
+//  317   wchar_t info[256];
+//  318   snwprintf(info,255,L"%i-%i-%i | %i:%i:%i", day, mon, year, hour, min, sec );
+        LDRB     R0,[SP, #+6]
+        LDR      R2,??onTimer_1   ;; `?<Constant L"\\x25\\x69\\x2d\\x25\\x69\\x2d\\x25\\x69\\`
+        MOV      R1,#+255
+        PUSH     {R0}
+        CFI CFA R13+532
+        LDRB     R0,[SP, #+9]
+        PUSH     {R0}
+        CFI CFA R13+536
+        LDRB     R0,[SP, #+12]
+        PUSH     {R0}
+        CFI CFA R13+540
+        LDRH     R0,[SP, #+12]
+        PUSH     {R0}
+        CFI CFA R13+544
+        LDRB     R0,[SP, #+18]
+        PUSH     {R0}
+        CFI CFA R13+548
+        LDRB     R3,[SP, #+23]
+        ADD      R0,SP,#+28
+        SWI      +277
+//  319   GuiObject_SetTitleText((GUI*)gui, TextID_Create( info, ENC_UCS2,TEXTID_ANY_LEN));
+        MOV      R2,#+255
+        ORR      R2,R2,#0xFF00
+        MOV      R1,#+0
+        ADD      R0,SP,#+28
+        SWI      +349
+        MOV      R1,R0
+        MOV      R0,R4
+        SWI      +307
+//  320   Timer_ReSet(&timer,1000,onTimer,gui);
+        LDR      R2,??onTimer_1+0x4  ;; ??onTimer
+        LDR      R0,??onTimer_1+0x8  ;; timer
+        MOV      R3,R4
+        MOV      R1,#+1000
+        SWI      +296
+//  321 }
+        ADD      SP,SP,#+540
+        CFI CFA R13+8
+        POP      {R4,PC}          ;; return
+        DATA
+??onTimer_1:
+        DC32     `?<Constant L"\\x25\\x69\\x2d\\x25\\x69\\x2d\\x25\\x69\\`
+        DC32     ??onTimer
+        DC32     timer
+        CFI EndBlock cfiBlock41
+
+        RSEG CODE:CODE:NOROOT(2)
+        CFI Block cfiBlock42 Using cfiCommon0
+        CFI NoFunction
+        THUMB
+??QuickAccess_menu??rT:
+        BX       PC
+        Nop      
+        CFI EndBlock cfiBlock42
+        REQUIRE ??QuickAccess_menu
+//  322 
+//  323 //==============================================================================
+
+        RSEG CODE:CODE:NOROOT(2)
+        CFI Block cfiBlock43 Using cfiCommon1
+        CFI Function ??QuickAccess_menu
+        ARM
+//  324 void QuickAccess_menu( void* r0,BOOK* bk,GUI_LIST* gui )
+//  325 {
+??QuickAccess_menu:
+        PUSH     {R4-R8,LR}
+        CFI ?RET Frame(CFA, -4)
+        CFI R8 Frame(CFA, -8)
+        CFI R7 Frame(CFA, -12)
+        CFI R6 Frame(CFA, -16)
+        CFI R5 Frame(CFA, -20)
+        CFI R4 Frame(CFA, -24)
+        CFI CFA R13+24
+//  326   for(int i = 0; i < 6; i++)
+        LDR      R6,??DataTable24  ;; names_textid
+        SUB      SP,SP,#+44
+        CFI CFA R13+68
+        MOV      R5,R1
+        MOV      R7,#+0
+        MOV      R4,#+255
+        ORR      R4,R4,#0xFF00
+//  327   {
+//  328     names_textid[i] = TextID_Create(names_str[i], ENC_UCS2,TEXTID_ANY_LEN);
+??QuickAccess_menu_1:
+        MOV      R2,R4
+        ADD      R0,R6,R7, LSL #+2
+        LDR      R0,[R0, #+52]
+        MOV      R1,#+0
+        SWI      +349
+        STR      R0,[R6, +R7, LSL #+2]
+//  329   }
+        ADD      R7,R7,#+1
+        CMP      R7,#+6
+        BLT      ??QuickAccess_menu_1
+//  330   
+//  331   TEXTID_DATA utf8str;
+//  332   wchar_t SetName[0x10];
+//  333   utf8str.ptr = SetName;
+        ADD      R1,SP,#+12
+        STR      R1,[SP, #+4]
+//  334   char error;  
+//  335   for(int i = 0,y = 6; i<7; i++, y++)
+        MOV      R7,#+0
+        MOV      R8,#+6
+//  336   { 
+//  337     REQUEST_PROFILE_GETPROFILENAME( SYNC, i, &utf8str, &error ); 
+??QuickAccess_menu_2:
+        LDR      R0,??DataTable25  ;; SYNC
+        ADD      R3,SP,#+8
+        LDR      R0,[R0, #+0]
+        MOV      R2,SP
+        MOV      R1,R7
+        SWI      +882
+//  338     names_textid[y] = TextID_Create(&utf8str, ENC_UT, utf8str.lenght);
+        LDRH     R2,[SP, #+0]
+        MOV      R1,#+8
+        MOV      R0,SP
+        SWI      +349
+        STR      R0,[R6, +R8, LSL #+2]
+//  339   } 
+        ADD      R7,R7,#+1
+        ADD      R8,R8,#+1
+        CMP      R7,#+7
+        BLT      ??QuickAccess_menu_2
+//  340 
+//  341   gui = CreateListMenu( bk, 0);
+        MOV      R1,#+0
+        MOV      R0,R5
+        SWI      +448
+        MOV      R5,R0
+//  342   //timer = Timer_Set(1000, onTimer, (LPARAM*)gui);
+//  343   ListMenu_SetItemCount(gui, LIST_ITEM_COUNT);
+        MOV      R1,#+13
+        SWI      +449
+//  344   ListMenu_SetOnMessage(gui, GuiOnLBMessage);
+        LDR      R1,??QuickAccess_menu_3  ;; ??GuiOnLBMessage
+        MOV      R0,R5
+        SWI      +372
+//  345   SetCursorToItem(gui,0);
+        MOV      R1,#+0
+        MOV      R0,R5
+        SWI      +309
+//  346   SetMenuItemStyle(gui, 0);   //
+        MOV      R1,#+0
+        MOV      R0,R5
+        SWI      +319
+//  347   GUIObject_SetStyle(gui, 2);  //Full screen   4
+        MOV      R1,#+2
+        MOV      R0,R5
+        SWI      +310
+//  348   GuiObject_SetTitleText(gui, TextID_Create(L"QuickAccessMenu", ENC_UCS2,TEXTID_ANY_LEN));
+        LDR      R0,??QuickAccess_menu_3+0x4  ;; `?<Constant L"\\x51\\x75\\x69\\x63\\x6b\\x41\\x63\\x63\\`
+        MOV      R2,R4
+//  349   GUIObject_SoftKeys_SetAction(gui, ACTION_BACK,GuiBack);
+        LDR      R4,??QuickAccess_menu_3+0x8  ;; ??GuiBack
+        MOV      R1,#+0
+        SWI      +349
+        MOV      R1,R0
+        MOV      R0,R5
+        SWI      +307
+        LDR      R0,??QuickAccess_menu_3+0xC  ;; ACTION_BACK
+        MOV      R2,R4
+        LDR      R1,[R0, #+0]
+        MOV      R0,R5
+        MOV      R1,R1, LSL #+16
+        MOV      R1,R1, LSR #+16
+        SWI      +331
+//  350   GUIObject_SoftKeys_SetAction(gui, ACTION_LONG_BACK,GuiBack);
+        LDR      R0,??QuickAccess_menu_3+0x10  ;; ACTION_LONG_BACK
+        MOV      R2,R4
+        LDR      R1,[R0, #+0]
+        MOV      R0,R5
+        MOV      R1,R1, LSL #+16
+        MOV      R1,R1, LSR #+16
+        SWI      +331
+//  351   GUIObject_SoftKeys_SetAction(gui, ACTION_SELECT1,GuiOnEnterPressed);
+        LDR      R0,??QuickAccess_menu_3+0x14  ;; ACTION_SELECT1
+        LDR      R2,??QuickAccess_menu_3+0x18  ;; ??GuiOnEnterPressed
+        LDR      R1,[R0, #+0]
+        MOV      R0,R5
+        MOV      R1,R1, LSL #+16
+        MOV      R1,R1, LSR #+16
+        SWI      +331
+//  352   GUIObject_Show(gui);
+        MOV      R0,R5
+        SWI      +308
+//  353 }
+        ADD      SP,SP,#+44
+        CFI CFA R13+24
+        POP      {R4-R8,PC}       ;; return
+        DATA
+??QuickAccess_menu_3:
+        DC32     ??GuiOnLBMessage
+        DC32     `?<Constant L"\\x51\\x75\\x69\\x63\\x6b\\x41\\x63\\x63\\`
+        DC32     ??GuiBack
+        DC32     ACTION_BACK
+        DC32     ACTION_LONG_BACK
+        DC32     ACTION_SELECT1
+        DC32     ??GuiOnEnterPressed
+        CFI EndBlock cfiBlock43
+
+        RSEG CODE:CODE:NOROOT(2)
+        DATA
+??DataTable24:
+        DC32     names_textid
+
+        RSEG CODE:CODE:NOROOT(2)
+        DATA
+??DataTable25:
+        DC32     SYNC
+
+        RSEG CODE:CODE:NOROOT(2)
+        CFI Block cfiBlock44 Using cfiCommon0
+        CFI NoFunction
+        THUMB
+??KeyPr??rT:
+        BX       PC
+        Nop      
+        CFI EndBlock cfiBlock44
+        REQUIRE ??KeyPr
+//  354 
+
+        RSEG CODE:CODE:NOROOT(2)
+        CFI Block cfiBlock45 Using cfiCommon1
+        CFI Function ??KeyPr
+        ARM
+//  355 int KeyPr ( int key, int r1, int mode, LPARAM lparam, DISP_OBJ*db )
+//  356 {
+??KeyPr:
+        PUSH     {R4-R10,LR}
+        CFI ?RET Frame(CFA, -4)
+        CFI R10 Frame(CFA, -8)
+        CFI R9 Frame(CFA, -12)
+        CFI R8 Frame(CFA, -16)
+        CFI R7 Frame(CFA, -20)
+        CFI R6 Frame(CFA, -24)
+        CFI R5 Frame(CFA, -28)
+        CFI R4 Frame(CFA, -32)
+        CFI CFA R13+32
+        MOV      R4,R0
+        LDR      R9,[SP, #+32]
+        MOV      R5,R2
+//  357   
+//  358   if(key==0x28 && mode==KBD_LONG_PRESS && !(isKeylocked()))
+        CMP      R4,#+40
+        BNE      ??KeyPr_1
+        LDR      R0,??KeyPr_2     ;; KBD_LONG_PRESS
+        LDR      R0,[R0, #+0]
+        CMP      R5,R0
+        BNE      ??KeyPr_1
+        SWI      +439
+        CMP      R0,#+0
+        BNE      ??KeyPr_1
+//  359   {
+//  360     Create_QuickAccessMenu();
+        BL       ??Create_QuickAccessMenu
+//  361     return -1;
+        MVN      R0,#+0
+        POP      {R4-R10,PC}
+//  362   }
+//  363   //--------------------------------
+//  364   if(key == KEY_UP && mode == KBD_SHORT_PRESS && !(isKeylocked()) && (Display_GetTopBook(0)==FindBookEx(isBook,(int*)QUICKACCESS_MENU_BOOK_NAME)))
+??KeyPr_1:
+        LDR      R0,??KeyPr_2+0x4  ;; KBD_SHORT_PRESS
+        LDR      R7,??KeyPr_2+0x8  ;; ??isBook
+        LDR      R6,[R0, #+0]
+        LDR      R0,??KeyPr_2+0xC  ;; KEY_UP
+        LDR      R8,??DataTable26  ;; `?<Constant "QAMenu_Book">`
+        LDR      R0,[R0, #+0]
+        CMP      R4,R0
+        CMPEQ    R5,R6
+        BNE      ??KeyPr_3
+        SWI      +439
+        CMP      R0,#+0
+        BNE      ??KeyPr_3
+        SWI      +795
+        MOV      R10,R0
+        MOV      R1,R8
+        MOV      R0,R7
+        SWI      +739
+        CMP      R10,R0
+        BNE      ??KeyPr_3
+//  365   {
+//  366     GUI* gui = DispObject_GetGUI(db);
+        MOV      R0,R9
+        SWI      +540
+        MOV      R10,R0
+//  367     if(ListMenu_GetSelectedItem(gui)==6)
+        SWI      +318
+        CMP      R0,#+6
+        BNE      ??KeyPr_3
+//  368       ListMenu_SetCursorToItem(gui, 5);
+        MOV      R1,#+5
+        MOV      R0,R10
+        SWI      +309
+//  369   }
+//  370   if(key == KEY_DOWN && mode == KBD_SHORT_PRESS && !(isKeylocked()) && (Display_GetTopBook(0)==FindBookEx(isBook,(int*)QUICKACCESS_MENU_BOOK_NAME)))
+??KeyPr_3:
+        LDR      R0,??KeyPr_2+0x10  ;; KEY_DOWN
+        LDR      R0,[R0, #+0]
+        CMP      R4,R0
+        CMPEQ    R5,R6
+        BNE      ??KeyPr_4
+        SWI      +439
+        CMP      R0,#+0
+        BNE      ??KeyPr_4
+        SWI      +795
+        MOV      R10,R0
+        MOV      R1,R8
+        MOV      R0,R7
+        SWI      +739
+        CMP      R10,R0
+        BNE      ??KeyPr_4
+//  371   {
+//  372     GUI* gui = DispObject_GetGUI(db);
+        MOV      R0,R9
+        SWI      +540
+        MOV      R9,R0
+//  373     if(ListMenu_GetSelectedItem(gui)==4)
+        SWI      +318
+        CMP      R0,#+4
+        BNE      ??KeyPr_4
+//  374       ListMenu_SetCursorToItem(gui, 5);
+        MOV      R1,#+5
+        MOV      R0,R9
+        SWI      +309
+//  375   }
+//  376   //---------------------------------
+//  377   
+//  378   
+//  379   if(key == KEY_DIGITAL_0+1 && mode == KBD_SHORT_PRESS && !(isKeylocked()) && (Display_GetTopBook(0)==FindBookEx(isBook,(int*)QUICKACCESS_MENU_BOOK_NAME)))
+??KeyPr_4:
+        LDR      R0,??KeyPr_2+0x14  ;; KEY_DIGITAL_0
+        LDR      R9,[R0, #+0]
+        ADD      R0,R9,#+1
+        CMP      R4,R0
+        CMPEQ    R5,R6
+        BNE      ??KeyPr_5
+        SWI      +439
+        CMP      R0,#+0
+        BNE      ??KeyPr_5
+        SWI      +795
+        MOV      R10,R0
+        MOV      R1,R8
+        MOV      R0,R7
+        SWI      +739
+        CMP      R10,R0
+        BNE      ??KeyPr_5
+//  380   {
+//  381     SelectMenuItem_Reboot(Display_GetTopBook(0));
+        MOV      R0,#+0
+        SWI      +795
+        BL       ??Create_QuestionReboot
+//  382   }
+//  383      
+//  384   if(key == KEY_DIGITAL_0+2 && mode == KBD_SHORT_PRESS && !(isKeylocked()) && (Display_GetTopBook(0)==FindBookEx(isBook,(int*)QUICKACCESS_MENU_BOOK_NAME)))
+??KeyPr_5:
+        ADD      R0,R9,#+2
+        CMP      R4,R0
+        CMPEQ    R5,R6
+        BNE      ??KeyPr_6
+        SWI      +439
+        CMP      R0,#+0
+        BNE      ??KeyPr_6
+        SWI      +795
+        MOV      R10,R0
+        MOV      R1,R8
+        MOV      R0,R7
+        SWI      +739
+        CMP      R10,R0
+        BNE      ??KeyPr_6
+//  385   {
+//  386     SelectMenuItem_Shutdown(Display_GetTopBook(0));
+        MOV      R0,#+0
+        SWI      +795
+        BL       ??Create_QuestionShutdown
+//  387   }
+//  388   
+//  389   if(key == KEY_DIGITAL_0+3 && mode == KBD_SHORT_PRESS && !(isKeylocked()) && (Display_GetTopBook(0)==FindBookEx(isBook,(int*)QUICKACCESS_MENU_BOOK_NAME)))
+??KeyPr_6:
+        ADD      R0,R9,#+3
+        CMP      R4,R0
+        CMPEQ    R5,R6
+        BNE      ??KeyPr_7
+        SWI      +439
+        CMP      R0,#+0
+        BNE      ??KeyPr_7
+        SWI      +795
+        MOV      R10,R0
+        MOV      R1,R8
+        MOV      R0,R7
+        SWI      +739
+        CMP      R10,R0
+        BNE      ??KeyPr_7
+//  390   {
+//  391     SelectMenuItem_KeyLock();
+        BL       ??SelectMenuItem_KeyLock
+//  392   }
+//  393      
+//  394   if(key == KEY_DIGITAL_0+4 && mode == KBD_SHORT_PRESS && !(isKeylocked()) && (Display_GetTopBook(0)==FindBookEx(isBook,(int*)QUICKACCESS_MENU_BOOK_NAME)))
+??KeyPr_7:
+        ADD      R0,R9,#+4
+        CMP      R4,R0
+        CMPEQ    R5,R6
+        BNE      ??KeyPr_8
+        SWI      +439
+        CMP      R0,#+0
+        BNE      ??KeyPr_8
+        SWI      +795
+        MOV      R10,R0
+        MOV      R1,R8
+        MOV      R0,R7
+        SWI      +739
+        CMP      R10,R0
+        BNE      ??KeyPr_8
+//  395   {
+//  396     SelectMenuItem_SilenceMode();
+        BL       ??SelectMenuItem_SilenceMode
+//  397   }
+//  398      
+//  399   if(key == KEY_DIGITAL_0+5 && mode == KBD_SHORT_PRESS && !(isKeylocked()) && (Display_GetTopBook(0)==FindBookEx(isBook,(int*)QUICKACCESS_MENU_BOOK_NAME)))
+??KeyPr_8:
+        ADD      R0,R9,#+5
+        CMP      R4,R0
+        CMPEQ    R5,R6
+        BNE      ??KeyPr_9
+        SWI      +439
+        CMP      R0,#+0
+        BNE      ??KeyPr_9
+        SWI      +795
+        MOV      R10,R0
+        MOV      R1,R8
+        MOV      R0,R7
+        SWI      +739
+        CMP      R10,R0
+        BNE      ??KeyPr_9
+//  400   {
+//  401     SelectMenuItem_FlashLight();
+        MOV      R0,#+1
+        SWI      +376
+//  402   }
+//  403   // profile   
+//  404   if(key == KEY_DIGITAL_0+6 && mode == KBD_SHORT_PRESS && !(isKeylocked()) && (Display_GetTopBook(0)==FindBookEx(isBook,(int*)QUICKACCESS_MENU_BOOK_NAME)))
+??KeyPr_9:
+        ADD      R0,R9,#+6
+        CMP      R4,R0
+        CMPEQ    R5,R6
+        BNE      ??KeyPr_10
+        SWI      +439
+        CMP      R0,#+0
+        BNE      ??KeyPr_10
+        SWI      +795
+        MOV      R10,R0
+        MOV      R1,R8
+        MOV      R0,R7
+        SWI      +739
+        CMP      R10,R0
+        BNE      ??KeyPr_10
+//  405   {
+//  406      SelectMenuItem_SelectProfile(0);
+        MOV      R1,#+0
+        MOV      R0,#+0
+        SWI      +437
+//  407   }
+//  408   if(key == KEY_DIGITAL_0+7 && mode == KBD_SHORT_PRESS && !(isKeylocked()) && (Display_GetTopBook(0)==FindBookEx(isBook,(int*)QUICKACCESS_MENU_BOOK_NAME)))
+??KeyPr_10:
+        ADD      R0,R9,#+7
+        CMP      R4,R0
+        CMPEQ    R5,R6
+        BNE      ??KeyPr_11
+        SWI      +439
+        CMP      R0,#+0
+        BNE      ??KeyPr_11
+        SWI      +795
+        MOV      R10,R0
+        MOV      R1,R8
+        MOV      R0,R7
+        SWI      +739
+        CMP      R10,R0
+        BNE      ??KeyPr_11
+//  409   {
+//  410      SelectMenuItem_SelectProfile(1);
+        MOV      R1,#+1
+        MOV      R0,#+1
+        SWI      +437
+//  411   }
+//  412   if(key == KEY_DIGITAL_0+8 && mode == KBD_SHORT_PRESS && !(isKeylocked()) && (Display_GetTopBook(0)==FindBookEx(isBook,(int*)QUICKACCESS_MENU_BOOK_NAME)))
+??KeyPr_11:
+        ADD      R0,R9,#+8
+        CMP      R4,R0
+        CMPEQ    R5,R6
+        BNE      ??KeyPr_12
+        SWI      +439
+        CMP      R0,#+0
+        BNE      ??KeyPr_12
+        SWI      +795
+        MOV      R10,R0
+        MOV      R1,R8
+        MOV      R0,R7
+        SWI      +739
+        CMP      R10,R0
+        BNE      ??KeyPr_12
+//  413   {
+//  414      SelectMenuItem_SelectProfile(2);
+        MOV      R1,#+2
+        MOV      R0,#+2
+        SWI      +437
+//  415   }
+//  416   if(key == KEY_DIGITAL_0+9 && mode == KBD_SHORT_PRESS && !(isKeylocked()) && (Display_GetTopBook(0)==FindBookEx(isBook,(int*)QUICKACCESS_MENU_BOOK_NAME)))
+??KeyPr_12:
+        ADD      R0,R9,#+9
+        CMP      R4,R0
+        CMPEQ    R5,R6
+        BNE      ??KeyPr_13
+        SWI      +439
+        CMP      R0,#+0
+        BNE      ??KeyPr_13
+        SWI      +795
+        MOV      R10,R0
+        MOV      R1,R8
+        MOV      R0,R7
+        SWI      +739
+        CMP      R10,R0
+        BNE      ??KeyPr_13
+//  417   {
+//  418      SelectMenuItem_SelectProfile(3);
+        MOV      R1,#+3
+        MOV      R0,#+3
+        SWI      +437
+//  419   }
+//  420   if(key == KEY_STAR && mode == KBD_SHORT_PRESS && !(isKeylocked()) && (Display_GetTopBook(0)==FindBookEx(isBook,(int*)QUICKACCESS_MENU_BOOK_NAME)))
+??KeyPr_13:
+        LDR      R0,??KeyPr_2+0x18  ;; KEY_STAR
+        LDR      R0,[R0, #+0]
+        CMP      R4,R0
+        CMPEQ    R5,R6
+        BNE      ??KeyPr_14
+        SWI      +439
+        CMP      R0,#+0
+        BNE      ??KeyPr_14
+        SWI      +795
+        MOV      R10,R0
+        MOV      R1,R8
+        MOV      R0,R7
+        SWI      +739
+        CMP      R10,R0
+        BNE      ??KeyPr_14
+//  421   {
+//  422      SelectMenuItem_SelectProfile(4);
+        MOV      R1,#+4
+        MOV      R0,#+4
+        SWI      +437
+//  423   }
+//  424   if(key == KEY_DIGITAL_0 && mode == KBD_SHORT_PRESS && !(isKeylocked()) && (Display_GetTopBook(0)==FindBookEx(isBook,(int*)QUICKACCESS_MENU_BOOK_NAME)))
+??KeyPr_14:
+        CMP      R4,R9
+        CMPEQ    R5,R6
+        BNE      ??KeyPr_15
+        SWI      +439
+        CMP      R0,#+0
+        BNE      ??KeyPr_15
+        SWI      +795
+        MOV      R9,R0
+        MOV      R1,R8
+        MOV      R0,R7
+        SWI      +739
+        CMP      R9,R0
+        BNE      ??KeyPr_15
+//  425   {
+//  426      SelectMenuItem_SelectProfile(5);
+        MOV      R1,#+5
+        MOV      R0,#+5
+        SWI      +437
+//  427   }
+//  428   if(key == KEY_DIEZ && mode == KBD_SHORT_PRESS && !(isKeylocked()) && (Display_GetTopBook(0)==FindBookEx(isBook,(int*)QUICKACCESS_MENU_BOOK_NAME)))
+??KeyPr_15:
+        LDR      R0,??KeyPr_2+0x1C  ;; KEY_DIEZ
+        LDR      R0,[R0, #+0]
+        CMP      R4,R0
+        CMPEQ    R5,R6
+        BNE      ??KeyPr_16
+        SWI      +439
+        CMP      R0,#+0
+        BNE      ??KeyPr_16
+        SWI      +795
+        MOV      R6,R0
+        MOV      R1,R8
+        MOV      R0,R7
+        SWI      +739
+        CMP      R6,R0
+        BNE      ??KeyPr_16
+//  429   {
+//  430      SelectMenuItem_SelectProfile(6);
+        MOV      R1,#+6
+        MOV      R0,#+6
+        SWI      +437
+//  431   }
+//  432   /*
+//  433   if(key==0x28 && mode==KBD_LONG_PRESS && (isKeylocked()))
+//  434   {
+//  435     UI_Event(UI_SLEEPMODE_DEACTIVATE_EVENT);
+//  436     UI_Event(UI_KEYLOCK_DEACTIVATE_EVENT);
+//  437     return -1;
+//  438   } */
+//  439   
+//  440   if(key==0x28 && mode==KBD_SHORT_RELEASE && !(isKeylocked()))
+??KeyPr_16:
+        CMP      R4,#+40
+        BNE      ??KeyPr_17
+        LDR      R0,??KeyPr_2+0x20  ;; KBD_SHORT_RELEASE
+        LDR      R0,[R0, #+0]
+        CMP      R5,R0
+        BNE      ??KeyPr_17
+        SWI      +439
+        CMP      R0,#+0
+        BNE      ??KeyPr_17
+//  441   {
+//  442     UI_Event(UI_KEYLOCK_ACTIVATE_EVENT);
+        LDR      R0,??DataTable27  ;; UI_KEYLOCK_ACTIVATE_EVENT
+        LDR      R0,[R0, #+0]
+        SWI      +424
+//  443     UI_Event(UI_SLEEPMODE_ACTIVATE_EVENT);
+        LDR      R0,??DataTable28  ;; UI_SLEEPMODE_ACTIVATE_EVENT
+        LDR      R0,[R0, #+0]
+        SWI      +424
+//  444     return -1;
+        MVN      R0,#+0
+        POP      {R4-R10,PC}
+//  445   }
+//  446 
+//  447   return 0;
+??KeyPr_17:
+        MOV      R0,#+0
+        POP      {R4-R10,PC}      ;; return
+        DATA
+??KeyPr_2:
+        DC32     KBD_LONG_PRESS
+        DC32     KBD_SHORT_PRESS
+        DC32     ??isBook
+        DC32     KEY_UP
+        DC32     KEY_DOWN
+        DC32     KEY_DIGITAL_0
+        DC32     KEY_STAR
+        DC32     KEY_DIEZ
+        DC32     KBD_SHORT_RELEASE
+        CFI EndBlock cfiBlock45
+//  448 }
+
+        RSEG CODE:CODE:NOROOT(2)
+        DATA
+??DataTable26:
+        DC32     `?<Constant "QAMenu_Book">`
+
+        RSEG CODE:CODE:NOROOT(2)
+        DATA
+??DataTable27:
+        DC32     UI_KEYLOCK_ACTIVATE_EVENT
+
+        RSEG CODE:CODE:NOROOT(2)
+        DATA
+??DataTable28:
+        DC32     UI_SLEEPMODE_ACTIVATE_EVENT
+
+        RSEG CODE:CODE:NOROOT(2)
+        CFI Block cfiBlock46 Using cfiCommon0
+        CFI NoFunction
+        THUMB
+??TerminateElf??rT:
+        BX       PC
+        Nop      
+        CFI EndBlock cfiBlock46
+        REQUIRE ??TerminateElf
+//  449 
+
+        RSEG CODE:CODE:NOROOT(2)
+        CFI Block cfiBlock47 Using cfiCommon1
+        CFI Function ??TerminateElf
+        ARM
+//  450 int TerminateElf(void * ,BOOK* book)
+//  451 {
+??TerminateElf:
+        PUSH     {LR}
+        CFI ?RET Frame(CFA, -4)
+        CFI CFA R13+4
+        MOV      R0,R1
+//  452   FreeBook(book);
+        SWI      +303
+//  453   return(1);
+        MOV      R0,#+1
+        POP      {PC}             ;; return
+        CFI EndBlock cfiBlock47
+//  454 }
+
+        RSEG CODE:CODE:NOROOT(2)
+        CFI Block cfiBlock48 Using cfiCommon0
+        CFI NoFunction
+        THUMB
+??ShowAuthorInfo??rT:
+        BX       PC
+        Nop      
+        CFI EndBlock cfiBlock48
+        REQUIRE ??ShowAuthorInfo
+//  455 
+//  456 typedef struct
+//  457 {
+//  458   BOOK * book;
+//  459 }MSG;
+//  460 
+
+        RSEG CODE:CODE:NOROOT(2)
+        CFI Block cfiBlock49 Using cfiCommon1
+        CFI Function ??ShowAuthorInfo
+        ARM
+//  461 int ShowAuthorInfo(void *mess ,BOOK* book)
+//  462 {
+//  463   MSG * msg = (MSG*)mess;
+//  464   wchar_t info[256];
+//  465   snwprintf(info,255,L"%s \nv.%s\n(c)Metaler\n%s",ELF_NAME,ELF_VER,__DATE__);
+??ShowAuthorInfo:
+        LDR      R2,??ShowAuthorInfo_1+0x4  ;; `?<Constant L"\\x25\\x73\\x20\\xa\\x76\\x2e\\x25\\x73\\x`
+        PUSH     {R4,R5,LR}
+        CFI ?RET Frame(CFA, -4)
+        CFI R5 Frame(CFA, -8)
+        CFI R4 Frame(CFA, -12)
+        CFI CFA R13+12
+        SUB      SP,SP,#+512
+        CFI CFA R13+524
+        MOV      R4,R0
+        ADD      R0,R2,#+60
+        PUSH     {R0}
+        CFI CFA R13+528
+        ADD      R3,R2,#+48
+        MOV      R1,#+255
+//  466   MessageBox(EMPTY_TEXTID,TextID_Create(info,ENC_UCS2,TEXTID_ANY_LEN),NOIMAGE,1,0,msg->book);
+        MOV      R5,#+255
+        ADR      R0,??ShowAuthorInfo_1  ;; "1.0"
+        PUSH     {R0}
+        CFI CFA R13+532
+        ORR      R5,R5,#0xFF00
+        ADD      R0,SP,#+8
+        SWI      +277
+        MOV      R2,R5
+        MOV      R1,#+0
+        ADD      R0,SP,#+8
+        SWI      +349
+        LDR      R1,[R4, #+0]
+        MOV      R3,#+1
+        PUSH     {R1}
+        CFI CFA R13+536
+        MOV      R2,R5
+        MOV      R1,#+0
+        PUSH     {R1}
+        CFI CFA R13+540
+        MOV      R1,R0
+        MVN      R0,#-1879048192
+        SWI      +599
+//  467   return(1);
+        MOV      R0,#+1
+        ADD      SP,SP,#+528
+        CFI CFA R13+12
+        POP      {R4,R5,PC}       ;; return
+        DATA
+??ShowAuthorInfo_1:
+        DC8      "1.0"
+        DC32     `?<Constant L"\\x25\\x73\\x20\\xa\\x76\\x2e\\x25\\x73\\x`
+        CFI EndBlock cfiBlock49
+//  468 }
+
+        RSEG CODE:CODE:NOROOT(2)
+        CFI Block cfiBlock50 Using cfiCommon0
+        CFI NoFunction
+        THUMB
+??elf_exit??rT:
+        BX       PC
+        Nop      
+        CFI EndBlock cfiBlock50
+        REQUIRE ??elf_exit
+//  469 
+
+        RSEG DYN_PAGE:CONST:SORT:NOROOT(2)
+//  470 const PAGE_MSG QuickAccess_PageEvents[]@ "DYN_PAGE" ={
+QuickAccess_PageEvents:
+        DATA
+        DC32 997, ??TerminateElf, 998, ??ShowAuthorInfo, 0, 0H
+
+        RSEG DATA_I:DATA:SORT:NOROOT(2)
+QuickAccessBook:
+        DS8 4
+        REQUIRE `?<Initializer for QuickAccessBook>`
+//  471   ELF_TERMINATE_EVENT , TerminateElf,
+//  472   ELF_SHOW_INFO_EVENT  , ShowAuthorInfo,
+//  473   0,0
+//  474 };
+//  475 
+//  476 PAGE_DESC base_page = {"QuickAccess_BasePage",0,QuickAccess_PageEvents};
+base_page:
+        DS8 12
+        REQUIRE `?<Initializer for base_page>`
+
+        RSEG DATA_I:DATA:SORT:NOROOT(2)
+names_textid:
+        DS8 52
+        REQUIRE `?<Initializer for names_textid>`
+names_str:
+        DS8 24
+        REQUIRE `?<Initializer for names_str>`
+imageid:
+        DS8 52
+        REQUIRE `?<Initializer for imageid>`
+//  477 
+
+        RSEG CODE:CODE:NOROOT(2)
+        CFI Block cfiBlock51 Using cfiCommon1
+        CFI Function ??elf_exit
+        ARM
+//  478 void elf_exit(void)
+//  479 
+//  480 {
+??elf_exit:
+        PUSH     {LR}
+        CFI ?RET Frame(CFA, -4)
+        CFI CFA R13+4
+//  481   kill_data(&ELF_BEGIN, (void(*)(void*))mfree_adr());
+        SWI      +33028
+        MOV      R1,R0
+        LDR      R0,??elf_exit_1  ;; ELF_BEGIN
+        POP      {LR}             ;; Pop
+        CFI ?RET R14
+        CFI CFA R13+0
+        _BF      kill_data,??kill_data??rA  ;; tailcall
+        DATA
+??elf_exit_1:
+        DC32     ELF_BEGIN
+        CFI EndBlock cfiBlock51
+//  482 }
+
+        RSEG CODE:CODE:NOROOT(2)
+        CFI Block cfiBlock52 Using cfiCommon0
+        CFI NoFunction
+        THUMB
+??OnClose_QuickAccessBook??rT:
+        BX       PC
+        Nop      
+        CFI EndBlock cfiBlock52
+        REQUIRE ??OnClose_QuickAccessBook
+//  483 
+
+        RSEG CODE:CODE:NOROOT(2)
+        CFI Block cfiBlock53 Using cfiCommon1
+        CFI Function ??OnClose_QuickAccessBook
+        ARM
+//  484 void OnClose_QuickAccessBook(BOOK * book)
+//  485 {
+??OnClose_QuickAccessBook:
+        PUSH     {LR}
+        CFI ?RET Frame(CFA, -4)
+        CFI CFA R13+4
+//  486   if (book)
+        CMP      R0,#+0
+        POPEQ    {PC}
+//  487   {
+//  488     ModifyKeyHook( KeyPr,0,0 );
+        LDR      R0,??DataTable34  ;; ??KeyPr
+        MOV      R2,#+0
+        MOV      R1,#+0
+        SWI      +263
+//  489     SUBPROC(elf_exit);
+        LDR      R0,??DataTable33  ;; ??elf_exit
+        SWI      +264
+//  490   }
+//  491 }
+        POP      {PC}             ;; return
+        CFI EndBlock cfiBlock53
+
+        RSEG CODE:CODE:NOROOT(2)
+        CFI Block cfiBlock54 Using cfiCommon0
+        CFI NoFunction
+        THUMB
+??Find_QuickAccessBook??rT:
+        BX       PC
+        Nop      
+        CFI EndBlock cfiBlock54
+        REQUIRE ??Find_QuickAccessBook
+//  492 
+//  493 //Проверяем, а не запущен ли наш эльф?------------------------------------------
+
+        RSEG CODE:CODE:NOROOT(2)
+        CFI Block cfiBlock55 Using cfiCommon1
+        CFI Function ??Find_QuickAccessBook
+        ARM
+//  494 int Find_QuickAccessBook(BOOK* book)
+//  495 {
+//  496   if(!strcmp(book->xbook->name,ELF_NAME))
+??Find_QuickAccessBook:
+        LDR      R1,??DataTable32  ;; `?<Constant L"\\x25\\x73\\x20\\xa\\x76\\x2e\\x25\\x73\\x` + 48
+        PUSH     {LR}
+        CFI ?RET Frame(CFA, -4)
+        CFI CFA R13+4
+        LDR      R0,[R0, #+0]
+        LDR      R0,[R0, #+4]
+        SWI      +345
+        CMP      R0,#+0
+//  497     return(1);
+        MOVEQ    R0,#+1
+        POPEQ    {PC}
+//  498   return(0);
+        MOV      R0,#+0
+        POP      {PC}             ;; return
+        CFI EndBlock cfiBlock55
+//  499 }
+
+        RSEG CODE:CODE:NOROOT(2)
+        CFI Block cfiBlock56 Using cfiCommon0
+        CFI NoFunction
+        THUMB
+??Create_QuickAccessBook??rT:
+        BX       PC
+        Nop      
+        CFI EndBlock cfiBlock56
+        REQUIRE ??Create_QuickAccessBook
+//  500 
+
+        RSEG CODE:CODE:NOROOT(2)
+        CFI Block cfiBlock57 Using cfiCommon1
+        CFI Function ??Create_QuickAccessBook
+        ARM
+//  501 BOOK * Create_QuickAccessBook()
+//  502 {
+??Create_QuickAccessBook:
+        PUSH     {R4,LR}
+        CFI ?RET Frame(CFA, -4)
+        CFI R4 Frame(CFA, -8)
+        CFI CFA R13+8
+//  503   QuickAccessBook = new BOOK;
+        LDR      R4,??Create_QuickAccessBook_1  ;; QuickAccessBook
+        MOV      R0,#+24
+        _BLF     `??operator new`,`??operator new??rA`
+//  504   CreateBook(QuickAccessBook, OnClose_QuickAccessBook, &base_page, ELF_NAME, -1, 0);
+        LDR      R3,??DataTable32  ;; `?<Constant L"\\x25\\x73\\x20\\xa\\x76\\x2e\\x25\\x73\\x` + 48
+        LDR      R1,??Create_QuickAccessBook_1+0x4  ;; ??OnClose_QuickAccessBook
+        STR      R0,[R4, #+0]
+        MOV      R0,#+0
+        PUSH     {R0}
+        CFI CFA R13+12
+        ADD      R2,R4,#+4
+        MVN      R0,R0
+        PUSH     {R0}
+        CFI CFA R13+16
+        LDR      R0,[R4, #+0]
+        SWI      +299
+//  505   return(QuickAccessBook);
+        LDR      R0,[R4, #+0]
+        POP      {R1,R2,R4,PC}    ;; return
+        DATA
+??Create_QuickAccessBook_1:
+        DC32     QuickAccessBook
+        DC32     ??OnClose_QuickAccessBook
+        CFI EndBlock cfiBlock57
+//  506 }
+
+        RSEG CODE:CODE:NOROOT(2)
+        DATA
+??DataTable32:
+        DC32     `?<Constant L"\\x25\\x73\\x20\\xa\\x76\\x2e\\x25\\x73\\x` + 48
+
+        RSEG CODE:CODE:NOROOT(2)
+        CFI Block cfiBlock58 Using cfiCommon0
+        CFI NoFunction
+        THUMB
+??main??rT:
+        BX       PC
+        Nop      
+        CFI EndBlock cfiBlock58
+        REQUIRE main
+//  507 
+
+        RSEG CODE:CODE:NOROOT(2)
+        CFI Block cfiBlock59 Using cfiCommon1
+        CFI Function main
+        ARM
+//  508 int main (void)
+//  509 {
+//  510   if (FindBook(Find_QuickAccessBook))
+main:
+        LDR      R0,??main_0      ;; ??Find_QuickAccessBook
+        PUSH     {R4,LR}
+        CFI ?RET Frame(CFA, -4)
+        CFI R4 Frame(CFA, -8)
+        CFI CFA R13+8
+        SWI      +304
+        CMP      R0,#+0
+        BEQ      ??main_1
+//  511   {
+//  512     MessageBox(EMPTY_TEXTID,STR("Ну хватит меня тыкать ;("),NOIMAGE,1,5000,0);
+        LDR      R0,??main_0+0x4  ;; `?<Constant L"\\x41d\\x443\\x20\\x445\\x432\\x430\\x44`
+        MOV      R4,#+255
+        ORR      R4,R4,#0xFF00
+        MOV      R2,R4
+        MOV      R1,#+0
+        SWI      +349
+        MOV      R1,#+0
+        PUSH     {R1}
+        CFI CFA R13+12
+        MOV      R3,#+1
+        MOV      R2,R4
+        MOV      R1,#+136
+        ORR      R1,R1,#0x1300
+        PUSH     {R1}
+        CFI CFA R13+16
+        MOV      R1,R0
+        MVN      R0,#-1879048192
+        SWI      +599
+//  513     SUBPROC(elf_exit);
+        LDR      R0,??DataTable33  ;; ??elf_exit
+        SWI      +264
+//  514   }
+//  515   else
+//  516   {
+//  517     Create_QuickAccessBook();
+//  518     ModifyKeyHook( KeyPr, KEY_HOOK_ADD, NULL );
+//  519     return(0);
+//  520   }
+//  521 }
+        MOV      R0,#+0
+        ADD      SP,SP,#+8
+        CFI CFA R13+8
+        POP      {R4,PC}
+??main_1:
+        BL       ??Create_QuickAccessBook
+        LDR      R0,??DataTable34  ;; ??KeyPr
+        MOV      R2,#+0
+        MOV      R1,#+1
+        SWI      +263
+        MOV      R0,#+0
+        POP      {R4,PC}          ;; return
+        DATA
+??main_0:
+        DC32     ??Find_QuickAccessBook
+        DC32     `?<Constant L"\\x41d\\x443\\x20\\x445\\x432\\x430\\x44`
+        CFI EndBlock cfiBlock59
+
+        RSEG CODE:CODE:NOROOT(2)
+        DATA
+??DataTable33:
+        DC32     ??elf_exit
+
+        RSEG CODE:CODE:NOROOT(2)
+        DATA
+??DataTable34:
+        DC32     ??KeyPr
+
+        RSEG CODE:CODE:NOROOT(2)
+        CFI Block cfiBlock60 Using cfiCommon1
+        CFI NoFunction
+        ARM
+`??operator new??rA`:
+        LDR      R12,??Subroutine30_0  ;; `??operator new`
+        BX       R12
+        DATA
+??Subroutine30_0:
+        DC32     `??operator new`
+        CFI EndBlock cfiBlock60
+
+        RSEG CODE:CODE:NOROOT(2)
+        CFI Block cfiBlock61 Using cfiCommon1
+        CFI NoFunction
+        ARM
+??kill_data??rA:
+        LDR      R12,??Subroutine31_0  ;; kill_data
+        BX       R12
+        DATA
+??Subroutine31_0:
+        DC32     kill_data
+        CFI EndBlock cfiBlock61
+
+        RSEG DATA_ID:CONST:SORT:NOROOT(2)
+`?<Initializer for QuickAccessBook>`:
+        DATA
+        DC8 0, 0, 0, 0
+`?<Initializer for base_page>`:
+        DC32 `?<Constant "QuickAccess_BasePage">`, 0H, QuickAccess_PageEvents
+
+        RSEG DATA_ID:CONST:SORT:NOROOT(2)
+`?<Initializer for names_textid>`:
+        DATA
+        DC8 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+        DC8 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+        DC8 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+`?<Initializer for names_str>`:
+        DC32 `?<Constant L"\\x41f\\x435\\x440\\x435\\x437\\x430\\x4`
+        DC32 `?<Constant L"\\x412\\x44b\\x43a\\x43b\\x44e\\x447\\x4`
+        DC32 `?<Constant L"\\x411\\x43b\\x43e\\x43a\\x438\\x440\\x4`
+        DC32 `?<Constant L"\\x20">`
+        DC32 `?<Constant L"\\x424\\x43e\\x43d\\x430\\x440\\x438\\x4`
+        DC32 `?<Constant L"\\x20">`
+`?<Initializer for imageid>`:
+        DC32 2302, 319, 1146, 2078, 737, 65535, 2013, 2010, 2004, 2019, 2025
+        DC32 2001, 2016
+
+        RSEG INITTAB:CODE:ROOT(2)
+        DATA
+?init?tab?DATA_Z:
+        DCD      sfe(DATA_Z) - sfb(DATA_Z), sfb(DATA_Z), sfb(DATA_Z)
+
+        RSEG DATA_ID:CONST:SORT:NOROOT(2)
+`?*?DATA_ID`:
+
+        RSEG INITTAB:CODE:ROOT(2)
+        DATA
+?init?tab?DATA_I:
+        DCD      sfe(DATA_I) - sfb(DATA_I), sfb(DATA_I), sfb(DATA_ID)
+
+        RSEG DATA_C:CONST:SORT:NOROOT(2)
+`?<Constant L"\\x41f\\x435\\x440\\x435\\x437\\x430\\x4`:
+        DATA
+        DC8 1FH, 4, 35H, 4, 40H, 4, 35H, 4
+        DC8 37H, 4, 30H, 4, 33H, 4, 40H, 4
+        DC8 43H, 4, 37H, 4, 3AH, 4, 30H, 4
+        DC8 0, 0
+        DC8 0, 0
+
+        RSEG DATA_C:CONST:SORT:NOROOT(2)
+`?<Constant L"\\x412\\x44b\\x43a\\x43b\\x44e\\x447\\x4`:
+        DATA
+        DC8 12H, 4, 4BH, 4, 3AH, 4, 3BH, 4
+        DC8 4EH, 4, 47H, 4, 35H, 4, 3DH, 4
+        DC8 38H, 4, 35H, 4, 0, 0
+        DC8 0, 0
+
+        RSEG DATA_C:CONST:SORT:NOROOT(2)
+`?<Constant L"\\x411\\x43b\\x43e\\x43a\\x438\\x440\\x4`:
+        DATA
+        DC8 11H, 4, 3BH, 4, 3EH, 4, 3AH, 4
+        DC8 38H, 4, 40H, 4, 3EH, 4, 32H, 4
+        DC8 3AH, 4, 30H, 4, 0, 0
+        DC8 0, 0
+
+        RSEG DATA_C:CONST:SORT:NOROOT(2)
+`?<Constant L"\\x20">`:
+        DATA
+        DC8 20H, 0, 0, 0
+
+        RSEG DATA_C:CONST:SORT:NOROOT(2)
+`?<Constant L"\\x424\\x43e\\x43d\\x430\\x440\\x438\\x4`:
+        DATA
+        DC8 24H, 4, 3EH, 4, 3DH, 4, 30H, 4
+        DC8 40H, 4, 38H, 4, 3AH, 4, 0, 0
+
+        RSEG DATA_C:CONST:SORT:NOROOT(2)
+`?<Constant "QuickAccess_BasePage">`:
+        DATA
+        DC8 "QuickAccess_BasePage"
+        DC8 0, 0, 0
+
+        RSEG DATA_C:CONST:SORT:NOROOT(2)
+`?<Constant "PB_UI_CallListBook">`:
+        DATA
+        DC8 "PB_UI_CallListBook"
+        DC8 0
+
+        RSEG DATA_C:CONST:SORT:NOROOT(2)
+`?<Constant "QAMenu_Book">`:
+        DATA
+        DC8 "QAMenu_Book"
+
+        RSEG DATA_C:CONST:SORT:NOROOT(2)
+`?<Constant L"\\x41f\\x435\\x440\\x435\\x437\\x430\\x4_1`:
+        DATA
+        DC8 1FH, 4, 35H, 4, 40H, 4, 35H, 4
+        DC8 37H, 4, 30H, 4, 33H, 4, 40H, 4
+        DC8 43H, 4, 37H, 4, 38H, 4, 42H, 4
+        DC8 4CH, 4, 20H, 0, 42H, 4, 35H, 4
+        DC8 3BH, 4, 35H, 4, 44H, 4, 3EH, 4
+        DC8 3DH, 4, 3FH, 0, 0, 0
+        DC8 0, 0
+
+        RSEG DATA_C:CONST:SORT:NOROOT(2)
+`?<Constant L"\\x412\\x44b\\x43a\\x43b\\x44e\\x447\\x4_1`:
+        DATA
+        DC8 12H, 4, 4BH, 4, 3AH, 4, 3BH, 4
+        DC8 4EH, 4, 47H, 4, 38H, 4, 42H, 4
+        DC8 4CH, 4, 20H, 0, 42H, 4, 35H, 4
+        DC8 3BH, 4, 35H, 4, 44H, 4, 3EH, 4
+        DC8 3DH, 4, 3FH, 0, 0, 0
+        DC8 0, 0
+
+        RSEG DATA_C:CONST:SORT:NOROOT(2)
+`?<Constant L"\\x41e\\x442\\x43a\\x43b\\x2e\\x20\\x431`:
+        DATA
+        DC8 1EH, 4, 42H, 4, 3AH, 4, 3BH, 4
+        DC8 2EH, 0, 20H, 0, 31H, 4, 35H, 4
+        DC8 37H, 4, 37H, 4, 32H, 4, 43H, 4
+        DC8 47H, 4, 3DH, 4, 4BH, 4, 39H, 4
+        DC8 0, 0
+        DC8 0, 0
+        DC8 12H, 4, 3AH, 4, 3BH, 4, 2EH, 0
+        DC8 20H, 0, 31H, 4, 35H, 4, 37H, 4
+        DC8 37H, 4, 32H, 4, 43H, 4, 47H, 4
+        DC8 3DH, 4, 4BH, 4, 39H, 4, 0, 0
+
+        RSEG DATA_C:CONST:SORT:NOROOT(2)
+`?<Constant L"\\x25\\x69\\x2d\\x25\\x69\\x2d\\x25\\x69\\`:
+        DATA
+        DC8 25H, 0, 69H, 0, 2DH, 0, 25H, 0
+        DC8 69H, 0, 2DH, 0, 25H, 0, 69H, 0
+        DC8 20H, 0, 7CH, 0, 20H, 0, 25H, 0
+        DC8 69H, 0, 3AH, 0, 25H, 0, 69H, 0
+        DC8 3AH, 0, 25H, 0, 69H, 0, 0, 0
+
+        RSEG DATA_C:CONST:SORT:NOROOT(2)
+`?<Constant L"\\x51\\x75\\x69\\x63\\x6b\\x41\\x63\\x63\\`:
+        DATA
+        DC8 51H, 0, 75H, 0, 69H, 0, 63H, 0
+        DC8 6BH, 0, 41H, 0, 63H, 0, 63H, 0
+        DC8 65H, 0, 73H, 0, 73H, 0, 4DH, 0
+        DC8 65H, 0, 6EH, 0, 75H, 0, 0, 0
+
+        RSEG DATA_C:CONST:SORT:NOROOT(2)
+`?<Constant L"\\x25\\x73\\x20\\xa\\x76\\x2e\\x25\\x73\\x`:
+        DATA
+        DC8 25H, 0, 73H, 0, 20H, 0, 0AH, 0
+        DC8 76H, 0, 2EH, 0, 25H, 0, 73H, 0
+        DC8 0AH, 0, 28H, 0, 63H, 0, 29H, 0
+        DC8 4DH, 0, 65H, 0, 74H, 0, 61H, 0
+        DC8 6CH, 0, 65H, 0, 72H, 0, 0AH, 0
+        DC8 25H, 0, 73H, 0, 0, 0
+        DC8 0, 0
+        DC8 "QuickAccess"
+        DC8 "Aug 18 2015"
+
+        RSEG DATA_C:CONST:SORT:NOROOT(2)
+        DATA
+        DC8 "1.0"
+
+        RSEG DATA_C:CONST:SORT:NOROOT(2)
+`?<Constant L"\\x41d\\x443\\x20\\x445\\x432\\x430\\x44`:
+        DATA
+        DC8 1DH, 4, 43H, 4, 20H, 0, 45H, 4
+        DC8 32H, 4, 30H, 4, 42H, 4, 38H, 4
+        DC8 42H, 4, 20H, 0, 3CH, 4, 35H, 4
+        DC8 3DH, 4, 4FH, 4, 20H, 0, 42H, 4
+        DC8 4BH, 4, 3AH, 4, 30H, 4, 42H, 4
+        DC8 4CH, 4, 20H, 0, 3BH, 0, 28H, 0
+        DC8 0, 0
+        DC8 0, 0
+
+        END
+// 
+// 3 636 bytes in segment CODE
+//   508 bytes in segment DATA_C
+//   144 bytes in segment DATA_I
+//   144 bytes in segment DATA_ID
+//    14 bytes in segment DATA_Z
+//    24 bytes in segment DYN_PAGE
+//    24 bytes in segment INITTAB
+// 
+// 3 492 bytes of CODE  memory (+ 168 bytes shared)
+//   676 bytes of CONST memory
+//   158 bytes of DATA  memory
+//
+//Errors: none
+//Warnings: none
